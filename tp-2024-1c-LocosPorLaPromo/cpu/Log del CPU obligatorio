@@ -1,0 +1,627 @@
+[INFO] 16:57:26:504 cpu.log/(8611:8611): PID: 0 - FETCH - :  0 
+[INFO] 16:57:26:504 cpu.log/(8611:8611): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 16:57:27:505 cpu.log/(8611:8611): PID: 0 - FETCH - :  0 
+[INFO] 16:57:27:505 cpu.log/(8611:8611): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 16:57:28:506 cpu.log/(8611:8611): PID: 0 - FETCH - :  1 
+[INFO] 16:57:28:507 cpu.log/(8611:8611): PID: 0 - Ejecutando: SET -  BX 1
+ 
+[INFO] 17:00:40:851 cpu.log/(8824:8824): PID: 0 - FETCH - :  0 
+[INFO] 17:00:40:851 cpu.log/(8824:8824): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 17:10:22:868 cpu.log/(9464:9464): PID: 0 - FETCH - :  0 
+[INFO] 17:10:22:882 cpu.log/(9464:9464): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 17:10:23:891 cpu.log/(9464:9464): PID: 0 - FETCH - :  1 
+[INFO] 17:10:23:893 cpu.log/(9464:9464): PID: 0 - Ejecutando: SET -  BX 1
+ 
+[INFO] 17:10:24:895 cpu.log/(9464:9464): PID: 0 - FETCH - :  2 
+[INFO] 17:10:24:899 cpu.log/(9464:9464): PID: 0 - Ejecutando: SUM -  AX BX
+ 
+[INFO] 17:15:14:301 cpu.log/(9663:9663): PID: 0 - FETCH - :  0 
+[INFO] 17:15:14:301 cpu.log/(9663:9663): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 17:15:15:302 cpu.log/(9663:9663): PID: 0 - FETCH - :  1 
+[INFO] 17:15:15:303 cpu.log/(9663:9663): PID: 0 - Ejecutando: SET -  BX 1
+ 
+[INFO] 17:15:16:304 cpu.log/(9663:9663): PID: 0 - FETCH - :  2 
+[INFO] 17:15:16:304 cpu.log/(9663:9663): PID: 0 - Ejecutando: SUM -  AX BX
+ 
+[INFO] 17:16:38:196 cpu.log/(9902:9902): PID: 0 - FETCH - :  0 
+[INFO] 17:16:38:196 cpu.log/(9902:9902): PID: 0 - Ejecutando: SET -  AX 1
+ 
+[INFO] 17:16:39:197 cpu.log/(9902:9902): PID: 0 - FETCH - :  1 
+[INFO] 17:16:39:197 cpu.log/(9902:9902): PID: 0 - Ejecutando: SET -  BX 1
+ 
+[INFO] 17:16:40:199 cpu.log/(9902:9902): PID: 0 - FETCH - :  2 
+[INFO] 17:16:40:199 cpu.log/(9902:9902): PID: 0 - Ejecutando: SUM -  AX BX
+ 
+[INFO] 17:36:21:677 cpu.log/(11704:11704): PID: 0 - FETCH - :  0 
+[INFO] 17:36:21:677 cpu.log/(11704:11704): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 17:36:22:678 cpu.log/(11704:11704): PID: 0 - FETCH - :  1 
+[INFO] 17:36:22:678 cpu.log/(11704:11704): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 17:36:23:679 cpu.log/(11704:11704): PID: 0 - FETCH - :  2 
+[INFO] 17:36:23:679 cpu.log/(11704:11704): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 17:46:34:726 cpu.log/(12121:12121): PID: 0 - FETCH - :  0 
+[INFO] 17:46:34:726 cpu.log/(12121:12121): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 17:46:35:731 cpu.log/(12121:12121): PID: 0 - FETCH - :  1 
+[INFO] 17:46:35:731 cpu.log/(12121:12121): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 17:46:36:734 cpu.log/(12121:12121): PID: 0 - FETCH - :  2 
+[INFO] 17:46:36:734 cpu.log/(12121:12121): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 17:49:27:043 cpu.log/(12542:12542): PID: 0 - FETCH - :  0 
+[INFO] 17:49:27:044 cpu.log/(12542:12542): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 17:49:28:045 cpu.log/(12542:12542): PID: 0 - FETCH - :  1 
+[INFO] 17:49:28:045 cpu.log/(12542:12542): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 17:49:29:047 cpu.log/(12542:12542): PID: 0 - FETCH - :  2 
+[INFO] 17:49:29:047 cpu.log/(12542:12542): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 15:34:32:205 cpu.log/(5154:5154): PID: 0 - FETCH - :  0 
+[INFO] 15:34:32:228 cpu.log/(5154:5154): PID: 0 - Ejecutando: SET -  AX 1   
+[INFO] 15:34:33:229 cpu.log/(5154:5154): PID: 0 - FETCH - :  1 
+[INFO] 15:34:33:229 cpu.log/(5154:5154): PID: 0 - Ejecutando: SET -  BX 1   
+[INFO] 15:34:34:231 cpu.log/(5154:5154): PID: 0 - FETCH - :  2 
+[INFO] 15:34:34:231 cpu.log/(5154:5154): PID: 0 - Ejecutando: SUM -  AX BX   
+[INFO] 15:34:35:240 cpu.log/(5154:5154): PID: 0 - FETCH - :  3 
+[INFO] 15:34:35:240 cpu.log/(5154:5154): PID: 0 - Ejecutando: EXIT -   
+[INFO] 15:37:18:677 cpu.log/(5335:5335): PID: 0 - FETCH - :  0 
+[INFO] 15:37:18:690 cpu.log/(5335:5335): PID: 0 - Ejecutando: SET -  AX 1   
+[INFO] 15:37:19:699 cpu.log/(5335:5335): PID: 0 - FETCH - :  1 
+[INFO] 15:37:19:701 cpu.log/(5335:5335): PID: 0 - Ejecutando: SET -  BX 1   
+[INFO] 15:37:20:703 cpu.log/(5335:5335): PID: 0 - FETCH - :  2 
+[INFO] 15:37:20:707 cpu.log/(5335:5335): PID: 0 - Ejecutando: SUM -  AX BX   
+[INFO] 15:37:21:724 cpu.log/(5335:5335): PID: 0 - FETCH - :  3 
+[INFO] 15:37:21:730 cpu.log/(5335:5335): PID: 0 - Ejecutando: EXIT -   
+[INFO] 15:47:08:459 cpu.log/(5553:5553): PID: 0 - FETCH - :  0 
+[INFO] 15:47:08:459 cpu.log/(5553:5553): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 15:47:09:460 cpu.log/(5553:5553): PID: 0 - FETCH - :  1 
+[INFO] 15:47:09:460 cpu.log/(5553:5553): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 15:47:10:462 cpu.log/(5553:5553): PID: 0 - FETCH - :  2 
+[INFO] 15:47:10:462 cpu.log/(5553:5553): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 15:47:11:477 cpu.log/(5553:5553): PID: 0 - FETCH - :  3 
+[INFO] 15:47:11:477 cpu.log/(5553:5553): PID: 0 - Ejecutando: EXIT -   
+[INFO] 15:54:20:270 cpu.log/(5933:5933): PID: 0 - FETCH - :  0 
+[INFO] 15:54:20:277 cpu.log/(5933:5933): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 15:54:21:286 cpu.log/(5933:5933): PID: 0 - FETCH - :  1 
+[INFO] 15:54:21:289 cpu.log/(5933:5933): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 15:54:22:291 cpu.log/(5933:5933): PID: 0 - FETCH - :  2 
+[INFO] 15:54:22:295 cpu.log/(5933:5933): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 15:54:23:317 cpu.log/(5933:5933): PID: 0 - FETCH - :  3 
+[INFO] 15:54:23:322 cpu.log/(5933:5933): PID: 0 - Ejecutando: EXIT -   
+[INFO] 15:58:22:594 cpu.log/(6119:6119): PID: 0 - FETCH - :  0 
+[INFO] 15:58:22:594 cpu.log/(6119:6119): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 15:58:23:596 cpu.log/(6119:6119): PID: 0 - FETCH - :  1 
+[INFO] 15:58:23:596 cpu.log/(6119:6119): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 15:58:24:597 cpu.log/(6119:6119): PID: 0 - FETCH - :  2 
+[INFO] 15:58:24:597 cpu.log/(6119:6119): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 15:58:25:612 cpu.log/(6119:6119): PID: 0 - FETCH - :  3 
+[INFO] 15:58:25:612 cpu.log/(6119:6119): PID: 0 - Ejecutando: EXIT -   
+[INFO] 16:01:21:953 cpu.log/(6441:6441): PID: 0 - FETCH - :  0 
+[INFO] 16:01:21:960 cpu.log/(6441:6441): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 16:01:22:970 cpu.log/(6441:6441): PID: 0 - FETCH - :  1 
+[INFO] 16:01:22:973 cpu.log/(6441:6441): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 16:01:23:977 cpu.log/(6441:6441): PID: 0 - FETCH - :  2 
+[INFO] 16:01:23:981 cpu.log/(6441:6441): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 16:01:25:002 cpu.log/(6441:6441): PID: 0 - FETCH - :  3 
+[INFO] 16:01:25:011 cpu.log/(6441:6441): PID: 0 - Ejecutando: EXIT -   
+[INFO] 16:08:24:225 cpu.log/(6637:6637): PID: 0 - FETCH - :  0 
+[INFO] 16:08:24:226 cpu.log/(6637:6637): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 16:08:25:227 cpu.log/(6637:6637): PID: 0 - FETCH - :  1 
+[INFO] 16:08:25:227 cpu.log/(6637:6637): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 16:08:26:228 cpu.log/(6637:6637): PID: 0 - FETCH - :  2 
+[INFO] 16:08:26:228 cpu.log/(6637:6637): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 16:08:27:245 cpu.log/(6637:6637): PID: 0 - FETCH - :  3 
+[INFO] 16:08:27:245 cpu.log/(6637:6637): PID: 0 - Ejecutando: EXIT -   
+[INFO] 16:20:24:955 cpu.log/(6842:6842): PID: 0 - FETCH - :  0 
+[INFO] 16:20:24:962 cpu.log/(6842:6842): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 16:20:25:972 cpu.log/(6842:6842): PID: 0 - FETCH - :  1 
+[INFO] 16:20:25:973 cpu.log/(6842:6842): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 16:20:26:976 cpu.log/(6842:6842): PID: 0 - FETCH - :  2 
+[INFO] 16:20:26:980 cpu.log/(6842:6842): PID: 0 - Ejecutando: SUM -  AX BX  
+[INFO] 16:20:27:997 cpu.log/(6842:6842): PID: 0 - FETCH - :  3 
+[INFO] 16:20:28:003 cpu.log/(6842:6842): PID: 0 - Ejecutando: EXIT -   
+[INFO] 01:08:33:552 cpu.log/(4193:4193): PID: 0 - FETCH - :  0 
+[INFO] 01:09:06:578 cpu.log/(4193:4193): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 01:09:07:593 cpu.log/(4193:4193): PID: 0 - FETCH - :  1 
+[INFO] 01:09:10:153 cpu.log/(4193:4193): PID: 0 - Ejecutando: WAIT -  RA  
+[INFO] 01:12:01:137 cpu.log/(4668:4668): PID: 0 - FETCH - :  0 
+[INFO] 01:12:12:132 cpu.log/(4668:4668): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 01:12:13:151 cpu.log/(4668:4668): PID: 0 - FETCH - :  1 
+[INFO] 01:12:24:053 cpu.log/(4668:4668): PID: 0 - Ejecutando: WAIT -  RA  
+[INFO] 01:15:02:956 cpu.log/(5039:5039): PID: 0 - FETCH - :  0 
+[INFO] 01:15:05:319 cpu.log/(5039:5039): PID: 0 - Ejecutando: SET -  AX 1  
+[INFO] 01:15:06:332 cpu.log/(5039:5039): PID: 0 - FETCH - :  1 
+[INFO] 01:15:07:184 cpu.log/(5039:5039): PID: 0 - Ejecutando: WAIT -  RA  
+[INFO] 19:04:42:109 cpu.log/(14360:14360): PID: 0 - FETCH - :  0 
+[INFO] 19:04:42:151 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:04:43:164 cpu.log/(14360:14360): PID: 0 - FETCH - :  1 
+[INFO] 19:04:43:165 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:04:44:179 cpu.log/(14360:14360): PID: 0 - FETCH - :  2 
+[INFO] 19:04:44:182 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:04:45:194 cpu.log/(14360:14360): PID: 0 - FETCH - :  3 
+[INFO] 19:04:45:197 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:04:46:205 cpu.log/(14360:14360): PID: 0 - FETCH - :  4 
+[INFO] 19:04:46:208 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:04:47:225 cpu.log/(14360:14360): PID: 0 - FETCH - :  5 
+[INFO] 19:04:47:228 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:04:48:236 cpu.log/(14360:14360): PID: 0 - FETCH - :  6 
+[INFO] 19:04:48:239 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:04:49:254 cpu.log/(14360:14360): PID: 0 - FETCH - :  7 
+[INFO] 19:04:49:257 cpu.log/(14360:14360): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:04:50:272 cpu.log/(14360:14360): PID: 0 - FETCH - :  8 
+[INFO] 19:04:50:276 cpu.log/(14360:14360): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:08:54:386 cpu.log/(14825:14825): PID: 0 - FETCH - :  0 
+[INFO] 19:08:54:400 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:08:55:411 cpu.log/(14825:14825): PID: 0 - FETCH - :  1 
+[INFO] 19:08:55:414 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:08:56:419 cpu.log/(14825:14825): PID: 0 - FETCH - :  2 
+[INFO] 19:08:56:422 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:08:57:445 cpu.log/(14825:14825): PID: 0 - FETCH - :  3 
+[INFO] 19:08:57:448 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:08:58:466 cpu.log/(14825:14825): PID: 0 - FETCH - :  4 
+[INFO] 19:08:58:469 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:08:59:486 cpu.log/(14825:14825): PID: 0 - FETCH - :  5 
+[INFO] 19:08:59:490 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:09:00:503 cpu.log/(14825:14825): PID: 0 - FETCH - :  6 
+[INFO] 19:09:00:506 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:09:01:519 cpu.log/(14825:14825): PID: 0 - FETCH - :  7 
+[INFO] 19:09:01:522 cpu.log/(14825:14825): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:09:02:538 cpu.log/(14825:14825): PID: 0 - FETCH - :  8 
+[INFO] 19:09:02:543 cpu.log/(14825:14825): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:09:04:574 cpu.log/(14825:14825): PID: 0 - FETCH - :  9 
+[INFO] 19:09:04:577 cpu.log/(14825:14825): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 19:09:04:586 cpu.log/(14825:14825): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 19:09:05:598 cpu.log/(14825:14825): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 19:09:05:604 cpu.log/(14825:14825): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 19:09:07:634 cpu.log/(14825:14825): PID: 0 - FETCH - :  10 
+[INFO] 19:09:07:637 cpu.log/(14825:14825): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 19:09:07:641 cpu.log/(14825:14825): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 19:13:21:605 cpu.log/(15305:15305): PID: 0 - FETCH - :  0 
+[INFO] 19:13:21:605 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:13:22:606 cpu.log/(15305:15305): PID: 0 - FETCH - :  1 
+[INFO] 19:13:22:607 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:13:23:608 cpu.log/(15305:15305): PID: 0 - FETCH - :  2 
+[INFO] 19:13:23:608 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:13:24:622 cpu.log/(15305:15305): PID: 0 - FETCH - :  3 
+[INFO] 19:13:24:622 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:13:25:634 cpu.log/(15305:15305): PID: 0 - FETCH - :  4 
+[INFO] 19:13:25:634 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:13:26:648 cpu.log/(15305:15305): PID: 0 - FETCH - :  5 
+[INFO] 19:13:26:648 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:13:27:662 cpu.log/(15305:15305): PID: 0 - FETCH - :  6 
+[INFO] 19:13:27:662 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:13:28:672 cpu.log/(15305:15305): PID: 0 - FETCH - :  7 
+[INFO] 19:13:28:672 cpu.log/(15305:15305): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:13:29:683 cpu.log/(15305:15305): PID: 0 - FETCH - :  8 
+[INFO] 19:13:29:683 cpu.log/(15305:15305): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:13:31:712 cpu.log/(15305:15305): PID: 0 - FETCH - :  9 
+[INFO] 19:13:31:712 cpu.log/(15305:15305): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 19:13:31:712 cpu.log/(15305:15305): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 19:13:32:719 cpu.log/(15305:15305): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 19:15:19:492 cpu.log/(15305:15305): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 199168
+[INFO] 19:15:21:517 cpu.log/(15305:15305): PID: 0 - FETCH - :  10 
+[INFO] 19:15:21:517 cpu.log/(15305:15305): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 19:15:21:517 cpu.log/(15305:15305): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 19:19:16:020 cpu.log/(15911:15911): PID: 0 - FETCH - :  0 
+[INFO] 19:19:16:020 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:19:17:021 cpu.log/(15911:15911): PID: 0 - FETCH - :  1 
+[INFO] 19:19:17:021 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:19:18:022 cpu.log/(15911:15911): PID: 0 - FETCH - :  2 
+[INFO] 19:19:18:023 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:19:19:039 cpu.log/(15911:15911): PID: 0 - FETCH - :  3 
+[INFO] 19:19:19:040 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:19:20:051 cpu.log/(15911:15911): PID: 0 - FETCH - :  4 
+[INFO] 19:19:20:052 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:19:21:067 cpu.log/(15911:15911): PID: 0 - FETCH - :  5 
+[INFO] 19:19:21:067 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:19:22:078 cpu.log/(15911:15911): PID: 0 - FETCH - :  6 
+[INFO] 19:19:22:078 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:19:23:089 cpu.log/(15911:15911): PID: 0 - FETCH - :  7 
+[INFO] 19:19:23:089 cpu.log/(15911:15911): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:19:24:101 cpu.log/(15911:15911): PID: 0 - FETCH - :  8 
+[INFO] 19:19:24:101 cpu.log/(15911:15911): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:21:45:752 cpu.log/(16200:16200): PID: 0 - FETCH - :  0 
+[INFO] 19:21:45:761 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:21:46:771 cpu.log/(16200:16200): PID: 0 - FETCH - :  1 
+[INFO] 19:21:46:773 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:21:47:776 cpu.log/(16200:16200): PID: 0 - FETCH - :  2 
+[INFO] 19:21:47:779 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:21:48:805 cpu.log/(16200:16200): PID: 0 - FETCH - :  3 
+[INFO] 19:21:48:808 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:21:49:822 cpu.log/(16200:16200): PID: 0 - FETCH - :  4 
+[INFO] 19:21:49:833 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:21:50:851 cpu.log/(16200:16200): PID: 0 - FETCH - :  5 
+[INFO] 19:21:50:854 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:21:51:868 cpu.log/(16200:16200): PID: 0 - FETCH - :  6 
+[INFO] 19:21:51:871 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:21:52:885 cpu.log/(16200:16200): PID: 0 - FETCH - :  7 
+[INFO] 19:21:52:888 cpu.log/(16200:16200): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:21:53:902 cpu.log/(16200:16200): PID: 0 - FETCH - :  8 
+[INFO] 19:21:53:906 cpu.log/(16200:16200): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:21:55:940 cpu.log/(16200:16200): PID: 0 - FETCH - :  9 
+[INFO] 19:21:55:943 cpu.log/(16200:16200): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 19:21:55:948 cpu.log/(16200:16200): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 19:21:56:960 cpu.log/(16200:16200): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 19:21:56:968 cpu.log/(16200:16200): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 19:21:59:000 cpu.log/(16200:16200): PID: 0 - FETCH - :  10 
+[INFO] 19:21:59:005 cpu.log/(16200:16200): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 19:21:59:009 cpu.log/(16200:16200): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 19:34:26:796 cpu.log/(16860:16860): PID: 0 - FETCH - :  0 
+[INFO] 19:34:26:803 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:34:27:812 cpu.log/(16860:16860): PID: 0 - FETCH - :  1 
+[INFO] 19:34:27:815 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:34:28:820 cpu.log/(16860:16860): PID: 0 - FETCH - :  2 
+[INFO] 19:34:28:824 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:34:29:842 cpu.log/(16860:16860): PID: 0 - FETCH - :  3 
+[INFO] 19:34:29:845 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:34:30:860 cpu.log/(16860:16860): PID: 0 - FETCH - :  4 
+[INFO] 19:34:30:864 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:34:31:876 cpu.log/(16860:16860): PID: 0 - FETCH - :  5 
+[INFO] 19:34:31:877 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:34:32:883 cpu.log/(16860:16860): PID: 0 - FETCH - :  6 
+[INFO] 19:34:32:886 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:34:33:900 cpu.log/(16860:16860): PID: 0 - FETCH - :  7 
+[INFO] 19:34:33:903 cpu.log/(16860:16860): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:34:34:918 cpu.log/(16860:16860): PID: 0 - FETCH - :  8 
+[INFO] 19:34:34:922 cpu.log/(16860:16860): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:34:36:948 cpu.log/(16860:16860): PID: 0 - FETCH - :  9 
+[INFO] 19:34:36:952 cpu.log/(16860:16860): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 19:34:36:960 cpu.log/(16860:16860): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 19:34:37:972 cpu.log/(16860:16860): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 19:34:37:979 cpu.log/(16860:16860): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 19:34:39:997 cpu.log/(16860:16860): PID: 0 - FETCH - :  10 
+[INFO] 19:34:40:000 cpu.log/(16860:16860): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 19:34:40:004 cpu.log/(16860:16860): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 19:39:39:623 cpu.log/(17503:17503): PID: 0 - FETCH - :  0 
+[INFO] 19:39:39:638 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 19:39:40:648 cpu.log/(17503:17503): PID: 0 - FETCH - :  1 
+[INFO] 19:39:40:651 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 19:39:41:654 cpu.log/(17503:17503): PID: 0 - FETCH - :  2 
+[INFO] 19:39:41:657 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 19:39:42:678 cpu.log/(17503:17503): PID: 0 - FETCH - :  3 
+[INFO] 19:39:42:681 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 19:39:43:696 cpu.log/(17503:17503): PID: 0 - FETCH - :  4 
+[INFO] 19:39:43:699 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 19:39:44:716 cpu.log/(17503:17503): PID: 0 - FETCH - :  5 
+[INFO] 19:39:44:719 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 19:39:45:735 cpu.log/(17503:17503): PID: 0 - FETCH - :  6 
+[INFO] 19:39:45:738 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 19:39:46:752 cpu.log/(17503:17503): PID: 0 - FETCH - :  7 
+[INFO] 19:39:46:755 cpu.log/(17503:17503): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 19:39:47:772 cpu.log/(17503:17503): PID: 0 - FETCH - :  8 
+[INFO] 19:39:47:776 cpu.log/(17503:17503): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 19:39:49:800 cpu.log/(17503:17503): PID: 0 - FETCH - :  9 
+[INFO] 19:39:49:803 cpu.log/(17503:17503): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 19:39:49:812 cpu.log/(17503:17503): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 19:39:50:825 cpu.log/(17503:17503): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 19:39:50:833 cpu.log/(17503:17503): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 19:39:52:856 cpu.log/(17503:17503): PID: 0 - FETCH - :  10 
+[INFO] 19:39:52:859 cpu.log/(17503:17503): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 19:39:52:862 cpu.log/(17503:17503): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 20:06:48:492 cpu.log/(18507:18507): PID: 0 - FETCH - :  0 
+[INFO] 20:06:48:499 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:06:49:507 cpu.log/(18507:18507): PID: 0 - FETCH - :  1 
+[INFO] 20:06:49:508 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:06:50:511 cpu.log/(18507:18507): PID: 0 - FETCH - :  2 
+[INFO] 20:06:50:514 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:06:51:533 cpu.log/(18507:18507): PID: 0 - FETCH - :  3 
+[INFO] 20:06:51:536 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:06:52:551 cpu.log/(18507:18507): PID: 0 - FETCH - :  4 
+[INFO] 20:06:52:555 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:06:53:570 cpu.log/(18507:18507): PID: 0 - FETCH - :  5 
+[INFO] 20:06:53:573 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:06:54:586 cpu.log/(18507:18507): PID: 0 - FETCH - :  6 
+[INFO] 20:06:54:589 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:06:55:604 cpu.log/(18507:18507): PID: 0 - FETCH - :  7 
+[INFO] 20:06:55:607 cpu.log/(18507:18507): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:06:56:621 cpu.log/(18507:18507): PID: 0 - FETCH - :  8 
+[INFO] 20:06:56:626 cpu.log/(18507:18507): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:06:58:659 cpu.log/(18507:18507): PID: 0 - FETCH - :  9 
+[INFO] 20:06:58:662 cpu.log/(18507:18507): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 20:06:58:671 cpu.log/(18507:18507): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 20:06:59:685 cpu.log/(18507:18507): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 20:06:59:695 cpu.log/(18507:18507): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 20:07:01:720 cpu.log/(18507:18507): PID: 0 - FETCH - :  10 
+[INFO] 20:07:01:723 cpu.log/(18507:18507): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 20:07:01:727 cpu.log/(18507:18507): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 20:12:00:161 cpu.log/(19210:19210): PID: 0 - FETCH - :  0 
+[INFO] 20:12:00:161 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:12:01:165 cpu.log/(19210:19210): PID: 0 - FETCH - :  1 
+[INFO] 20:12:01:165 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:12:02:167 cpu.log/(19210:19210): PID: 0 - FETCH - :  2 
+[INFO] 20:12:02:167 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:12:03:184 cpu.log/(19210:19210): PID: 0 - FETCH - :  3 
+[INFO] 20:12:03:184 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:12:04:191 cpu.log/(19210:19210): PID: 0 - FETCH - :  4 
+[INFO] 20:12:04:191 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:12:05:203 cpu.log/(19210:19210): PID: 0 - FETCH - :  5 
+[INFO] 20:12:05:204 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:12:06:213 cpu.log/(19210:19210): PID: 0 - FETCH - :  6 
+[INFO] 20:12:06:214 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:12:07:225 cpu.log/(19210:19210): PID: 0 - FETCH - :  7 
+[INFO] 20:12:07:225 cpu.log/(19210:19210): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:12:08:236 cpu.log/(19210:19210): PID: 0 - FETCH - :  8 
+[INFO] 20:12:08:236 cpu.log/(19210:19210): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:12:10:265 cpu.log/(19210:19210): PID: 0 - FETCH - :  9 
+[INFO] 20:12:10:265 cpu.log/(19210:19210): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 20:12:10:265 cpu.log/(19210:19210): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 20:12:11:271 cpu.log/(19210:19210): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 20:12:11:271 cpu.log/(19210:19210): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 199424
+[INFO] 20:12:13:288 cpu.log/(19210:19210): PID: 0 - FETCH - :  10 
+[INFO] 20:12:13:288 cpu.log/(19210:19210): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 20:12:13:288 cpu.log/(19210:19210): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 20:14:29:358 cpu.log/(19599:19599): PID: 0 - FETCH - :  0 
+[INFO] 20:14:29:365 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:14:30:373 cpu.log/(19599:19599): PID: 0 - FETCH - :  1 
+[INFO] 20:14:30:376 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:14:31:379 cpu.log/(19599:19599): PID: 0 - FETCH - :  2 
+[INFO] 20:14:31:382 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:14:32:407 cpu.log/(19599:19599): PID: 0 - FETCH - :  3 
+[INFO] 20:14:32:410 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:14:33:424 cpu.log/(19599:19599): PID: 0 - FETCH - :  4 
+[INFO] 20:14:33:427 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:14:34:443 cpu.log/(19599:19599): PID: 0 - FETCH - :  5 
+[INFO] 20:14:34:446 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:14:35:461 cpu.log/(19599:19599): PID: 0 - FETCH - :  6 
+[INFO] 20:14:35:464 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:14:36:476 cpu.log/(19599:19599): PID: 0 - FETCH - :  7 
+[INFO] 20:14:36:479 cpu.log/(19599:19599): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:14:37:494 cpu.log/(19599:19599): PID: 0 - FETCH - :  8 
+[INFO] 20:14:37:498 cpu.log/(19599:19599): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:26:03:525 cpu.log/(20842:20842): PID: 0 - FETCH - :  0 
+[INFO] 20:26:03:525 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:26:04:527 cpu.log/(20842:20842): PID: 0 - FETCH - :  1 
+[INFO] 20:26:04:527 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:26:05:528 cpu.log/(20842:20842): PID: 0 - FETCH - :  2 
+[INFO] 20:26:05:529 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:26:06:544 cpu.log/(20842:20842): PID: 0 - FETCH - :  3 
+[INFO] 20:26:06:544 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:26:07:556 cpu.log/(20842:20842): PID: 0 - FETCH - :  4 
+[INFO] 20:26:07:556 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:26:08:566 cpu.log/(20842:20842): PID: 0 - FETCH - :  5 
+[INFO] 20:26:08:566 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:26:09:576 cpu.log/(20842:20842): PID: 0 - FETCH - :  6 
+[INFO] 20:26:09:576 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:26:10:587 cpu.log/(20842:20842): PID: 0 - FETCH - :  7 
+[INFO] 20:26:10:587 cpu.log/(20842:20842): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:26:11:598 cpu.log/(20842:20842): PID: 0 - FETCH - :  8 
+[INFO] 20:26:11:598 cpu.log/(20842:20842): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:26:13:622 cpu.log/(20842:20842): PID: 0 - FETCH - :  9 
+[INFO] 20:26:13:622 cpu.log/(20842:20842): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 20:26:13:622 cpu.log/(20842:20842): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 20:26:14:628 cpu.log/(20842:20842): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 20:26:14:628 cpu.log/(20842:20842): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 199424
+[INFO] 20:26:16:645 cpu.log/(20842:20842): PID: 0 - FETCH - :  10 
+[INFO] 20:26:16:645 cpu.log/(20842:20842): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 20:26:16:645 cpu.log/(20842:20842): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 20:42:50:107 cpu.log/(21571:21571): PID: 0 - FETCH - :  0 
+[INFO] 20:42:50:107 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:42:51:109 cpu.log/(21571:21571): PID: 0 - FETCH - :  1 
+[INFO] 20:42:51:109 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:42:52:110 cpu.log/(21571:21571): PID: 0 - FETCH - :  2 
+[INFO] 20:42:52:110 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:42:53:119 cpu.log/(21571:21571): PID: 0 - FETCH - :  3 
+[INFO] 20:42:53:119 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:42:54:129 cpu.log/(21571:21571): PID: 0 - FETCH - :  4 
+[INFO] 20:42:54:129 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:42:55:141 cpu.log/(21571:21571): PID: 0 - FETCH - :  5 
+[INFO] 20:42:55:141 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:42:56:152 cpu.log/(21571:21571): PID: 0 - FETCH - :  6 
+[INFO] 20:42:56:152 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:42:57:162 cpu.log/(21571:21571): PID: 0 - FETCH - :  7 
+[INFO] 20:42:57:162 cpu.log/(21571:21571): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:42:58:172 cpu.log/(21571:21571): PID: 0 - FETCH - :  8 
+[INFO] 20:42:58:172 cpu.log/(21571:21571): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:43:00:192 cpu.log/(21571:21571): PID: 0 - FETCH - :  9 
+[INFO] 20:43:00:192 cpu.log/(21571:21571): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 20:43:00:192 cpu.log/(21571:21571): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 20:43:01:201 cpu.log/(21571:21571): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 20:47:01:200 cpu.log/(21917:21917): PID: 0 - FETCH - :  0 
+[INFO] 20:47:01:200 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 20:47:02:201 cpu.log/(21917:21917): PID: 0 - FETCH - :  1 
+[INFO] 20:47:02:201 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 20:47:03:203 cpu.log/(21917:21917): PID: 0 - FETCH - :  2 
+[INFO] 20:47:03:203 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 20:47:04:221 cpu.log/(21917:21917): PID: 0 - FETCH - :  3 
+[INFO] 20:47:04:221 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 20:47:05:231 cpu.log/(21917:21917): PID: 0 - FETCH - :  4 
+[INFO] 20:47:05:231 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 20:47:06:240 cpu.log/(21917:21917): PID: 0 - FETCH - :  5 
+[INFO] 20:47:06:240 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 20:47:07:251 cpu.log/(21917:21917): PID: 0 - FETCH - :  6 
+[INFO] 20:47:07:251 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 20:47:08:260 cpu.log/(21917:21917): PID: 0 - FETCH - :  7 
+[INFO] 20:47:08:260 cpu.log/(21917:21917): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 20:47:09:271 cpu.log/(21917:21917): PID: 0 - FETCH - :  8 
+[INFO] 20:47:09:271 cpu.log/(21917:21917): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 20:47:11:299 cpu.log/(21917:21917): PID: 0 - FETCH - :  9 
+[INFO] 20:47:11:299 cpu.log/(21917:21917): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 20:51:52:408 cpu.log/(21917:21917): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 20:51:53:416 cpu.log/(21917:21917): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 21:31:59:500 cpu.log/(23865:23865): PID: 0 - FETCH - :  0 
+[INFO] 21:31:59:512 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 21:32:00:525 cpu.log/(23865:23865): PID: 0 - FETCH - :  1 
+[INFO] 21:32:00:528 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 21:32:01:530 cpu.log/(23865:23865): PID: 0 - FETCH - :  2 
+[INFO] 21:32:01:533 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 21:32:02:552 cpu.log/(23865:23865): PID: 0 - FETCH - :  3 
+[INFO] 21:32:02:555 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 21:32:03:567 cpu.log/(23865:23865): PID: 0 - FETCH - :  4 
+[INFO] 21:32:03:570 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 21:32:04:583 cpu.log/(23865:23865): PID: 0 - FETCH - :  5 
+[INFO] 21:32:04:587 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 21:32:05:600 cpu.log/(23865:23865): PID: 0 - FETCH - :  6 
+[INFO] 21:32:05:604 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 21:32:06:617 cpu.log/(23865:23865): PID: 0 - FETCH - :  7 
+[INFO] 21:32:06:620 cpu.log/(23865:23865): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 21:32:07:633 cpu.log/(23865:23865): PID: 0 - FETCH - :  8 
+[INFO] 21:32:07:638 cpu.log/(23865:23865): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 21:32:09:673 cpu.log/(23865:23865): PID: 0 - FETCH - :  9 
+[INFO] 21:32:09:676 cpu.log/(23865:23865): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 21:32:09:685 cpu.log/(23865:23865): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 21:32:10:699 cpu.log/(23865:23865): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 21:32:10:708 cpu.log/(23865:23865): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 21:32:12:731 cpu.log/(23865:23865): PID: 0 - FETCH - :  10 
+[INFO] 21:32:12:733 cpu.log/(23865:23865): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 21:32:12:736 cpu.log/(23865:23865): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 22:30:29:188 cpu.log/(26729:26729): PID: 0 - FETCH - :  0 
+[INFO] 22:30:29:194 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 22:30:30:205 cpu.log/(26729:26729): PID: 0 - FETCH - :  1 
+[INFO] 22:30:30:208 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 22:30:31:212 cpu.log/(26729:26729): PID: 0 - FETCH - :  2 
+[INFO] 22:30:31:215 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 22:30:32:243 cpu.log/(26729:26729): PID: 0 - FETCH - :  3 
+[INFO] 22:30:32:246 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 22:30:33:259 cpu.log/(26729:26729): PID: 0 - FETCH - :  4 
+[INFO] 22:30:33:262 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 22:30:34:279 cpu.log/(26729:26729): PID: 0 - FETCH - :  5 
+[INFO] 22:30:34:282 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 22:30:35:296 cpu.log/(26729:26729): PID: 0 - FETCH - :  6 
+[INFO] 22:30:35:298 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 22:30:36:313 cpu.log/(26729:26729): PID: 0 - FETCH - :  7 
+[INFO] 22:30:36:316 cpu.log/(26729:26729): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 22:30:37:331 cpu.log/(26729:26729): PID: 0 - FETCH - :  8 
+[INFO] 22:30:37:336 cpu.log/(26729:26729): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 22:30:39:370 cpu.log/(26729:26729): PID: 0 - FETCH - :  9 
+[INFO] 22:30:39:374 cpu.log/(26729:26729): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 22:30:39:383 cpu.log/(26729:26729): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 22:30:40:397 cpu.log/(26729:26729): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 22:32:39:176 cpu.log/(26951:26951): PID: 0 - FETCH - :  0 
+[INFO] 22:32:39:182 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 22:32:40:191 cpu.log/(26951:26951): PID: 0 - FETCH - :  1 
+[INFO] 22:32:40:194 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 22:32:41:198 cpu.log/(26951:26951): PID: 0 - FETCH - :  2 
+[INFO] 22:32:41:201 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 22:32:42:218 cpu.log/(26951:26951): PID: 0 - FETCH - :  3 
+[INFO] 22:32:42:221 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 22:32:43:236 cpu.log/(26951:26951): PID: 0 - FETCH - :  4 
+[INFO] 22:32:43:239 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 22:32:44:252 cpu.log/(26951:26951): PID: 0 - FETCH - :  5 
+[INFO] 22:32:44:255 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 22:32:45:268 cpu.log/(26951:26951): PID: 0 - FETCH - :  6 
+[INFO] 22:32:45:271 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 22:32:46:287 cpu.log/(26951:26951): PID: 0 - FETCH - :  7 
+[INFO] 22:32:46:290 cpu.log/(26951:26951): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 22:32:47:297 cpu.log/(26951:26951): PID: 0 - FETCH - :  8 
+[INFO] 22:32:47:302 cpu.log/(26951:26951): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 22:32:49:335 cpu.log/(26951:26951): PID: 0 - FETCH - :  9 
+[INFO] 22:32:49:338 cpu.log/(26951:26951): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 22:32:49:347 cpu.log/(26951:26951): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 22:32:50:359 cpu.log/(26951:26951): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 22:32:50:366 cpu.log/(26951:26951): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 22:32:52:392 cpu.log/(26951:26951): PID: 0 - FETCH - :  10 
+[INFO] 22:32:52:395 cpu.log/(26951:26951): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 22:32:52:399 cpu.log/(26951:26951): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 10:19:23:881 cpu.log/(4223:4223): PID: 0 - FETCH - :  0 
+[INFO] 10:19:23:927 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 10:19:24:937 cpu.log/(4223:4223): PID: 0 - FETCH - :  1 
+[INFO] 10:19:24:938 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 10:19:25:953 cpu.log/(4223:4223): PID: 0 - FETCH - :  2 
+[INFO] 10:19:25:956 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 10:19:26:960 cpu.log/(4223:4223): PID: 0 - FETCH - :  3 
+[INFO] 10:19:26:963 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 10:19:27:974 cpu.log/(4223:4223): PID: 0 - FETCH - :  4 
+[INFO] 10:19:27:977 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 10:19:28:981 cpu.log/(4223:4223): PID: 0 - FETCH - :  5 
+[INFO] 10:19:28:985 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 10:19:29:993 cpu.log/(4223:4223): PID: 0 - FETCH - :  6 
+[INFO] 10:19:29:996 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 10:19:31:000 cpu.log/(4223:4223): PID: 0 - FETCH - :  7 
+[INFO] 10:19:31:005 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 10:19:32:018 cpu.log/(4223:4223): PID: 0 - FETCH - :  8 
+[INFO] 10:19:32:023 cpu.log/(4223:4223): PID: 0 - Ejecutando: RESIZE -  128  
+[INFO] 10:19:34:056 cpu.log/(4223:4223): PID: 0 - FETCH - :  9 
+[INFO] 10:19:34:059 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EAX AX  
+[INFO] 10:19:34:064 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  0
+[INFO] 10:19:35:076 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 0 - Marco: 0
+[INFO] 10:19:35:079 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 0 - Valor: 0
+[INFO] 10:19:37:099 cpu.log/(4223:4223): PID: 0 - FETCH - :  10 
+[INFO] 10:19:37:102 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EBX AX  
+[INFO] 10:19:37:104 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  1
+[INFO] 10:19:38:107 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 1 - Marco: 1
+[INFO] 10:19:38:108 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 32 - Valor: 0
+[INFO] 10:19:40:116 cpu.log/(4223:4223): PID: 0 - FETCH - :  11 
+[INFO] 10:19:40:119 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  ECX AX  
+[INFO] 10:19:40:125 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  2
+[INFO] 10:19:41:129 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 2 - Marco: 2
+[INFO] 10:19:41:131 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 64 - Valor: 0
+[INFO] 10:19:43:144 cpu.log/(4223:4223): PID: 0 - FETCH - :  12 
+[INFO] 10:19:43:147 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EDX AX  
+[INFO] 10:19:43:149 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  3
+[INFO] 10:19:44:153 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 3 - Marco: 3
+[INFO] 10:19:44:155 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 96 - Valor: 0
+[INFO] 10:19:46:168 cpu.log/(4223:4223): PID: 0 - FETCH - :  13 
+[INFO] 10:19:46:171 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  DX 64  
+[INFO] 10:19:47:173 cpu.log/(4223:4223): PID: 0 - FETCH - :  14 
+[INFO] 10:19:47:176 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_IN -  BX EBX  
+[INFO] 10:19:47:179 cpu.log/(4223:4223): PID: 0 - TLB HIT - Pagina: 1
+[INFO] 10:19:47:180 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 1 - Marco: 1
+[INFO] 10:19:48:193 cpu.log/(4223:4223): PID: 0 - Acción: LEER - Dirección Física: 32 - Valor: 0
+[INFO] 10:19:49:208 cpu.log/(4223:4223): PID: 0 - FETCH - :  15 
+[INFO] 10:19:49:210 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_IN -  CX ECX  
+[INFO] 10:19:49:213 cpu.log/(4223:4223): PID: 0 - TLB HIT - Pagina: 2
+[INFO] 10:19:49:213 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 2 - Marco: 2
+[INFO] 10:19:50:218 cpu.log/(4223:4223): PID: 0 - Acción: LEER - Dirección Física: 64 - Valor: 0
+[INFO] 10:19:51:231 cpu.log/(4223:4223): PID: 0 - FETCH - :  16 
+[INFO] 10:19:51:234 cpu.log/(4223:4223): PID: 0 - Ejecutando: RESIZE -  256  
+[INFO] 10:19:53:252 cpu.log/(4223:4223): PID: 0 - FETCH - :  17 
+[INFO] 10:19:53:255 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EAX 128  
+[INFO] 10:19:54:258 cpu.log/(4223:4223): PID: 0 - FETCH - :  18 
+[INFO] 10:19:54:260 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EBX 160  
+[INFO] 10:19:55:267 cpu.log/(4223:4223): PID: 0 - FETCH - :  19 
+[INFO] 10:19:55:270 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EAX DX  
+[INFO] 10:19:55:272 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  4
+[INFO] 10:19:56:276 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 4 - Marco: 4
+[INFO] 10:19:56:277 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 128 - Valor: 64
+[INFO] 10:19:58:290 cpu.log/(4223:4223): PID: 0 - FETCH - :  20 
+[INFO] 10:19:58:292 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EBX DX  
+[INFO] 10:19:58:295 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  5
+[INFO] 10:19:59:298 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 5 - Marco: 5
+[INFO] 10:19:59:300 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 160 - Valor: 64
+[INFO] 10:20:01:316 cpu.log/(4223:4223): PID: 0 - FETCH - :  21 
+[INFO] 10:20:01:320 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EAX 40  
+[INFO] 10:20:02:323 cpu.log/(4223:4223): PID: 0 - FETCH - :  22 
+[INFO] 10:20:02:326 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EBX 80  
+[INFO] 10:20:03:336 cpu.log/(4223:4223): PID: 0 - FETCH - :  23 
+[INFO] 10:20:03:339 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  ECX 192  
+[INFO] 10:20:04:342 cpu.log/(4223:4223): PID: 0 - FETCH - :  24 
+[INFO] 10:20:04:345 cpu.log/(4223:4223): PID: 0 - Ejecutando: SET -  EDX 224  
+[INFO] 10:20:05:356 cpu.log/(4223:4223): PID: 0 - FETCH - :  25 
+[INFO] 10:20:05:359 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EAX DX  
+[INFO] 10:20:05:361 cpu.log/(4223:4223): PID: 0 - TLB HIT - Pagina: 1
+[INFO] 10:20:05:362 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 1 - Marco: 1
+[INFO] 10:20:05:364 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 40 - Valor: 64
+[INFO] 10:20:07:377 cpu.log/(4223:4223): PID: 0 - FETCH - :  26 
+[INFO] 10:20:07:380 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EBX DX  
+[INFO] 10:20:07:383 cpu.log/(4223:4223): PID: 0 - TLB HIT - Pagina: 2
+[INFO] 10:20:07:384 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 2 - Marco: 2
+[INFO] 10:20:07:385 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 80 - Valor: 64
+[INFO] 10:20:09:396 cpu.log/(4223:4223): PID: 0 - FETCH - :  27 
+[INFO] 10:20:09:399 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  ECX DX  
+[INFO] 10:20:09:400 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  6
+[INFO] 10:20:10:405 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 6 - Marco: 6
+[INFO] 10:20:10:406 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 192 - Valor: 64
+[INFO] 10:20:12:414 cpu.log/(4223:4223): PID: 0 - FETCH - :  28 
+[INFO] 10:20:12:417 cpu.log/(4223:4223): PID: 0 - Ejecutando: MOV_OUT -  EDX DX  
+[INFO] 10:20:12:419 cpu.log/(4223:4223): PID: 0 - TLB MISS - Pagina:  7
+[INFO] 10:20:13:421 cpu.log/(4223:4223): PID: 0 - OBTENER MARCO - Página: 7 - Marco: 7
+[INFO] 10:20:13:423 cpu.log/(4223:4223): PID: 0 - Acción: ESCRIBIR - Dirección Física: 224 - Valor: 64
+[INFO] 10:20:15:434 cpu.log/(4223:4223): PID: 0 - FETCH - :  29 
+[INFO] 10:20:15:439 cpu.log/(4223:4223): PID: 0 - Ejecutando: EXIT -   
+[INFO] 10:38:44:640 cpu.log/(4988:4988): PID: 0 - FETCH - :  0 
+[INFO] 10:38:44:651 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  AX 0  
+[INFO] 10:38:45:664 cpu.log/(4988:4988): PID: 0 - FETCH - :  1 
+[INFO] 10:38:45:666 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  BX 1  
+[INFO] 10:38:46:670 cpu.log/(4988:4988): PID: 0 - FETCH - :  2 
+[INFO] 10:38:46:673 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  CX 2  
+[INFO] 10:38:47:697 cpu.log/(4988:4988): PID: 0 - FETCH - :  3 
+[INFO] 10:38:47:700 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  DX 3  
+[INFO] 10:38:48:705 cpu.log/(4988:4988): PID: 0 - FETCH - :  4 
+[INFO] 10:38:48:708 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  EAX 0  
+[INFO] 10:38:49:722 cpu.log/(4988:4988): PID: 0 - FETCH - :  5 
+[INFO] 10:38:49:726 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  EBX 32  
+[INFO] 10:38:50:732 cpu.log/(4988:4988): PID: 0 - FETCH - :  6 
+[INFO] 10:38:50:735 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  ECX 64  
+[INFO] 10:38:51:747 cpu.log/(4988:4988): PID: 0 - FETCH - :  7 
+[INFO] 10:38:51:750 cpu.log/(4988:4988): PID: 0 - Ejecutando: SET -  EDX 96  
+[INFO] 10:38:52:754 cpu.log/(4988:4988): PID: 0 - FETCH - :  8 
+[INFO] 10:38:52:759 cpu.log/(4988:4988): PID: 0 - Ejecutando: RESIZE -  128  

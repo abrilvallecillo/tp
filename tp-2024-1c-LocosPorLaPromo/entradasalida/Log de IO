@@ -1,0 +1,1541 @@
+[INFO] 17:09:19:102 entradasalida.log/(12487:12487): PID: 0 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:27:05:517 entradasalida.log/(12487:12487): PID: 1 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:31:27:035 entradasalida.log/(12487:12487): PID: 2 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:36:02:946 entradasalida.log/(12487:12487): PID: 3 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:42:45:452 entradasalida.log/(12487:12487): PID: 4 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:50:19:840 entradasalida.log/(15099:15099): PID: 6 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:56:08:439 entradasalida.log/(15502:15502): PID: 8 - Operacion: IO_STDOUT_WRITE
+[INFO] 17:57:43:707 entradasalida.log/(15758:15758): PID: 9 - Operacion: IO_STDOUT_WRITE
+[INFO] 18:01:25:936 entradasalida.log/(16026:16026): PID: 11 - Operacion: IO_STDOUT_WRITE
+[INFO] 14:25:18:776 entradasalida.log/(16400:16400): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 14:25:18:851 entradasalida.log/(16400:16400): PID: 0 - Crear Archivo: salida.txt
+[INFO] 14:25:21:874 entradasalida.log/(16400:16400): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 14:25:21:875 entradasalida.log/(16400:16400): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 14:25:24:910 entradasalida.log/(16400:16400): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 14:25:24:913 entradasalida.log/(16400:16400): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 14:25:27:935 entradasalida.log/(16400:16400): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 14:25:27:935 entradasalida.log/(16400:16400): PID: 0 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 14:49:06:033 entradasalida.log/(17655:17655): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 14:49:06:079 entradasalida.log/(17655:17655): PID: 5 - Crear Archivo: salida.txt
+[INFO] 14:49:09:103 entradasalida.log/(17655:17655): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 14:49:09:103 entradasalida.log/(17655:17655): PID: 5 - Crear Archivo: salida.txt
+[INFO] 14:49:12:121 entradasalida.log/(17655:17655): PID: 5 - Operacion: IO_FS_TRUNCATE
+[INFO] 14:49:12:123 entradasalida.log/(17655:17655): PID: 5 - Truncar Archivo: salida.txt - Tamaño: 21318
+[INFO] 15:06:04:097 entradasalida.log/(18404:18404): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 15:06:04:135 entradasalida.log/(18404:18404): PID: 0 - Crear Archivo: salida.txt
+[INFO] 15:06:07:163 entradasalida.log/(18404:18404): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 15:06:07:164 entradasalida.log/(18404:18404): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 15:06:10:208 entradasalida.log/(18404:18404): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:06:10:211 entradasalida.log/(18404:18404): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 15:06:13:243 entradasalida.log/(18404:18404): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:06:13:244 entradasalida.log/(18404:18404): PID: 0 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 15:24:22:568 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 15:24:22:604 entradasalida.log/(19255:19255): PID: 0 - Crear Archivo: salida.txt
+[INFO] 15:24:25:632 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 15:24:25:633 entradasalida.log/(19255:19255): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 15:24:28:676 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:24:28:678 entradasalida.log/(19255:19255): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 15:24:31:706 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:24:31:707 entradasalida.log/(19255:19255): PID: 0 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 15:25:30:624 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 15:25:30:628 entradasalida.log/(19255:19255): PID: 0 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 15:26:18:962 entradasalida.log/(19255:19255): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 15:26:18:963 entradasalida.log/(19255:19255): PID: 0 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 15:27:15:993 entradasalida.log/(19255:19255): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 15:27:15:994 entradasalida.log/(19255:19255): PID: 1 - Crear Archivo: archivo1.txt
+[INFO] 15:27:19:019 entradasalida.log/(19255:19255): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 15:27:19:022 entradasalida.log/(19255:19255): PID: 1 - Crear Archivo: archivo2.txt
+[INFO] 15:27:22:046 entradasalida.log/(19255:19255): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:27:22:047 entradasalida.log/(19255:19255): PID: 1 - Truncar Archivo: archivo1.txt - Tamaño: 10
+[INFO] 15:27:25:069 entradasalida.log/(19255:19255): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 15:27:25:070 entradasalida.log/(19255:19255): PID: 1 - Truncar Archivo: archivo2.txt - Tamaño: 10
+[INFO] 15:33:12:439 entradasalida.log/(19939:19939): PID: 0 - Operacion: IO_FS_READ
+[INFO] 15:33:12:477 entradasalida.log/(19939:19939): PID: 0 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 15:33:36:720 entradasalida.log/(19939:19939): PID: 0 - Operacion: IO_FS_READ
+[INFO] 15:33:36:722 entradasalida.log/(19939:19939): PID: 0 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 17:06:51:744 entradasalida.log/(24020:24020): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 17:06:51:781 entradasalida.log/(24020:24020): PID: 0 - Crear Archivo: salida.txt
+[INFO] 17:06:54:810 entradasalida.log/(24020:24020): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 17:06:54:811 entradasalida.log/(24020:24020): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 17:06:57:849 entradasalida.log/(24020:24020): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 17:06:57:851 entradasalida.log/(24020:24020): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 17:06:57:858 entradasalida.log/(24020:24020): PID: 0 - Inicio Compactación.
+[INFO] 17:14:52:387 entradasalida.log/(24909:24909): PID: 7 - Operacion: IO_FS_CREATE
+[INFO] 17:14:52:387 entradasalida.log/(24909:24909): PID: 7 - Crear Archivo: salida.txt
+[INFO] 17:14:55:410 entradasalida.log/(24909:24909): PID: 7 - Operacion: IO_FS_CREATE
+[INFO] 17:14:55:410 entradasalida.log/(24909:24909): PID: 7 - Crear Archivo: cronologico.txt
+[INFO] 17:14:58:434 entradasalida.log/(24909:24909): PID: 7 - Operacion: IO_FS_TRUNCATE
+[INFO] 17:14:58:434 entradasalida.log/(24909:24909): PID: 7 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 17:14:58:435 entradasalida.log/(24909:24909): PID: 7 - Inicio Compactación.
+[INFO] 17:20:30:167 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_CREATE
+[INFO] 17:20:30:204 entradasalida.log/(25734:25734): PID: 10 - Crear Archivo: salida.txt
+[INFO] 17:20:33:233 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_CREATE
+[INFO] 17:20:33:234 entradasalida.log/(25734:25734): PID: 10 - Crear Archivo: cronologico.txt
+[INFO] 17:20:36:261 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_TRUNCATE
+[INFO] 17:20:36:262 entradasalida.log/(25734:25734): PID: 10 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 17:20:36:270 entradasalida.log/(25734:25734): PID: 10 - Inicio Compactación.
+[INFO] 17:20:43:785 entradasalida.log/(25734:25734): PID: 10 - Fin Compactación.
+[INFO] 17:20:46:806 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_TRUNCATE
+[INFO] 17:20:46:807 entradasalida.log/(25734:25734): PID: 10 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 17:20:46:809 entradasalida.log/(25734:25734): PID: 10 - Inicio Compactación.
+[INFO] 17:20:54:320 entradasalida.log/(25734:25734): PID: 10 - Fin Compactación.
+[INFO] 17:23:03:588 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_WRITE
+[INFO] 17:23:03:593 entradasalida.log/(25734:25734): PID: 10 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 17:23:51:931 entradasalida.log/(25734:25734): PID: 10 - Operacion: IO_FS_WRITE
+[INFO] 17:23:51:932 entradasalida.log/(25734:25734): PID: 10 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 17:29:13:280 entradasalida.log/(26425:26425): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 17:29:13:280 entradasalida.log/(26425:26425): PID: 0 - Crear Archivo: salida.txt
+[INFO] 17:29:16:307 entradasalida.log/(26425:26425): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 17:29:16:307 entradasalida.log/(26425:26425): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 17:29:19:343 entradasalida.log/(26425:26425): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 17:29:19:343 entradasalida.log/(26425:26425): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 17:29:19:343 entradasalida.log/(26425:26425): PID: 0 - Inicio Compactación.
+[INFO] 18:05:19:125 entradasalida.log/(28820:28820): PID: 2 - Operacion: IO_FS_CREATE
+[INFO] 18:05:19:126 entradasalida.log/(28820:28820): PID: 2 - Crear Archivo: salida.txt
+[INFO] 18:05:22:153 entradasalida.log/(28820:28820): PID: 2 - Operacion: IO_FS_CREATE
+[INFO] 18:05:22:153 entradasalida.log/(28820:28820): PID: 2 - Crear Archivo: cronologico.txt
+[INFO] 18:05:25:187 entradasalida.log/(28820:28820): PID: 2 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:05:25:187 entradasalida.log/(28820:28820): PID: 2 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:05:25:187 entradasalida.log/(28820:28820): PID: 2 - Inicio Compactación.
+[INFO] 18:09:04:118 entradasalida.log/(29198:29198): PID: 3 - Operacion: IO_FS_CREATE
+[INFO] 18:09:04:118 entradasalida.log/(29198:29198): PID: 3 - Crear Archivo: salida.txt
+[INFO] 18:10:02:608 entradasalida.log/(29198:29198): PID: 3 - Operacion: IO_FS_CREATE
+[INFO] 18:10:02:608 entradasalida.log/(29198:29198): PID: 3 - Crear Archivo: cronologico.txt
+[INFO] 18:10:33:687 entradasalida.log/(29198:29198): PID: 3 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:10:33:687 entradasalida.log/(29198:29198): PID: 3 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:10:33:688 entradasalida.log/(29198:29198): PID: 3 - Inicio Compactación.
+[INFO] 18:12:27:622 entradasalida.log/(29603:29603): PID: 4 - Operacion: IO_FS_CREATE
+[INFO] 18:12:27:622 entradasalida.log/(29603:29603): PID: 4 - Crear Archivo: salida.txt
+[INFO] 18:12:30:645 entradasalida.log/(29603:29603): PID: 4 - Operacion: IO_FS_CREATE
+[INFO] 18:12:30:645 entradasalida.log/(29603:29603): PID: 4 - Crear Archivo: cronologico.txt
+[INFO] 18:12:33:677 entradasalida.log/(29603:29603): PID: 4 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:12:33:677 entradasalida.log/(29603:29603): PID: 4 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:12:33:678 entradasalida.log/(29603:29603): PID: 4 - Inicio Compactación.
+[INFO] 18:18:11:651 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 18:18:11:651 entradasalida.log/(30119:30119): PID: 5 - Crear Archivo: salida.txt
+[INFO] 18:18:14:675 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 18:18:14:675 entradasalida.log/(30119:30119): PID: 5 - Crear Archivo: cronologico.txt
+[INFO] 18:18:17:700 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:18:17:700 entradasalida.log/(30119:30119): PID: 5 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:18:17:700 entradasalida.log/(30119:30119): PID: 5 - Inicio Compactación.
+[INFO] 18:19:17:231 entradasalida.log/(30119:30119): PID: 5 - Fin Compactación.
+[INFO] 18:19:20:250 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:19:20:250 entradasalida.log/(30119:30119): PID: 5 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 18:19:20:250 entradasalida.log/(30119:30119): PID: 5 - Inicio Compactación.
+[INFO] 18:22:01:932 entradasalida.log/(30119:30119): PID: 5 - Fin Compactación.
+[INFO] 18:23:16:217 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_WRITE
+[INFO] 18:23:16:217 entradasalida.log/(30119:30119): PID: 5 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 18:24:04:550 entradasalida.log/(30119:30119): PID: 5 - Operacion: IO_FS_WRITE
+[INFO] 18:24:04:550 entradasalida.log/(30119:30119): PID: 5 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 18:31:01:885 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_CREATE
+[INFO] 18:31:01:922 entradasalida.log/(30988:30988): PID: 7 - Crear Archivo: salida.txt
+[INFO] 18:31:04:954 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_CREATE
+[INFO] 18:31:04:955 entradasalida.log/(30988:30988): PID: 7 - Crear Archivo: cronologico.txt
+[INFO] 18:31:07:996 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:31:07:998 entradasalida.log/(30988:30988): PID: 7 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:31:08:005 entradasalida.log/(30988:30988): PID: 7 - Inicio Compactación.
+[INFO] 18:31:15:528 entradasalida.log/(30988:30988): PID: 7 - Fin Compactación.
+[INFO] 18:31:18:549 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:31:18:550 entradasalida.log/(30988:30988): PID: 7 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 18:31:18:552 entradasalida.log/(30988:30988): PID: 7 - Inicio Compactación.
+[INFO] 18:31:26:061 entradasalida.log/(30988:30988): PID: 7 - Fin Compactación.
+[INFO] 18:32:50:116 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_WRITE
+[INFO] 18:32:50:119 entradasalida.log/(30988:30988): PID: 7 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 18:33:38:434 entradasalida.log/(30988:30988): PID: 7 - Operacion: IO_FS_WRITE
+[INFO] 18:33:38:435 entradasalida.log/(30988:30988): PID: 7 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 18:35:55:734 entradasalida.log/(31498:31498): PID: 9 - Operacion: IO_FS_READ
+[INFO] 18:35:55:772 entradasalida.log/(31498:31498): PID: 9 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 18:36:19:985 entradasalida.log/(31498:31498): PID: 9 - Operacion: IO_FS_READ
+[INFO] 18:36:19:986 entradasalida.log/(31498:31498): PID: 9 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 18:49:34:551 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_CREATE
+[INFO] 18:49:34:551 entradasalida.log/(32342:32342): PID: 12 - Crear Archivo: salida.txt
+[INFO] 18:49:37:842 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_CREATE
+[INFO] 18:49:37:842 entradasalida.log/(32342:32342): PID: 12 - Crear Archivo: cronologico.txt
+[INFO] 18:49:40:863 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:49:40:863 entradasalida.log/(32342:32342): PID: 12 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 18:49:40:863 entradasalida.log/(32342:32342): PID: 12 - Inicio Compactación.
+[INFO] 18:50:29:045 entradasalida.log/(32342:32342): PID: 12 - Fin Compactación.
+[INFO] 18:50:32:065 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_TRUNCATE
+[INFO] 18:50:32:065 entradasalida.log/(32342:32342): PID: 12 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 18:50:32:065 entradasalida.log/(32342:32342): PID: 12 - Inicio Compactación.
+[INFO] 18:50:39:566 entradasalida.log/(32342:32342): PID: 12 - Fin Compactación.
+[INFO] 18:51:42:883 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_WRITE
+[INFO] 18:51:42:883 entradasalida.log/(32342:32342): PID: 12 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 18:52:31:189 entradasalida.log/(32342:32342): PID: 12 - Operacion: IO_FS_WRITE
+[INFO] 18:52:31:189 entradasalida.log/(32342:32342): PID: 12 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): Datos bitmap: 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:564 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:01:49:565 entradasalida.log/(33803:33803): 1 
+[INFO] 19:10:57:962 entradasalida.log/(34455:34455): cantidad elementos: 32
+[INFO] 19:15:52:572 entradasalida.log/(34930:34930): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 19:15:52:572 entradasalida.log/(34930:34930): PID: 1 - Crear Archivo: salida.txt
+[INFO] 19:15:52:572 entradasalida.log/(34930:34930): Datos bitmap: 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 0 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:573 entradasalida.log/(34930:34930): 1 
+[INFO] 19:15:52:574 entradasalida.log/(34930:34930): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): Datos bitmap: 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:16:47:189 entradasalida.log/(35195:35195): 1 
+[INFO] 19:26:38:491 entradasalida.log/(35745:35745): PID: 8 - Operacion: IO_FS_CREATE
+[INFO] 19:26:38:491 entradasalida.log/(35745:35745): PID: 8 - Crear Archivo: salida.txt
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): Datos bitmap: 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 0 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:26:38:492 entradasalida.log/(35745:35745): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): Datos bitmap: 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:27:11:392 entradasalida.log/(35960:35960): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): Datos bitmap: 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:10:602 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_CREATE
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): PID: 10 - Crear Archivo: salida.txt
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): Datos bitmap: 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 0 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:152 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:38:153 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:887 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_CREATE
+[INFO] 19:29:54:887 entradasalida.log/(36204:36204): PID: 10 - Crear Archivo: cronologico.txt
+[INFO] 19:29:54:887 entradasalida.log/(36204:36204): Datos bitmap: 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 0 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 0 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:29:54:888 entradasalida.log/(36204:36204): 1 
+[INFO] 19:30:21:762 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_TRUNCATE
+[INFO] 19:30:21:762 entradasalida.log/(36204:36204): PID: 10 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 19:30:21:763 entradasalida.log/(36204:36204): PID: 10 - Inicio Compactación.
+[INFO] 19:30:29:264 entradasalida.log/(36204:36204): PID: 10 - Fin Compactación.
+[INFO] 19:30:32:285 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_TRUNCATE
+[INFO] 19:30:32:285 entradasalida.log/(36204:36204): PID: 10 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 19:30:32:286 entradasalida.log/(36204:36204): PID: 10 - Inicio Compactación.
+[INFO] 19:30:39:787 entradasalida.log/(36204:36204): PID: 10 - Fin Compactación.
+[INFO] 19:31:39:989 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_WRITE
+[INFO] 19:31:39:990 entradasalida.log/(36204:36204): PID: 10 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 19:32:28:305 entradasalida.log/(36204:36204): PID: 10 - Operacion: IO_FS_WRITE
+[INFO] 19:32:28:306 entradasalida.log/(36204:36204): PID: 10 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): Datos bitmap: 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:35:24:981 entradasalida.log/(37495:37495): 1 
+[INFO] 19:36:36:307 entradasalida.log/(37754:37754): Datos bitmap: 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:36:36:308 entradasalida.log/(37754:37754): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): Datos bitmap: 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:37:47:462 entradasalida.log/(37937:37937): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): Datos bitmap: 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:44:06:838 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_CREATE
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): PID: 15 - Crear Archivo: salida.txt
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): Datos bitmap: 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 0 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:391 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:17:392 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_CREATE
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): PID: 15 - Crear Archivo: cronologico.txt
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): Datos bitmap: 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 0 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 0 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:664 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:665 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:665 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:665 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:37:665 entradasalida.log/(38388:38388): 1 
+[INFO] 19:45:40:688 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_TRUNCATE
+[INFO] 19:45:40:696 entradasalida.log/(38388:38388): PID: 15 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 19:45:40:696 entradasalida.log/(38388:38388): PID: 15 - Inicio Compactación.
+[INFO] 19:45:48:197 entradasalida.log/(38388:38388): PID: 15 - Fin Compactación.
+[INFO] 19:45:51:220 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_TRUNCATE
+[INFO] 19:45:51:220 entradasalida.log/(38388:38388): PID: 15 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 19:45:51:220 entradasalida.log/(38388:38388): PID: 15 - Inicio Compactación.
+[INFO] 19:45:58:721 entradasalida.log/(38388:38388): PID: 15 - Fin Compactación.
+[INFO] 19:47:19:020 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_WRITE
+[INFO] 19:47:19:020 entradasalida.log/(38388:38388): PID: 15 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 19:48:07:327 entradasalida.log/(38388:38388): PID: 15 - Operacion: IO_FS_WRITE
+[INFO] 19:48:07:327 entradasalida.log/(38388:38388): PID: 15 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): Datos bitmap: 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 19:53:40:715 entradasalida.log/(39335:39335): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): Datos bitmap: 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:02:50:937 entradasalida.log/(39857:39857): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): Datos bitmap: 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:03:13:355 entradasalida.log/(40004:40004): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): Datos bitmap: 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:04:50:016 entradasalida.log/(40220:40220): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): Datos bitmap: 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:05:08:400 entradasalida.log/(40370:40370): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): Datos bitmap: 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:564 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:04:565 entradasalida.log/(41168:41168): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): Datos bitmap: 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 0 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 0 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:11:39:404 entradasalida.log/(41347:41347): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): Datos bitmap: 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:977 entradasalida.log/(41573:41573): 1 
+[INFO] 20:12:59:978 entradasalida.log/(41573:41573): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): Datos bitmap: 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:11:047 entradasalida.log/(41703:41703): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): Datos bitmap: 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:849 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:13:32:850 entradasalida.log/(41860:41860): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): Datos bitmap: 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:147 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:148 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:148 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:148 entradasalida.log/(42091:42091): 1 
+[INFO] 20:15:32:148 entradasalida.log/(42091:42091): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): Datos bitmap: 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:949 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:16:25:950 entradasalida.log/(42278:42278): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): Datos bitmap: 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:04:201 entradasalida.log/(42460:42460): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): Datos bitmap: 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 0 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 0 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:357 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:22:358 entradasalida.log/(42606:42606): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): Datos bitmap: 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 0 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 0 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:17:37:989 entradasalida.log/(42753:42753): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): Datos bitmap: 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 0 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 0 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:516 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:517 entradasalida.log/(42933:42933): 1 
+[INFO] 20:18:20:517 entradasalida.log/(42933:42933): 1 
+[INFO] 21:03:49:663 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_CREATE
+[INFO] 21:03:49:701 entradasalida.log/(45389:45389): PID: 3 - Crear Archivo: salida.txt
+[INFO] 21:03:52:730 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_CREATE
+[INFO] 21:03:52:731 entradasalida.log/(45389:45389): PID: 3 - Crear Archivo: cronologico.txt
+[INFO] 21:03:55:772 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_TRUNCATE
+[INFO] 21:03:55:775 entradasalida.log/(45389:45389): PID: 3 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 21:03:55:783 entradasalida.log/(45389:45389): PID: 3 - Inicio Compactación.
+[INFO] 21:04:03:307 entradasalida.log/(45389:45389): PID: 3 - Fin Compactación.
+[INFO] 21:04:06:327 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_TRUNCATE
+[INFO] 21:04:06:328 entradasalida.log/(45389:45389): PID: 3 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 21:04:06:330 entradasalida.log/(45389:45389): PID: 3 - Inicio Compactación.
+[INFO] 21:04:13:840 entradasalida.log/(45389:45389): PID: 3 - Fin Compactación.
+[INFO] 21:05:15:578 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_WRITE
+[INFO] 21:05:15:579 entradasalida.log/(45389:45389): PID: 3 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 21:06:03:921 entradasalida.log/(45389:45389): PID: 3 - Operacion: IO_FS_WRITE
+[INFO] 21:06:03:922 entradasalida.log/(45389:45389): PID: 3 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 21:08:30:427 entradasalida.log/(45830:45830): PID: 5 - Operacion: IO_FS_READ
+[INFO] 21:08:30:466 entradasalida.log/(45830:45830): PID: 5 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 21:08:54:696 entradasalida.log/(45830:45830): PID: 5 - Operacion: IO_FS_READ
+[INFO] 21:08:54:698 entradasalida.log/(45830:45830): PID: 5 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 22:57:29:854 entradasalida.log/(51696:51696): PID: 21 - Operacion: IO_FS_CREATE
+[INFO] 22:57:29:888 entradasalida.log/(51696:51696): PID: 21 - Crear Archivo: salida.txt
+[INFO] 22:57:32:917 entradasalida.log/(51696:51696): PID: 21 - Operacion: IO_FS_CREATE
+[INFO] 22:57:32:918 entradasalida.log/(51696:51696): PID: 21 - Crear Archivo: cronologico.txt
+[INFO] 22:57:35:955 entradasalida.log/(51696:51696): PID: 21 - Operacion: IO_FS_TRUNCATE
+[INFO] 22:57:35:956 entradasalida.log/(51696:51696): PID: 21 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 22:57:35:959 entradasalida.log/(51696:51696): PID: 21 - Inicio Compactación.
+[INFO] 22:57:43:483 entradasalida.log/(51696:51696): PID: 21 - Fin Compactación.
+[INFO] 22:57:46:505 entradasalida.log/(51696:51696): PID: 21 - Operacion: IO_FS_TRUNCATE
+[INFO] 22:57:46:506 entradasalida.log/(51696:51696): PID: 21 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 22:57:46:508 entradasalida.log/(51696:51696): PID: 21 - Inicio Compactación.
+[INFO] 22:57:54:016 entradasalida.log/(51696:51696): PID: 21 - Fin Compactación.
+[INFO] 23:04:50:474 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 23:04:50:509 entradasalida.log/(52375:52375): PID: 0 - Crear Archivo: salida.txt
+[INFO] 23:04:53:537 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 23:04:53:538 entradasalida.log/(52375:52375): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 23:04:56:574 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:04:56:576 entradasalida.log/(52375:52375): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 23:04:56:585 entradasalida.log/(52375:52375): PID: 0 - Inicio Compactación.
+[INFO] 23:05:04:109 entradasalida.log/(52375:52375): PID: 0 - Fin Compactación.
+[INFO] 23:05:07:132 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:05:07:133 entradasalida.log/(52375:52375): PID: 0 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 23:05:07:136 entradasalida.log/(52375:52375): PID: 0 - Inicio Compactación.
+[INFO] 23:05:14:644 entradasalida.log/(52375:52375): PID: 0 - Fin Compactación.
+[INFO] 23:06:02:090 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 23:06:02:095 entradasalida.log/(52375:52375): PID: 0 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 23:06:50:420 entradasalida.log/(52375:52375): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 23:06:50:421 entradasalida.log/(52375:52375): PID: 0 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 23:08:37:172 entradasalida.log/(52801:52801): PID: 2 - Operacion: IO_FS_READ
+[INFO] 23:08:37:210 entradasalida.log/(52801:52801): PID: 2 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:09:01:436 entradasalida.log/(52801:52801): PID: 2 - Operacion: IO_FS_READ
+[INFO] 23:09:01:437 entradasalida.log/(52801:52801): PID: 2 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:13:15:911 entradasalida.log/(53191:53191): PID: 4 - Operacion: IO_FS_READ
+[INFO] 23:13:15:911 entradasalida.log/(53191:53191): PID: 4 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:14:30:268 entradasalida.log/(53191:53191): PID: 4 - Operacion: IO_FS_READ
+[INFO] 23:14:30:268 entradasalida.log/(53191:53191): PID: 4 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:21:49:977 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 23:21:49:977 entradasalida.log/(53684:53684): PID: 5 - Crear Archivo: salida.txt
+[INFO] 23:21:52:996 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_CREATE
+[INFO] 23:21:52:996 entradasalida.log/(53684:53684): PID: 5 - Crear Archivo: cronologico.txt
+[INFO] 23:21:56:014 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:21:56:014 entradasalida.log/(53684:53684): PID: 5 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 23:21:56:014 entradasalida.log/(53684:53684): PID: 5 - Inicio Compactación.
+[INFO] 23:22:03:515 entradasalida.log/(53684:53684): PID: 5 - Fin Compactación.
+[INFO] 23:22:06:540 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:22:06:540 entradasalida.log/(53684:53684): PID: 5 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 23:22:06:540 entradasalida.log/(53684:53684): PID: 5 - Inicio Compactación.
+[INFO] 23:22:14:041 entradasalida.log/(53684:53684): PID: 5 - Fin Compactación.
+[INFO] 23:23:11:553 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_WRITE
+[INFO] 23:23:11:553 entradasalida.log/(53684:53684): PID: 5 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 23:25:04:878 entradasalida.log/(53684:53684): PID: 5 - Operacion: IO_FS_WRITE
+[INFO] 23:25:04:878 entradasalida.log/(53684:53684): PID: 5 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 23:32:12:823 entradasalida.log/(53684:53684): PID: 6 - Operacion: IO_FS_READ
+[INFO] 23:32:12:823 entradasalida.log/(53684:53684): PID: 6 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:33:30:573 entradasalida.log/(53684:53684): PID: 6 - Operacion: IO_FS_READ
+[INFO] 23:33:30:573 entradasalida.log/(53684:53684): PID: 6 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:38:33:408 entradasalida.log/(55340:55340): PID: 8 - Operacion: IO_FS_READ
+[INFO] 23:38:33:408 entradasalida.log/(55340:55340): PID: 8 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:38:57:541 entradasalida.log/(55340:55340): PID: 8 - Operacion: IO_FS_READ
+[INFO] 23:38:57:541 entradasalida.log/(55340:55340): PID: 8 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 23:58:33:562 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_CREATE
+[INFO] 23:58:33:599 entradasalida.log/(56325:56325): PID: 11 - Crear Archivo: salida.txt
+[INFO] 23:58:36:629 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_CREATE
+[INFO] 23:58:36:630 entradasalida.log/(56325:56325): PID: 11 - Crear Archivo: cronologico.txt
+[INFO] 23:58:39:662 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:58:39:664 entradasalida.log/(56325:56325): PID: 11 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 23:58:39:672 entradasalida.log/(56325:56325): PID: 11 - Inicio Compactación.
+[INFO] 23:58:47:197 entradasalida.log/(56325:56325): PID: 11 - Fin Compactación.
+[INFO] 23:58:50:218 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_TRUNCATE
+[INFO] 23:58:50:219 entradasalida.log/(56325:56325): PID: 11 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 23:58:50:221 entradasalida.log/(56325:56325): PID: 11 - Inicio Compactación.
+[INFO] 23:58:57:729 entradasalida.log/(56325:56325): PID: 11 - Fin Compactación.
+[INFO] 00:00:19:742 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_WRITE
+[INFO] 00:00:19:746 entradasalida.log/(56325:56325): PID: 11 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 00:01:08:063 entradasalida.log/(56325:56325): PID: 11 - Operacion: IO_FS_WRITE
+[INFO] 00:01:08:066 entradasalida.log/(56325:56325): PID: 11 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 00:05:34:749 entradasalida.log/(56870:56870): PID: 13 - Operacion: IO_FS_READ
+[INFO] 00:05:34:786 entradasalida.log/(56870:56870): PID: 13 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 00:05:58:931 entradasalida.log/(56870:56870): PID: 13 - Operacion: IO_FS_READ
+[INFO] 00:05:58:933 entradasalida.log/(56870:56870): PID: 13 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 00:16:47:500 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_CREATE
+[INFO] 00:16:47:535 entradasalida.log/(57624:57624): PID: 16 - Crear Archivo: salida.txt
+[INFO] 00:16:50:566 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_CREATE
+[INFO] 00:16:50:567 entradasalida.log/(57624:57624): PID: 16 - Crear Archivo: cronologico.txt
+[INFO] 00:16:53:599 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_TRUNCATE
+[INFO] 00:16:53:601 entradasalida.log/(57624:57624): PID: 16 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 00:16:53:609 entradasalida.log/(57624:57624): PID: 16 - Inicio Compactación.
+[INFO] 00:17:01:133 entradasalida.log/(57624:57624): PID: 16 - Fin Compactación.
+[INFO] 00:17:04:155 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_TRUNCATE
+[INFO] 00:17:04:156 entradasalida.log/(57624:57624): PID: 16 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 00:17:04:159 entradasalida.log/(57624:57624): PID: 16 - Inicio Compactación.
+[INFO] 00:17:11:665 entradasalida.log/(57624:57624): PID: 16 - Fin Compactación.
+[INFO] 00:18:06:622 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_WRITE
+[INFO] 00:18:06:625 entradasalida.log/(57624:57624): PID: 16 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 00:18:54:946 entradasalida.log/(57624:57624): PID: 16 - Operacion: IO_FS_WRITE
+[INFO] 00:18:54:947 entradasalida.log/(57624:57624): PID: 16 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 00:20:25:094 entradasalida.log/(58163:58163): PID: 18 - Operacion: IO_FS_READ
+[INFO] 00:20:25:133 entradasalida.log/(58163:58163): PID: 18 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 00:20:49:278 entradasalida.log/(58163:58163): PID: 18 - Operacion: IO_FS_READ
+[INFO] 00:20:49:280 entradasalida.log/(58163:58163): PID: 18 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 12:27:21:146 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 12:27:21:226 entradasalida.log/(4874:4874): PID: 0 - Crear Archivo: salida.txt
+[INFO] 12:27:23:359 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_CREATE
+[INFO] 12:27:23:361 entradasalida.log/(4874:4874): PID: 0 - Crear Archivo: cronologico.txt
+[INFO] 12:27:25:499 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:27:25:501 entradasalida.log/(4874:4874): PID: 0 - Truncar Archivo: salida.txt - Tamaño: 80
+[INFO] 12:27:25:510 entradasalida.log/(4874:4874): PID: 0 - Inicio Compactación.
+[INFO] 12:27:33:034 entradasalida.log/(4874:4874): PID: 0 - Fin Compactación.
+[INFO] 12:27:35:040 entradasalida.log/(4874:4874): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 12:27:35:041 entradasalida.log/(4874:4874): PID: 1 - Crear Archivo: archivo1.txt
+[INFO] 12:27:37:052 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:27:37:054 entradasalida.log/(4874:4874): PID: 0 - Truncar Archivo: cronologico.txt - Tamaño: 80
+[INFO] 12:27:37:055 entradasalida.log/(4874:4874): PID: 0 - Inicio Compactación.
+[INFO] 12:27:44:566 entradasalida.log/(4874:4874): PID: 0 - Fin Compactación.
+[INFO] 12:27:46:575 entradasalida.log/(4874:4874): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 12:27:46:576 entradasalida.log/(4874:4874): PID: 1 - Crear Archivo: archivo2.txt
+[INFO] 12:27:48:700 entradasalida.log/(4874:4874): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:27:48:701 entradasalida.log/(4874:4874): PID: 1 - Truncar Archivo: archivo1.txt - Tamaño: 10
+[INFO] 12:27:48:702 entradasalida.log/(4874:4874): PID: 1 - Inicio Compactación.
+[INFO] 12:27:56:217 entradasalida.log/(4874:4874): PID: 1 - Fin Compactación.
+[INFO] 12:27:58:336 entradasalida.log/(4874:4874): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:27:58:337 entradasalida.log/(4874:4874): PID: 1 - Truncar Archivo: archivo2.txt - Tamaño: 10
+[INFO] 12:28:02:490 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 12:28:02:494 entradasalida.log/(4874:4874): PID: 0 - Escribir Archivo: salida.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 12:28:09:429 entradasalida.log/(4874:4874): PID: 0 - Operacion: IO_FS_WRITE
+[INFO] 12:28:09:430 entradasalida.log/(4874:4874): PID: 0 - Escribir Archivo: cronologico.txt - Tamaño a Escribir: 69 - Puntero Archivo: 0
+[INFO] 12:29:25:315 entradasalida.log/(5246:5246): PID: 0 - Operacion: IO_FS_READ
+[INFO] 12:29:25:352 entradasalida.log/(5246:5246): PID: 0 - Leer Archivo: salida.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 12:29:27:902 entradasalida.log/(5246:5246): PID: 1 - Operacion: IO_FS_CREATE
+[INFO] 12:29:27:904 entradasalida.log/(5246:5246): PID: 1 - Crear Archivo: pesado.txt
+[INFO] 12:29:29:925 entradasalida.log/(5246:5246): PID: 0 - Operacion: IO_FS_READ
+[INFO] 12:29:29:926 entradasalida.log/(5246:5246): PID: 0 - Leer Archivo: cronologico.txt - Tamaño a Leer: 69 - Puntero Archivo: 0
+[INFO] 12:29:32:455 entradasalida.log/(5246:5246): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:29:32:457 entradasalida.log/(5246:5246): PID: 1 - Truncar Archivo: pesado.txt - Tamaño: 250
+[INFO] 12:29:32:465 entradasalida.log/(5246:5246): PID: 1 - Inicio Compactación.
+[INFO] 12:29:39:991 entradasalida.log/(5246:5246): PID: 1 - Fin Compactación.
+[INFO] 12:29:42:112 entradasalida.log/(5246:5246): PID: 1 - Operacion: IO_FS_DELETE
+[INFO] 12:29:42:114 entradasalida.log/(5246:5246): PID: 1 - Eliminar Archivo: archivo1.txt
+[INFO] 12:29:44:240 entradasalida.log/(5246:5246): PID: 1 - Operacion: IO_FS_TRUNCATE
+[INFO] 12:29:44:241 entradasalida.log/(5246:5246): PID: 1 - Truncar Archivo: archivo2.txt - Tamaño: 70
+[INFO] 12:29:44:244 entradasalida.log/(5246:5246): PID: 1 - Inicio Compactación.
+[INFO] 12:29:51:751 entradasalida.log/(5246:5246): PID: 1 - Fin Compactación.
+[INFO] 16:07:38:744 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:41:725 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:44:273 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:45:928 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:48:041 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:50:146 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:53:133 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:07:54:915 entradasalida.log/(12161:12161): PID: 1 - Operacion: IO_GEN_SLEEP
+[INFO] 16:08:19:636 entradasalida.log/(12161:12161): PID: 0 - Operacion: IO_GEN_SLEEP
+[INFO] 16:08:31:069 entradasalida.log/(12161:12161): PID: 2 - Operacion: IO_GEN_SLEEP
+[INFO] 16:08:33:003 entradasalida.log/(12161:12161): PID: 2 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:13:863 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:16:855 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:20:057 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:22:790 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:23:117 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:26:525 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:29:049 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:30:911 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:32:436 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:35:942 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:37:814 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:38:911 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:39:355 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:41:966 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:45:026 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:45:573 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:47:859 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:50:597 entradasalida.log/(12161:12161): PID: 3 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:51:375 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:53:125 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:09:58:386 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:00:792 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:02:741 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:03:174 entradasalida.log/(12161:12161): PID: 4 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:05:152 entradasalida.log/(12161:12161): PID: 5 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:10:981 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:14:281 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:17:232 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:17:488 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:21:948 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:22:203 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:25:035 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:27:225 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:29:644 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:32:604 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:32:860 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:33:154 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:36:233 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:39:300 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:39:845 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:42:144 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:44:877 entradasalida.log/(12161:12161): PID: 6 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:45:654 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:47:409 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:52:655 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:55:062 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:57:026 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:57:458 entradasalida.log/(12161:12161): PID: 7 - Operacion: IO_GEN_SLEEP
+[INFO] 16:10:59:427 entradasalida.log/(12161:12161): PID: 8 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:05:230 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:08:511 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:11:465 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:11:719 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:16:177 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:16:432 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:19:253 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:21:435 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:26:010 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:27:331 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:27:660 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:30:724 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:31:936 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:32:371 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:37:179 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:41:551 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:42:207 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:42:462 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:44:280 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:49:826 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:51:790 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:52:112 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:11:56:174 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:00:433 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:02:282 entradasalida.log/(12161:12161): PID: 9 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:04:901 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:05:896 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:08:089 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:10:191 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:13:171 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:17:932 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:21:142 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:21:919 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:23:896 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:24:335 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:27:537 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:29:070 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:29:511 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:31:170 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:36:546 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:43:350 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:44:665 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:47:303 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:52:125 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:53:766 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:58:356 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:12:59:562 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:03:504 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:04:705 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:06:009 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:06:904 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:07:340 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:08:229 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:10:752 entradasalida.log/(12161:12161): PID: 10 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:12:177 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:12:433 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:17:893 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:20:518 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:26:319 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:30:575 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:30:906 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:32:660 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:32:916 entradasalida.log/(12161:12161): PID: 11 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:33:171 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:35:974 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:37:840 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:38:395 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:39:500 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:41:038 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:43:451 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:43:707 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:44:118 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:44:801 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:50:942 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:53:020 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:55:324 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:13:56:304 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:01:022 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:02:679 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:05:208 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:06:424 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:07:849 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:09:399 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:11:378 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:11:708 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:14:138 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:15:681 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:19:951 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:20:721 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:24:457 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:24:715 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:26:007 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:28:093 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:29:197 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:30:954 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:31:957 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:32:843 entradasalida.log/(12161:12161): PID: 12 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:34:488 entradasalida.log/(12161:12161): PID: 13 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:36:468 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:42:362 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:44:790 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:49:051 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:51:128 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:51:667 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:14:52:437 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:01:663 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:03:087 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:07:810 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:08:142 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:12:312 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:12:859 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:14:828 entradasalida.log/(12161:12161): PID: 15 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:17:231 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:20:321 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:22:284 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:22:540 entradasalida.log/(12161:12161): PID: 14 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:22:836 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:24:933 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:26:802 entradasalida.log/(12161:12161): PID: 16 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:27:908 entradasalida.log/(12161:12161): PID: 17 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:30:659 entradasalida.log/(12161:12161): PID: 18 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:32:071 entradasalida.log/(12161:12161): PID: 21 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:34:480 entradasalida.log/(12161:12161): PID: 23 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:36:453 entradasalida.log/(12161:12161): PID: 20 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:38:637 entradasalida.log/(12161:12161): PID: 25 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:42:271 entradasalida.log/(12161:12161): PID: 22 - Operacion: IO_GEN_SLEEP
+[INFO] 16:15:42:528 entradasalida.log/(12161:12161): PID: 24 - Operacion: IO_GEN_SLEEP

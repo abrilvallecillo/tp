@@ -1,0 +1,356 @@
+[INFO] 23:21:47:001 memoria.log/(27197:27203): PID: 0 - Tamaño: 0
+[INFO] 23:23:57:428 memoria.log/(27414:27419): Me llego!
+[INFO] 23:24:32:106 memoria.log/(27414:27420): PID: 0 - Tamaño: 0
+[INFO] 23:50:19:438 memoria.log/(27414:27419): Desconectado
+[INFO] 23:50:19:676 memoria.log/(27414:27420): Desconectado
+[INFO] 00:07:47:610 memoria.log/(28474:28485): PID: 0 - Tamaño: 0
+[INFO] 00:08:14:455 memoria.log/(28474:28484): Me llego!
+[INFO] 00:09:09:991 memoria.log/(28474:28484): Desconectado
+[INFO] 00:09:10:245 memoria.log/(28474:28485): Desconectado
+[INFO] 15:36:28:708 memoria.log/(4145:4157): Me llego!
+[INFO] 15:39:33:549 memoria.log/(4351:4357): Me llego!
+[INFO] 15:41:04:870 memoria.log/(4598:4603): Me llego!
+[INFO] 15:41:40:931 memoria.log/(4763:4770): Me llego!
+[INFO] 15:48:13:552 memoria.log/(5506:5511): Me llego!
+[INFO] 15:48:37:323 memoria.log/(5506:5511): Desconectado
+[INFO] 15:49:32:912 memoria.log/(5506:5735): Me llego!
+[INFO] 15:50:21:468 memoria.log/(5506:5735): Desconectado
+[INFO] 15:51:29:058 memoria.log/(5506:5821): Me llego!
+[INFO] 15:56:05:123 memoria.log/(6162:6167): Me llego!
+[INFO] 16:01:59:889 memoria.log/(6380:6386): Me llego!
+[INFO] 16:05:28:773 memoria.log/(6676:6689): Me llego!
+[INFO] 16:07:08:803 memoria.log/(6676:6688): PID: 0 - Tamaño: 0
+[INFO] 16:07:12:150 memoria.log/(6676:6688): Desconectado
+[INFO] 16:07:12:277 memoria.log/(6676:6689): Desconectado
+[INFO] 16:30:50:811 memoria.log/(7308:7317): Me llego!
+[INFO] 16:31:28:054 memoria.log/(7308:7318): PID: 0 - Tamaño: 0
+[INFO] 16:31:31:389 memoria.log/(7308:7318): Desconectado
+[INFO] 16:31:31:522 memoria.log/(7308:7317): Desconectado
+[INFO] 16:49:29:028 memoria.log/(8187:8196): Me llego!
+[INFO] 16:49:54:744 memoria.log/(8187:8197): PID: 0 - Tamaño: 0
+[INFO] 16:49:58:075 memoria.log/(8187:8197): Desconectado
+[INFO] 16:49:59:227 memoria.log/(8187:8196): Desconectado
+[INFO] 15:10:41:357 memoria.log/(3862:3874): Me llego!
+[INFO] 15:11:13:522 memoria.log/(3862:3875): PID: 0 - Tamaño: 0
+[INFO] 15:11:24:005 memoria.log/(3862:3875): PID: 0 - Tamaño: 0
+[INFO] 15:12:04:074 memoria.log/(4054:4060): Me llego!
+[INFO] 15:12:41:830 memoria.log/(4054:4059): PID: 0 - Tamaño: 0
+[INFO] 15:12:53:247 memoria.log/(4054:4059): PID: 0 - Tamaño: 0
+[INFO] 15:14:10:235 memoria.log/(4257:4263): Me llego!
+[INFO] 15:14:23:526 memoria.log/(4257:4262): PID: 0 - Tamaño: 0
+[INFO] 15:14:28:703 memoria.log/(4257:4262): PID: 0 - Tamaño: 0
+[INFO] 15:14:47:691 memoria.log/(4257:4262): Desconectado
+[INFO] 15:14:48:851 memoria.log/(4257:4263): Desconectado
+[INFO] 17:45:59:401 memoria.log/(8562:8566): Me llego!
+[INFO] 17:47:24:757 memoria.log/(8562:8565): PID: 0 - Tamaño: 0
+[INFO] 17:58:31:859 memoria.log/(9113:9152): Me llego!
+[INFO] 17:58:59:420 memoria.log/(9113:9191): PID: 0 - Tamaño: 0
+[INFO] 17:59:04:023 memoria.log/(9113:9152): Desconectado
+[INFO] 17:59:09:173 memoria.log/(9113:9248): Me llego!
+[INFO] 17:59:19:664 memoria.log/(9113:9248): Cantidad Marcos: 128
+[INFO] 17:59:19:668 memoria.log/(9113:9248): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:03:36:433 memoria.log/(9507:9546): Me llego!
+[INFO] 18:03:58:440 memoria.log/(9507:9578): PID: 0 - Tamaño: 0
+[INFO] 18:04:08:662 memoria.log/(9507:9546): Cantidad Marcos: 128
+[INFO] 18:04:08:667 memoria.log/(9507:9546): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:15:17:738 memoria.log/(10070:10101): Me llego!
+[INFO] 18:15:35:655 memoria.log/(10070:10122): PID: 0 - Tamaño: 0
+[INFO] 18:15:45:890 memoria.log/(10070:10101): Cantidad Marcos: 128
+[INFO] 18:15:45:895 memoria.log/(10070:10101): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:20:37:529 memoria.log/(10588:10601): Me llego!
+[INFO] 18:21:01:097 memoria.log/(10588:10602): PID: 0 - Tamaño: 0
+[INFO] 18:21:11:334 memoria.log/(10588:10601): Cantidad Marcos: 128
+[INFO] 18:21:11:336 memoria.log/(10588:10601): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:23:58:606 memoria.log/(10982:11703): Me llego!
+[INFO] 18:24:28:190 memoria.log/(10982:11771): PID: 0 - Tamaño: 0
+[INFO] 18:24:38:399 memoria.log/(10982:11703): Cantidad Marcos: 499
+[INFO] 18:24:38:399 memoria.log/(10982:11703): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:27:48:999 memoria.log/(12053:12104): PID: 0 - Tamaño: 0
+[INFO] 18:27:55:428 memoria.log/(12053:12129): Me llego!
+[INFO] 18:28:05:929 memoria.log/(12053:12129): Cantidad Marcos: 128
+[INFO] 18:28:05:929 memoria.log/(12053:12129): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:31:17:115 memoria.log/(12545:12551): PID: 0 - Tamaño: 0
+[INFO] 18:31:17:116 memoria.log/(12545:12550): Me llego!
+[INFO] 18:31:27:615 memoria.log/(12545:12550): Cantidad Marcos: 128
+[INFO] 18:31:27:615 memoria.log/(12545:12550): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:34:29:598 memoria.log/(12898:12952): Me llego!
+[INFO] 18:34:40:896 memoria.log/(12898:12951): PID: 0 - Tamaño: 0
+[INFO] 18:34:51:129 memoria.log/(12898:12952): Cantidad Marcos: 128
+[INFO] 18:34:51:130 memoria.log/(12898:12952): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:34:53:162 memoria.log/(12898:12952): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 18:34:54:208 memoria.log/(12898:12952): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0” - Tamaño 1
+[INFO] 18:52:15:937 memoria.log/(13719:13764): PID: 0 - Tamaño: 0
+[INFO] 18:52:20:057 memoria.log/(13719:13796): Me llego!
+[INFO] 18:52:30:548 memoria.log/(13719:13796): Cantidad Marcos: 128
+[INFO] 18:52:30:552 memoria.log/(13719:13796): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 18:52:32:582 memoria.log/(13719:13796): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 18:52:33:624 memoria.log/(13719:13796): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0” - Tamaño 1
+[INFO] 18:52:56:022 memoria.log/(13719:13796): Desconectado
+[INFO] 23:57:36:410 memoria.log/(29323:29328): Me llego!
+[INFO] 23:58:03:295 memoria.log/(29323:29327): PID: 0 - Tamaño: 0
+[INFO] 23:58:13:521 memoria.log/(29323:29328): Cantidad Marcos: 128
+[INFO] 23:58:13:521 memoria.log/(29323:29328): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:00:19:473 memoria.log/(29323:29328): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:00:20:499 memoria.log/(29323:29328): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:00:23:533 memoria.log/(29323:29327): PID: 0 - Tamaño: 4
+[INFO] 00:05:18:730 memoria.log/(29896:29901): Me llego!
+[INFO] 00:05:57:616 memoria.log/(29896:29900): PID: 0 - Tamaño: 0
+[INFO] 00:06:07:830 memoria.log/(29896:29901): Cantidad Marcos: 128
+[INFO] 00:06:07:830 memoria.log/(29896:29901): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:11:53:139 memoria.log/(30356:30360): Me llego!
+[INFO] 00:12:08:852 memoria.log/(30356:30361): PID: 0 - Tamaño: 0
+[INFO] 00:12:19:073 memoria.log/(30356:30360): Cantidad Marcos: 128
+[INFO] 00:12:19:074 memoria.log/(30356:30360): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:17:40:865 memoria.log/(30764:30768): Me llego!
+[INFO] 00:18:02:487 memoria.log/(30764:30781): PID: 0 - Tamaño: 0
+[INFO] 00:18:12:690 memoria.log/(30764:30768): Cantidad Marcos: 128
+[INFO] 00:18:12:690 memoria.log/(30764:30768): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:20:17:925 memoria.log/(31047:31065): Me llego!
+[INFO] 00:20:29:639 memoria.log/(31047:31055): PID: 0 - Tamaño: 0
+[INFO] 00:20:39:860 memoria.log/(31047:31065): Cantidad Marcos: 128
+[INFO] 00:20:39:860 memoria.log/(31047:31065): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:23:54:652 memoria.log/(31376:31402): Me llego!
+[INFO] 00:24:03:466 memoria.log/(31376:31392): PID: 0 - Tamaño: 0
+[INFO] 00:24:13:678 memoria.log/(31376:31402): Cantidad Marcos: 128
+[INFO] 00:24:13:679 memoria.log/(31376:31402): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:26:59:999 memoria.log/(32398:32402): Me llego!
+[INFO] 00:27:14:904 memoria.log/(32398:32405): PID: 0 - Tamaño: 0
+[INFO] 00:27:25:135 memoria.log/(32398:32402): Cantidad Marcos: 128
+[INFO] 00:27:25:136 memoria.log/(32398:32402): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:27:27:170 memoria.log/(32398:32402): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:27:28:205 memoria.log/(32398:32402): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:27:30:236 memoria.log/(32398:32402): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 00:27:31:243 memoria.log/(32398:32402): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:27:33:266 memoria.log/(32398:32402): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 00:27:34:272 memoria.log/(32398:32402): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:27:36:290 memoria.log/(32398:32402): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 00:27:37:295 memoria.log/(32398:32402): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 00:27:40:350 memoria.log/(32398:32402): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:27:42:383 memoria.log/(32398:32402): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:27:44:399 memoria.log/(32398:32402): PID: 0 - Tamaño Actual: 128 - Tamaño a Reducir: 0
+[INFO] 00:27:49:456 memoria.log/(32398:32405): PID: 0 - Tamaño: 0
+[INFO] 00:29:45:320 memoria.log/(32703:32745): Me llego!
+[INFO] 00:30:14:769 memoria.log/(32703:32743): PID: 0 - Tamaño: 0
+[INFO] 00:30:24:992 memoria.log/(32703:32745): Cantidad Marcos: 128
+[INFO] 00:30:24:995 memoria.log/(32703:32745): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:30:27:027 memoria.log/(32703:32745): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:30:28:061 memoria.log/(32703:32745): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:30:30:085 memoria.log/(32703:32745): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 00:30:31:091 memoria.log/(32703:32745): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:30:33:113 memoria.log/(32703:32745): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 00:30:34:125 memoria.log/(32703:32745): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:30:36:145 memoria.log/(32703:32745): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 00:30:37:150 memoria.log/(32703:32745): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 00:30:40:203 memoria.log/(32703:32745): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:30:42:238 memoria.log/(32703:32745): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:30:44:262 memoria.log/(32703:32745): PID: 0 - Tamaño Actual: 128 - Tamaño a Reducir: 0
+[INFO] 00:30:49:324 memoria.log/(32703:32743): PID: 0 - Tamaño: 0
+[INFO] 00:38:05:355 memoria.log/(33261:33317): Me llego!
+[INFO] 00:40:10:079 memoria.log/(33629:33683): Me llego!
+[INFO] 00:40:24:686 memoria.log/(33629:33679): PID: 0 - Tamaño: 0
+[INFO] 00:40:34:913 memoria.log/(33629:33683): Cantidad Marcos: 128
+[INFO] 00:40:34:913 memoria.log/(33629:33683): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:40:41:239 memoria.log/(33629:33683): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:40:42:277 memoria.log/(33629:33683): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:40:44:296 memoria.log/(33629:33683): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 00:40:45:302 memoria.log/(33629:33683): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:40:47:323 memoria.log/(33629:33683): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 00:40:48:332 memoria.log/(33629:33683): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:40:50:353 memoria.log/(33629:33683): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 00:40:51:358 memoria.log/(33629:33683): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 00:40:54:405 memoria.log/(33629:33683): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:40:56:439 memoria.log/(33629:33683): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:40:58:461 memoria.log/(33629:33683): PID: 0 - Tamaño Actual: 128 - Tamaño a Reducir: 0
+[INFO] 00:41:24:532 memoria.log/(33629:33679): PID: 0 - Tamaño: 0
+[INFO] 00:50:20:730 memoria.log/(34430:34477): Me llego!
+[INFO] 00:50:33:499 memoria.log/(34430:34470): PID: 0 - Tamaño: 0
+[INFO] 00:50:43:741 memoria.log/(34430:34477): Cantidad Marcos: 128
+[INFO] 00:50:43:744 memoria.log/(34430:34477): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:50:45:776 memoria.log/(34430:34477): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:50:46:819 memoria.log/(34430:34477): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:50:48:839 memoria.log/(34430:34477): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 00:50:49:846 memoria.log/(34430:34477): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:50:51:870 memoria.log/(34430:34477): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 00:50:52:880 memoria.log/(34430:34477): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:50:54:904 memoria.log/(34430:34477): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 00:50:55:910 memoria.log/(34430:34477): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 00:50:58:955 memoria.log/(34430:34477): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:51:00:991 memoria.log/(34430:34477): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:51:03:013 memoria.log/(34430:34477): PID: 0 - Tamaño Actual: 128 - Tamaño a Reducir: 0
+[INFO] 00:51:08:080 memoria.log/(34430:34470): PID: 0 - Tamaño: 0
+[INFO] 00:58:16:743 memoria.log/(35173:35178): Me llego!
+[INFO] 00:58:39:217 memoria.log/(35173:35179): PID: 0 - Tamaño: 0
+[INFO] 00:58:49:463 memoria.log/(35173:35178): Cantidad Marcos: 128
+[INFO] 00:58:49:466 memoria.log/(35173:35178): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 00:58:51:518 memoria.log/(35173:35178): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 00:58:52:539 memoria.log/(35173:35178): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 00:58:54:565 memoria.log/(35173:35178): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 00:58:55:570 memoria.log/(35173:35178): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:58:57:591 memoria.log/(35173:35178): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 00:58:58:597 memoria.log/(35173:35178): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:59:00:620 memoria.log/(35173:35178): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 00:59:01:626 memoria.log/(35173:35178): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 00:59:04:669 memoria.log/(35173:35178): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 00:59:06:700 memoria.log/(35173:35178): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 00:59:08:721 memoria.log/(35173:35178): PID: 0 - Tamaño Actual: 128 - Tamaño a Reducir: 0
+[INFO] 00:59:13:798 memoria.log/(35173:35179): PID: 0 - Tamaño: 0
+[INFO] 01:40:34:247 memoria.log/(37115:37129): Me llego!
+[INFO] 01:40:58:807 memoria.log/(37115:37117): PID: 0 - Tamaño: 0
+[INFO] 01:41:09:029 memoria.log/(37115:37129): Cantidad Marcos: 128
+[INFO] 01:41:09:032 memoria.log/(37115:37129): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 01:41:11:065 memoria.log/(37115:37129): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 01:41:12:088 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 01:41:14:114 memoria.log/(37115:37129): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 01:41:15:119 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 01:41:17:141 memoria.log/(37115:37129): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 01:41:18:147 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 01:41:20:165 memoria.log/(37115:37129): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 01:41:21:171 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 01:41:24:225 memoria.log/(37115:37129): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 01:41:26:248 memoria.log/(37115:37129): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 01:41:28:262 memoria.log/(37115:37129): Cantidad Marcos: 124
+[INFO] 01:41:28:263 memoria.log/(37115:37129): PID: 0 - Tamaño Actual: 128 - Tamaño a Ampliar: 256
+[INFO] 01:41:32:317 memoria.log/(37115:37129): PID: 0 - Pagina: 4 - Marco: 4
+[INFO] 01:41:33:324 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 128 - Tamaño 1
+[INFO] 01:41:35:346 memoria.log/(37115:37129): PID: 0 - Pagina: 5 - Marco: 5
+[INFO] 01:41:36:352 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 160 - Tamaño 1
+[INFO] 01:41:42:421 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 40 - Tamaño 1
+[INFO] 01:41:44:438 memoria.log/(37115:37129): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 80 - Tamaño 1
+[INFO] 02:29:25:820 memoria.log/(4789:4809): Me llego!
+[INFO] 02:29:54:365 memoria.log/(4789:4808): PID: 0 - Tamaño: 0
+[INFO] 02:30:04:620 memoria.log/(4789:4809): Cantidad Marcos: 128
+[INFO] 02:30:04:623 memoria.log/(4789:4809): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 02:30:06:655 memoria.log/(4789:4809): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 02:30:07:673 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 02:30:09:694 memoria.log/(4789:4809): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 02:30:10:701 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 02:30:12:723 memoria.log/(4789:4809): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 02:30:13:729 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 02:30:15:751 memoria.log/(4789:4809): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 02:30:16:757 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 02:30:19:808 memoria.log/(4789:4809): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 02:30:21:844 memoria.log/(4789:4809): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 02:30:23:867 memoria.log/(4789:4809): Cantidad Marcos: 124
+[INFO] 02:30:23:868 memoria.log/(4789:4809): PID: 0 - Tamaño Actual: 128 - Tamaño a Ampliar: 256
+[INFO] 02:30:27:924 memoria.log/(4789:4809): PID: 0 - Pagina: 4 - Marco: 4
+[INFO] 02:30:28:929 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 128 - Tamaño 1
+[INFO] 02:30:30:948 memoria.log/(4789:4809): PID: 0 - Pagina: 5 - Marco: 5
+[INFO] 02:30:31:954 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 160 - Tamaño 1
+[INFO] 02:30:38:039 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 40 - Tamaño 1
+[INFO] 02:30:40:072 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 80 - Tamaño 1
+[INFO] 02:30:42:094 memoria.log/(4789:4809): PID: 0 - Pagina: 6 - Marco: 6
+[INFO] 02:30:43:099 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 192 - Tamaño 1
+[INFO] 02:30:45:121 memoria.log/(4789:4809): PID: 0 - Pagina: 7 - Marco: 7
+[INFO] 02:30:46:127 memoria.log/(4789:4809): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 224 - Tamaño 1
+[INFO] 02:30:48:250 memoria.log/(4789:4808): PID: 0 - Tamaño: 256
+[INFO] 02:40:29:402 memoria.log/(4789:4808): PID: 1 - Tamaño: 0
+[INFO] 02:41:56:157 memoria.log/(4789:4808): PID: 2 - Tamaño: 0
+[INFO] 02:42:21:188 memoria.log/(4789:4808): Desconectado
+[INFO] 02:42:21:319 memoria.log/(4789:4809): Desconectado
+[INFO] 11:59:57:104 memoria.log/(8792:8834): Me llego!
+[INFO] 12:00:35:939 memoria.log/(8792:8834): Desconectado
+[INFO] 12:01:47:176 memoria.log/(8992:9030): Me llego!
+[INFO] 12:01:52:703 memoria.log/(8992:9030): Desconectado
+[INFO] 12:02:15:881 memoria.log/(8992:9094): Me llego!
+[INFO] 12:03:07:638 memoria.log/(8992:9093): PID: 0 - Tamaño: 0
+[INFO] 12:03:10:752 memoria.log/(8992:9094): Cantidad Marcos: 32
+[INFO] 12:03:10:755 memoria.log/(8992:9094): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 960
+[INFO] 12:03:13:854 memoria.log/(8992:9094): PID: 0 - Tamaño Actual: 960 - Tamaño a Reducir: 256
+[INFO] 12:03:15:917 memoria.log/(8992:9094): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 12:03:16:934 memoria.log/(8992:9094): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 4
+[INFO] 12:03:18:950 memoria.log/(8992:9094): Cantidad Marcos: 24
+[INFO] 12:03:19:962 memoria.log/(8992:9093): PID: 0 - Tamaño: 256
+[INFO] 12:10:40:569 memoria.log/(9545:9576): Me llego!
+[INFO] 12:11:16:620 memoria.log/(9545:9603): PID: 0 - Tamaño: 0
+[INFO] 12:11:19:742 memoria.log/(9545:9576): Cantidad Marcos: 32
+[INFO] 12:11:19:745 memoria.log/(9545:9576): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 960
+[INFO] 12:11:22:852 memoria.log/(9545:9576): PID: 0 - Tamaño Actual: 960 - Tamaño a Reducir: 256
+[INFO] 12:11:24:923 memoria.log/(9545:9576): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 12:11:25:943 memoria.log/(9545:9576): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 4
+[INFO] 12:11:27:958 memoria.log/(9545:9576): Cantidad Marcos: 24
+[INFO] 12:11:28:972 memoria.log/(9545:9603): PID: 0 - Tamaño: 256
+[INFO] 12:11:43:697 memoria.log/(9545:9603): Desconectado
+[INFO] 12:11:44:861 memoria.log/(9545:9576): Desconectado
+[INFO] 15:13:35:296 memoria.log/(4321:4437): Me llego!
+[INFO] 15:14:38:309 memoria.log/(4321:4434): PID: 0 - Tamaño: 0
+[INFO] 15:14:48:490 memoria.log/(4321:4437): Cantidad Marcos: 32
+[INFO] 15:14:48:491 memoria.log/(4321:4437): PID: 0 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 15:14:50:519 memoria.log/(4321:4437): PID: 0 - Pagina: 0 - Marco: 0
+[INFO] 15:14:51:530 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 15:14:53:551 memoria.log/(4321:4437): PID: 0 - Pagina: 1 - Marco: 1
+[INFO] 15:14:54:557 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 15:14:56:576 memoria.log/(4321:4437): PID: 0 - Pagina: 2 - Marco: 2
+[INFO] 15:14:57:585 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 15:14:59:604 memoria.log/(4321:4437): PID: 0 - Pagina: 3 - Marco: 3
+[INFO] 15:15:00:610 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 15:15:03:648 memoria.log/(4321:4437): PID: 0 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 15:15:05:675 memoria.log/(4321:4437): PID: 0 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 15:15:07:690 memoria.log/(4321:4437): Cantidad Marcos: 28
+[INFO] 15:15:07:690 memoria.log/(4321:4437): PID: 0 - Tamaño Actual: 128 - Tamaño a Ampliar: 256
+[INFO] 15:15:11:732 memoria.log/(4321:4437): PID: 0 - Pagina: 4 - Marco: 4
+[INFO] 15:15:12:736 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 128 - Tamaño 1
+[INFO] 15:15:14:753 memoria.log/(4321:4437): PID: 0 - Pagina: 5 - Marco: 5
+[INFO] 15:15:15:758 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 160 - Tamaño 1
+[INFO] 15:15:21:822 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 40 - Tamaño 1
+[INFO] 15:15:23:836 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 80 - Tamaño 1
+[INFO] 15:15:25:856 memoria.log/(4321:4437): PID: 0 - Pagina: 6 - Marco: 6
+[INFO] 15:15:26:861 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 192 - Tamaño 1
+[INFO] 15:15:28:877 memoria.log/(4321:4437): PID: 0 - Pagina: 7 - Marco: 7
+[INFO] 15:15:29:881 memoria.log/(4321:4437): PID: 0 - Accion: ESCRIBIR - Direccion fisica: 224 - Tamaño 1
+[INFO] 15:15:32:006 memoria.log/(4321:4434): PID: 0 - Tamaño: 256
+[INFO] 15:15:56:691 memoria.log/(4321:4434): PID: 1 - Tamaño: 0
+[INFO] 15:16:03:767 memoria.log/(4321:4437): Cantidad Marcos: 32
+[INFO] 15:16:03:767 memoria.log/(4321:4437): PID: 1 - Tamaño Actual: 0 - Tamaño a Ampliar: 60
+[INFO] 15:16:05:783 memoria.log/(4321:4437): PID: 1 - Pagina: 0 - Marco: 0
+[INFO] 15:16:06:789 memoria.log/(4321:4437): PID: 1 - Pagina: 1 - Marco: 1
+[INFO] 15:16:07:795 memoria.log/(4321:4437): PID: 1 - Accion: ESCRIBIR - Direccion fisica: 30 - Tamaño 2
+[INFO] 15:16:08:798 memoria.log/(4321:4437): PID: 1 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 2
+[INFO] 15:16:10:819 memoria.log/(4321:4437): PID: 1 - Accion: LEER - Direccion fisica: 30 - Tamaño 2
+[INFO] 15:16:11:823 memoria.log/(4321:4437): PID: 1 - Accion: LEER - Direccion fisica: 32 - Tamaño 2
+[INFO] 15:16:15:870 memoria.log/(4321:4434): PID: 1 - Tamaño: 64
+[INFO] 15:16:47:602 memoria.log/(4321:4434): PID: 2 - Tamaño: 0
+[INFO] 15:16:50:630 memoria.log/(4321:4437): Cantidad Marcos: 32
+[INFO] 15:16:50:630 memoria.log/(4321:4437): PID: 2 - Tamaño Actual: 0 - Tamaño a Ampliar: 960
+[INFO] 15:16:53:659 memoria.log/(4321:4437): PID: 2 - Tamaño Actual: 960 - Tamaño a Reducir: 256
+[INFO] 15:16:55:678 memoria.log/(4321:4437): PID: 2 - Pagina: 0 - Marco: 0
+[INFO] 15:16:56:684 memoria.log/(4321:4437): PID: 2 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 4
+[INFO] 15:16:58:703 memoria.log/(4321:4437): Cantidad Marcos: 24
+[INFO] 15:16:59:710 memoria.log/(4321:4434): PID: 2 - Tamaño: 256
+[INFO] 15:17:44:125 memoria.log/(4321:4434): PID: 4 - Tamaño: 0
+[INFO] 15:17:54:239 memoria.log/(4321:4437): Cantidad Marcos: 32
+[INFO] 15:17:54:239 memoria.log/(4321:4437): PID: 4 - Tamaño Actual: 0 - Tamaño a Ampliar: 128
+[INFO] 15:17:56:257 memoria.log/(4321:4437): PID: 4 - Pagina: 0 - Marco: 0
+[INFO] 15:17:57:261 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 0 - Tamaño 1
+[INFO] 15:17:59:280 memoria.log/(4321:4437): PID: 4 - Pagina: 1 - Marco: 1
+[INFO] 15:18:00:286 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 1
+[INFO] 15:18:02:305 memoria.log/(4321:4437): PID: 4 - Pagina: 2 - Marco: 2
+[INFO] 15:18:03:309 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 64 - Tamaño 1
+[INFO] 15:18:05:326 memoria.log/(4321:4437): PID: 4 - Pagina: 3 - Marco: 3
+[INFO] 15:18:06:330 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 96 - Tamaño 1
+[INFO] 15:18:09:351 memoria.log/(4321:4437): PID: 4 - Accion: LEER - Direccion fisica: 32 - Tamaño 1
+[INFO] 15:18:11:374 memoria.log/(4321:4437): PID: 4 - Accion: LEER - Direccion fisica: 64 - Tamaño 1
+[INFO] 15:18:13:390 memoria.log/(4321:4437): Cantidad Marcos: 28
+[INFO] 15:18:13:390 memoria.log/(4321:4437): PID: 4 - Tamaño Actual: 128 - Tamaño a Ampliar: 256
+[INFO] 15:18:17:434 memoria.log/(4321:4437): PID: 4 - Pagina: 4 - Marco: 4
+[INFO] 15:18:18:438 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 128 - Tamaño 1
+[INFO] 15:18:20:455 memoria.log/(4321:4437): PID: 4 - Pagina: 5 - Marco: 5
+[INFO] 15:18:21:460 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 160 - Tamaño 1
+[INFO] 15:18:27:516 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 40 - Tamaño 1
+[INFO] 15:18:29:534 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 80 - Tamaño 1
+[INFO] 15:18:31:552 memoria.log/(4321:4437): PID: 4 - Pagina: 6 - Marco: 6
+[INFO] 15:18:32:557 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 192 - Tamaño 1
+[INFO] 15:18:34:574 memoria.log/(4321:4437): PID: 4 - Pagina: 7 - Marco: 7
+[INFO] 15:18:35:579 memoria.log/(4321:4437): PID: 4 - Accion: ESCRIBIR - Direccion fisica: 224 - Tamaño 1
+[INFO] 15:18:37:598 memoria.log/(4321:4434): PID: 4 - Tamaño: 256
+[INFO] 15:18:52:853 memoria.log/(4321:4434): PID: 5 - Tamaño: 0
+[INFO] 15:18:59:932 memoria.log/(4321:4437): Cantidad Marcos: 32
+[INFO] 15:18:59:932 memoria.log/(4321:4437): PID: 5 - Tamaño Actual: 0 - Tamaño a Ampliar: 60
+[INFO] 15:19:01:951 memoria.log/(4321:4437): PID: 5 - Pagina: 0 - Marco: 0
+[INFO] 15:19:02:955 memoria.log/(4321:4437): PID: 5 - Pagina: 1 - Marco: 1
+[INFO] 15:19:03:960 memoria.log/(4321:4437): PID: 5 - Accion: ESCRIBIR - Direccion fisica: 30 - Tamaño 2
+[INFO] 15:19:04:963 memoria.log/(4321:4437): PID: 5 - Accion: ESCRIBIR - Direccion fisica: 32 - Tamaño 2
+[INFO] 15:19:06:979 memoria.log/(4321:4437): PID: 5 - Accion: LEER - Direccion fisica: 30 - Tamaño 2
+[INFO] 15:19:07:981 memoria.log/(4321:4437): PID: 5 - Accion: LEER - Direccion fisica: 32 - Tamaño 2
+[INFO] 15:19:12:026 memoria.log/(4321:4434): PID: 5 - Tamaño: 64
+[INFO] 15:20:15:452 memoria.log/(4321:4434): Desconectado
+[INFO] 15:20:16:664 memoria.log/(4321:4437): Desconectado
