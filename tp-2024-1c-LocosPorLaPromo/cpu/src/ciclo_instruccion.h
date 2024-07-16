@@ -3,7 +3,7 @@
 
 #include <netdb.h>
 #include "cpu.h"
-void cicloDeInstruccion(uint32_t pid, int volvio_de_interrupcion);
+
 typedef enum{
     SET,
     MOV_IN,
@@ -31,6 +31,7 @@ typedef struct {
     t_queue * parametros;
 }instruccion_decodificada;
 
+void cicloDeInstruccion(uint32_t pid, int volvio_de_interrupcion);
 char * fetch(uint32_t pid, uint32_t pc);
 int casteoStringInstruccion(char* instruccion);
 registro_casteado * casteoRegistro(char * operando_registro);

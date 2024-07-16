@@ -34,8 +34,7 @@ void * atenderInterrupciones(void * sin_parametro){
                     modificarEnteroSincronizado(estado_interrupcion, paquete_interrupcion->codigoOperacion);
                 } else {
                     modificarEnteroSincronizado(consumirFinQ, 0);
-                } 
-
+                }
             }
         } 
 

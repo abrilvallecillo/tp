@@ -14,8 +14,7 @@ typedef struct {
     void* stream; // Payload
 } t_buffer;
 
-typedef enum
-{
+typedef enum{
 	MENSAJE,
 	PAQUETE
 }op_code;

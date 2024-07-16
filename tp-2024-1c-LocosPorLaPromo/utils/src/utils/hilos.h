@@ -5,6 +5,7 @@
 #include <semaphore.h>
 #include <commons/collections/list.h>
 #include <stdlib.h>
+
 typedef struct {
     int entero;
     pthread_mutex_t * mutex_entero;

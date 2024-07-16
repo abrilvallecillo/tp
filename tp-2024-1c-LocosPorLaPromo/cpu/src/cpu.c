@@ -62,7 +62,7 @@ t_queue * traducirMemoria(int direccionLogica, int tamanioDato){
     
     int espacioPaginaLibre = tamanioPagina - desplazamiento;
     int tamanioAEnviar = minInt(tamanioDato, espacioPaginaLibre);
-    int tamanioInstantaneo = tamanioDato - tamanioAEnviar;
+    int tamanioInstantaneo = tamanioDato - tamanioAEnviar; // lo que me queda
     
     int i = 1;
 
@@ -94,44 +94,45 @@ int minInt(int entero1, int entero2){
 
 t_direccionMemoria * direccionLogicaAFisica(int numeroPagina, int tamanioAEnviar, int pid){
     t_direccionMemoria * direccionMemoria = malloc(sizeof(t_direccionMemoria));
+    
     int respuestaTLB = buscarMarcoEnTLB(numeroPagina, pid);
 
     if(respuestaTLB != -1){
+        
         direccionMemoria->direccionFisica = respuestaTLB * tamanioPagina;
         direccionMemoria->tamanioEnvio = tamanioAEnviar;
 
-        // Logs mínimos y obligatorios --------------------------
         char * mensaje = string_from_format ("PID: %d - TLB HIT - Pagina: %d", pid, numeroPagina);
         logInfoSincronizado(mensaje);
         free(mensaje);
+
         mensaje = string_from_format ("PID: %d - OBTENER MARCO - Página: %d - Marco: %d", pid, numeroPagina, respuestaTLB);
         logInfoSincronizado(mensaje);
         free(mensaje);
-        // Logs mínimos y obligatorios --------------------------
    
     } else {
-        
-        // Logs mínimos y obligatorios --------------------------
+
         char * mensaje = string_from_format ("PID: %d - TLB MISS - Pagina:  %d", pid, numeroPagina);
         logInfoSincronizado(mensaje);
         free(mensaje);
-        // Logs mínimos y obligatorios --------------------------
         
         solicitarMarcoAMemoria(numeroPagina, pid);
         int marcoMemoria = recibirMarcoDeMemoria();
+       
         if(marcoMemoria == -1) {
             free(direccionMemoria);
             return NULL;
         }
+
         direccionMemoria->direccionFisica = marcoMemoria * tamanioPagina;
         direccionMemoria->tamanioEnvio = tamanioAEnviar;
+
         agregarDireccionATLB(pid, numeroPagina, marcoMemoria);
-        
-        // Logs mínimos y obligatorios --------------------------
+
         mensaje = string_from_format ("PID: %d - OBTENER MARCO - Página: %d - Marco: %d", pid, numeroPagina, marcoMemoria);
         logInfoSincronizado(mensaje);
         free(mensaje);
-        // Logs mínimos y obligatorios --------------------------
+
     } return direccionMemoria;
 }
 

@@ -4,6 +4,20 @@
 #include<netdb.h>
 #include <utils/conexiones.h>
 #include <commons/collections/queue.h>
+
+// -------------------------- REGISTROS DE CPU --------------------------
+// PC : Program Counter, indica la próxima instrucción a ejecutar
+// AX : Registro Numérico de propósito general
+// BX : Registro Numérico de propósito general
+// CX :  Registro Numérico de propósito general
+// DX : Registro Numérico de propósito general
+// EAX : Registro Numérico de propósito general
+// EBX : Registro Numérico de propósito general
+// ECX : Registro Numérico de propósito general
+// EDX : Registro Numérico de propósito general
+// SI : Contiene la dirección lógica de memoria de origen desde donde se va a copiar un string.
+// DI : Contiene la dirección lógica de memoria de destino a donde se va a copiar un string.
+
 typedef struct {
     uint8_t AX;
     uint8_t BX;
@@ -16,18 +30,18 @@ typedef struct {
 } registros_generales;
 
 typedef struct {
-    uint32_t PID;
-    uint32_t PC;
-    uint32_t Quantum;
-    registros_generales registros;
-} pcb;
-
-typedef struct {
     registros_generales generales;
     uint32_t PC;
     uint32_t SI;
     uint32_t DI;
 }registros_CPU; //registros propios que va a usar la CPU
+
+typedef struct {
+    uint32_t PID;
+    uint32_t PC;
+    uint32_t Quantum;
+    registros_generales registros;
+} pcb;
 
 typedef enum {
     CONTEXTO_A_EJECUTAR, //Se envía un contexto desde el kernel al cpu,
