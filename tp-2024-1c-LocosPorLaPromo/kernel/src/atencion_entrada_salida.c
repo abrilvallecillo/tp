@@ -7,14 +7,6 @@
 #include <utils/interfaces.h>
 #include <commons/string.h>
 
-t_interfaz_kernel * recibirTipoInterfaz(int conexion_cliente_io);
-t_interfaz_kernel * deserializarInformacionInterfaz(t_buffer * buffer);
-void enviarOperacionAInterfaz(pcb_cola_interfaz * pcb_a_trabajar, int conexion_cliente_io);
-int recibirOperacionAInterfaz(int conexion_cliente_io);
-void eliminarInterfaz(t_interfaz_kernel * interfaz_actual);
-void mandarAFinalizarLosProcesos(void * elemento);
-void matarProcesoInterfaz(pcb_cola_interfaz *proceso_a_matar);
-
 void * atenderIO(void * socket_cliente_io) {
     int* conexion_cliente_io = (int *) socket_cliente_io;
     int resultado = recibirHandshake(*conexion_cliente_io);

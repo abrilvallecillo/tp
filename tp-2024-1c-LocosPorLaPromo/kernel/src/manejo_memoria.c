@@ -9,10 +9,7 @@
 #include <utils/logger_concurrente.h>
 #include <commons/string.h>
 
-pcb * recibirRespuestaACrearProceso(int conexion_memoria);
-inicializar_proceso * crearInicializarProceso(peticion_memoria * nueva_peticion);
-t_buffer * serializarBorrarMemoriaP(peticion_memoria * nueva_peticion);
-void cargarProcesoEnSistema(uint32_t pid);
+
 
 void *manejarMemoria(void * sin_parametro) {
     int conexion_memoria = crearConexionCliente(configuracion.IP_MEMORIA, configuracion.PUERTO_MEMORIA);

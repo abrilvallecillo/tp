@@ -2,12 +2,6 @@
 #include <utils/conexiones.h>
 #include "kernel.h"
 #include <utils/hilos.h>
-#include "configuracion.h"
-pthread_t manejo_interrupciones_quantum;
-
-void enviarInterrupcionPorQuantum(int conexion_cpu_interrupt);
-void enviarInterrupcionACPUConsola(int conexion_cpu_interrupt);
-void * manejarInterrupcionesQuantum(void * conexion_interrupt);
 
 void *interrupcionDeProcesos(void * sin_parametro) {
     int conexion_cpu_interrupt = crearConexionCliente(configuracion.IP_CPU, configuracion.PUERTO_CPU_INTERRUPT);

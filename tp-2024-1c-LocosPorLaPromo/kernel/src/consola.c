@@ -6,8 +6,6 @@
 #include "configuracion.h"
 #include <utils/logger_concurrente.h>
 
-peticion_memoria * CrearPeticionCrearProceso(char * ruta_codigo);
-bool detenerPlanificacion = false;
 void * consola(void * parametro_nulo) {
     char * leer_cadena = readline("> ");
 
