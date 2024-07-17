@@ -58,9 +58,11 @@ direccionTLB * elegirCandidatoSegunAlgoritmo(){
         case FIFO:
             candidato = (direccionTLB*) list_get(TLB, 0);
             break;
+            
         case LRU:
             candidato = (direccionTLB*) list_get(TLB, 0);
             break;
+
         default: fprintf(stderr, "Algoritmo TLB no reconocido.");
     } return candidato;
 }

@@ -28,11 +28,15 @@ int main(int argc, char* argv[]) {
     int conexion_servidor = crearConexionServidor(configuracion.PUERTO);
     //log_info(logger, "Servidor listo para recibir al cliente");
     
+
+    //Un espacio contiguo de memoria (representado por un void*). Este representará el espacio de usuario de la misma, donde los procesos podrán leer y/o escribir.
+    memoria = malloc(configuracion.TAMANIO);
+
+    // Las Tablas de páginas.
     cantidadMarcos = (int) (configuracion.TAMANIO / configuracion.TAMANIO_PAGINAS);
     tamanioMarcosLibres = malloc(cantidadMarcos/8);
     marcosLibres = bitarray_create_with_mode(tamanioMarcosLibres, cantidadMarcos/8, LSB_FIRST);
-    memoria = malloc(configuracion.TAMANIO);
-    for(int i = 0; i< bitarray_get_max_bit(marcosLibres); i++) { bitarray_set_bit(marcosLibres, i); }
+    for(int i = 0; i < bitarray_get_max_bit(marcosLibres); i++) { bitarray_set_bit(marcosLibres, i); }
     tablaPaginasProcesos = crearListaSincronizada();
     
     while (1) {

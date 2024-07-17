@@ -19,11 +19,15 @@ void * atenderPeticiones(void * conexion_cliente) {
         
         if(paquete_peticion == NULL) {break;}
         
+        // -------------------------- Retardo en peticiones --------------------------
+           
         usleep(configuracion.RETARDO_RESPUESTA * 1000);
         t_buffer * buffer;
         
         switch(paquete_peticion->codigoOperacion) {
             
+            // -------------------------- Creación de proceso --------------------------
+
             case CREAR_PROCESO:
                 inicializar_proceso * nueva_peticion = deserializarInicializarProceso(paquete_peticion->buffer);
                 pcb * proceso_creado = CrearProceso(nueva_peticion);
@@ -41,65 +45,18 @@ void * atenderPeticiones(void * conexion_cliente) {
                 free(nueva_peticion->direccion_codigo);
                 free(nueva_peticion);
                 break;
-            
-            case PETICION_INSTRUCCION:
-                peticion_instruccion * nueva_instruccion = deserializarPeticionInstruccion(paquete_peticion->buffer);
-                char * string_instruccion = buscarInstruccion(nueva_instruccion);
-               
-                enviarSegunErrorAlBuscarInstr(buffer, string_instruccion, *socket_cliente);
-               
-                free(nueva_instruccion);
-                break;
-            
-            case P_RESIZE:
-                peticion_resize * nuevo_resize = deserializarPeticionResize(paquete_peticion->buffer);
-                codigos_operacion resultado = redimensionarProceso(nuevo_resize);
-               
-                buffer = crearBufferGeneral(0);
-                enviarBufferProcesoConMotivo(buffer, resultado, *socket_cliente);
-               
-                free(nuevo_resize);
-                break;
-           
-            case ESCRIBIR_MEMORIA:
-                t_operacionMemEscribirUsuario * operacion_escritura = deserializarOperacionMemEscribirUsuario(paquete_peticion->buffer);
-                char * mensaje = string_from_format ("PID: %d - Accion: ESCRIBIR - Direccion fisica: %d - Tamaño %d", operacion_escritura->pid, operacion_escritura->direccion->direccionFisica, operacion_escritura->direccion->tamanioEnvio);
-                logInfoSincronizado(mensaje);
-                free(mensaje);
-               
-                pthread_mutex_lock(mutexMemoria);
-                memcpy(memoria+operacion_escritura->direccion->direccionFisica, operacion_escritura->valor, operacion_escritura->direccion->tamanioEnvio);
-                pthread_mutex_unlock(mutexMemoria);
-               
-                buffer = crearBufferGeneral(0);
-                enviarBufferProcesoConMotivo(buffer, ESCRIBIR_MEMORIA, *socket_cliente);
-               
-                free(operacion_escritura->direccion);
-                free(operacion_escritura->valor);
-                free(operacion_escritura);
-                break;
-           
-            case LEER_MEMORIA:
-                t_operacionMemLeerUsuario * operacion_lectura = deserializarOperacionMemLeerUsuario(paquete_peticion->buffer);
-                mensaje = string_from_format ("PID: %d - Accion: LEER - Direccion fisica: %d - Tamaño %d", operacion_lectura->pid, operacion_lectura->direccion->direccionFisica, operacion_lectura->direccion->tamanioEnvio);
-                logInfoSincronizado(mensaje);
-                free(mensaje);
 
-                void * valor = malloc(operacion_lectura->direccion->tamanioEnvio);
-               
-                pthread_mutex_lock(mutexMemoria);
-                memcpy(valor, memoria+operacion_lectura->direccion->direccionFisica, operacion_lectura->direccion->tamanioEnvio);
-                pthread_mutex_unlock(mutexMemoria);
+            // -------------------------- Finalización de proceso --------------------------
 
-                buffer = crearBufferGeneral(operacion_lectura->direccion->tamanioEnvio);
-                agregarABufferVoidP(buffer, valor, operacion_lectura->direccion->tamanioEnvio);
-                enviarBufferProcesoConMotivo(buffer, LEER_MEMORIA, *socket_cliente);
-               
-                free(operacion_lectura->direccion);
-                free(operacion_lectura);
-                free(valor);
+            case P_BORRAR_MEMORIA:
+                uint32_t pid = deserializarBorrarMemoriaP(paquete_peticion->buffer);
+                tabla = buscarTablaDePaginas(pid);
+                borrarTablaDePaginas(tabla);
+                borrarCodigoProceso(pid);
                 break;
-            
+
+            // -------------------------- Acceso a tabla de páginas --------------------------
+  
             case PEDIDO_MARCO:
                 t_pedidoMarco * pedido = deserializarPedidoMarco(paquete_peticion->buffer);
                 t_tablaPaginas * tabla = buscarTablaDePaginas(pedido->pid);
@@ -121,14 +78,76 @@ void * atenderPeticiones(void * conexion_cliente) {
                
                 free(pedido);
                 break;
-          
-            case P_BORRAR_MEMORIA:
-                uint32_t pid = deserializarBorrarMemoriaP(paquete_peticion->buffer);
-                tabla = buscarTablaDePaginas(pid);
-                borrarTablaDePaginas(tabla);
-                borrarCodigoProceso(pid);
+            
+            // -------------------------- Ajustar tamaño de un proceso --------------------------
+
+            case P_RESIZE:
+                peticion_resize * nuevo_resize = deserializarPeticionResize(paquete_peticion->buffer);
+                codigos_operacion resultado = redimensionarProceso(nuevo_resize);
+               
+                buffer = crearBufferGeneral(0);
+                enviarBufferProcesoConMotivo(buffer, resultado, *socket_cliente);
+               
+                free(nuevo_resize);
+                break;
+
+            // -------------------------- Ajustar tamaño de un proceso --------------------------
+
+            case PETICION_INSTRUCCION:
+                peticion_instruccion * nueva_instruccion = deserializarPeticionInstruccion(paquete_peticion->buffer);
+                char * string_instruccion = buscarInstruccion(nueva_instruccion);
+               
+                enviarSegunErrorAlBuscarInstr(buffer, string_instruccion, *socket_cliente);
+               
+                free(nueva_instruccion);
+                break;
+            
+            // -------------------------- Acceso a espacio de usuario --------------------------
+
+            case ESCRIBIR_MEMORIA:
+                t_operacionMemEscribirUsuario * operacion_escritura = deserializarOperacionMemEscribirUsuario(paquete_peticion->buffer);
+                char * mensaje = string_from_format ("PID: %d - Accion: ESCRIBIR - Direccion fisica: %d - Tamaño %d", operacion_escritura->pid, operacion_escritura->direccion->direccionFisica, operacion_escritura->direccion->tamanioEnvio);
+                logInfoSincronizado(mensaje);
+                free(mensaje);
+               
+                pthread_mutex_lock(mutexMemoria);
+                    memcpy( memoria + 
+                            operacion_escritura->direccion->direccionFisica, 
+                            operacion_escritura->valor, 
+                            operacion_escritura->direccion->tamanioEnvio);
+                pthread_mutex_unlock(mutexMemoria);
+               
+                buffer = crearBufferGeneral(0);
+                enviarBufferProcesoConMotivo(buffer, ESCRIBIR_MEMORIA, *socket_cliente);
+               
+                free(operacion_escritura->direccion);
+                free(operacion_escritura->valor);
+                free(operacion_escritura);
                 break;
            
+            case LEER_MEMORIA:
+                t_operacionMemLeerUsuario * operacion_lectura = deserializarOperacionMemLeerUsuario(paquete_peticion->buffer);
+                mensaje = string_from_format ("PID: %d - Accion: LEER - Direccion fisica: %d - Tamaño %d", operacion_lectura->pid, operacion_lectura->direccion->direccionFisica, operacion_lectura->direccion->tamanioEnvio);
+                logInfoSincronizado(mensaje);
+                free(mensaje);
+
+                void * valor = malloc(operacion_lectura->direccion->tamanioEnvio);
+               
+                pthread_mutex_lock(mutexMemoria);
+                    memcpy(valor, memoria + 
+                            operacion_lectura->direccion->direccionFisica, 
+                            operacion_lectura->direccion->tamanioEnvio);
+                pthread_mutex_unlock(mutexMemoria);
+
+                buffer = crearBufferGeneral(operacion_lectura->direccion->tamanioEnvio);
+                agregarABufferVoidP(buffer, valor, operacion_lectura->direccion->tamanioEnvio);
+                enviarBufferProcesoConMotivo(buffer, LEER_MEMORIA, *socket_cliente);
+               
+                free(operacion_lectura->direccion);
+                free(operacion_lectura);
+                free(valor);
+                break;
+
             case PEDIR_TAM_PAG:
                 logInfoSincronizado("Me llego!");
                 buffer = serializarTamPagina(configuracion.TAMANIO_PAGINAS);
@@ -148,8 +167,7 @@ void * atenderPeticiones(void * conexion_cliente) {
     return NULL;
 }
 
-// Creación de proceso
-// Esta petición podrá venir solamente desde el módulo Kernel, y el módulo Memoria deberá crear las estructuras administrativas necesarias.
+// -------------------------- Creación de proceso --------------------------
 
 pcb * CrearProceso(inicializar_proceso * peticion) {
     if(peticion->direccion_codigo == NULL) {return NULL;}
@@ -187,10 +205,10 @@ pcb * CrearProceso(inicializar_proceso * peticion) {
     while(fgets(lectura_linea, 256, codigo_proceso_archivo)){
         string_array_push(&codigo_nuevo->array_instrucciones, string_duplicate(lectura_linea));
     }
-    
     fclose(codigo_proceso_archivo);
     free(direccion);
     agregarElementoAListaSincronizada(codigos_programas, codigo_nuevo);
+
     t_tablaPaginas * tablaPaginas = malloc(sizeof(t_tablaPaginas));
     tablaPaginas->pid = peticion->pid;
     tablaPaginas->listaPaginas = list_create();
@@ -201,125 +219,11 @@ pcb * CrearProceso(inicializar_proceso * peticion) {
     logInfoSincronizado(mensaje);
     free(mensaje);
     free(lectura_linea);
+
     return pcb_nuevo;   
 }
 
-char * buscarInstruccion(peticion_instruccion * nueva_instruccion){
-    pthread_mutex_lock(codigos_programas->mutex_lista);
-    pid_solicitado = nueva_instruccion->pid;
-    codigo_proceso * codigo_del_programa = list_find(codigos_programas->lista, pid_a_comparar);
-    pthread_mutex_unlock(codigos_programas->mutex_lista);
-    
-    if(codigo_del_programa){
-        int pc_instruccion = nueva_instruccion->pc;
-        return codigo_del_programa->array_instrucciones[pc_instruccion];
-    } else {
-        return NULL;
-    }
-}
-
-bool pid_a_comparar(void* codigo_del_programa){
-    codigo_proceso * codigo = (codigo_proceso*) codigo_del_programa;
-    return pid_solicitado == codigo->pid;
-}
-
-t_instruccion * estandarizarStringInstruccion(char * string_instruccion){
-    t_instruccion * instruccion_estandarizada = malloc(sizeof(t_instruccion));
-    instruccion_estandarizada->longitud = string_length(string_instruccion)+1;
-    instruccion_estandarizada->string_instruccion = string_duplicate(string_instruccion);
-    return instruccion_estandarizada;
-}
-
-void enviarSegunErrorAlBuscarInstr(t_buffer * buffer, char * string_instruccion, int socket_cliente) {
-    if(string_instruccion) {
-       t_instruccion * instruccion_a_mandar = estandarizarStringInstruccion(string_instruccion);                
-        buffer = serializarInstruccion(instruccion_a_mandar);
-        enviarBufferPorPaquete(buffer, ENVIAR_INSTRUCCION, socket_cliente);
-        free(instruccion_a_mandar->string_instruccion);
-        free(instruccion_a_mandar);
-    } else {
-        buffer = crearBufferGeneral(0);
-        enviarBufferPorPaquete(buffer, P_ERROR, socket_cliente);
-    }
-}
-
-// Ajustar tamaño de un proceso
-// Al llegar una solicitud de ajuste de tamaño de proceso (resize) se deberá cambiar el tamaño del proceso de acuerdo al nuevo tamaño. Se pueden dar 2 opciones:
-
-// Ampliación de un proceso
-// Se deberá ampliar el tamaño del proceso al final del mismo, pudiendo solicitarse múltiples páginas. Es posible que en un punto no se puedan solicitar más marcos ya que la memoria se encuentra llena, por lo que en ese caso se deberá contestar con un error de Out Of Memory.
-
-// Reducción de un proceso
-// Se reducirá el mismo desde el final, liberando, en caso de ser necesario, las páginas que ya no sean utilizadas (desde la última hacia la primera).
-
-codigos_operacion redimensionarProceso(peticion_resize * peticion){
-    int cantidadPaginasNuevas = peticion->tamanio / configuracion.TAMANIO_PAGINAS;
-    
-    if(peticion->tamanio % configuracion.TAMANIO_PAGINAS && peticion->tamanio){ cantidadPaginasNuevas++; }
-    
-    pthread_mutex_lock(mutexMarcosLibres);
-        int deltaCantidadPaginas = cantidadPaginasNuevas - cantidadTablaPaginas(peticion->pid);
-        
-        if(deltaCantidadPaginas > 0) {
-            int cantidad_marcos = contarMarcosLibres();
-            char * mensaje_temp = string_from_format("Cantidad Marcos: %d", cantidad_marcos);
-            logInfoSincronizado(mensaje_temp);
-            free(mensaje_temp);
-        
-            if (deltaCantidadPaginas > contarMarcosLibres()) { return OUT_OF_MEMORY; }
-    pthread_mutex_unlock(mutexMarcosLibres);
-        
-            t_tablaPaginas * tabla = buscarTablaDePaginas(peticion->pid);
-            char * mensaje = string_from_format ("PID: %d - Tamaño Actual: %d - Tamaño a Ampliar: %d", tabla->pid, cantidadTablaPaginas(peticion->pid)*configuracion.TAMANIO_PAGINAS, peticion->tamanio);
-            logInfoSincronizado(mensaje);
-            free(mensaje);
-        
-            while (deltaCantidadPaginas > 0){
-                fila_tabla_de_paginas * fila = malloc(sizeof(fila_tabla_de_paginas));
-                fila_tabla_de_paginas * ultimaFila = buscarUltimaFilaValida(tabla);
-        
-                if(ultimaFila == NULL){ fila->numeroPagina = 0; } 
-                else { fila->numeroPagina = ultimaFila->numeroPagina +1;}
-
-                fila->numeroMarco = encontrarPrimerMarcoLibre();
-                fila->validez = true;
-                deltaCantidadPaginas--;
-                bitarray_clean_bit(marcosLibres, fila->numeroMarco);
-            
-                if(ultimaFila == NULL || ultimaFila->numeroPagina == cantidadTablaPaginas(peticion->pid) - 1) { 
-                    list_add(tabla->listaPaginas, fila);
-                } else {
-                    fila_tabla_de_paginas *  fila_vieja = list_replace(tabla->listaPaginas, fila->numeroPagina, fila);
-                    free(fila_vieja);
-                }
-            }
-
-        } else if(deltaCantidadPaginas < 0){
-            t_tablaPaginas * tabla = buscarTablaDePaginas(peticion->pid);
-            char * mensaje = string_from_format ("PID: %d - Tamaño Actual: %d - Tamaño a Reducir: %d", tabla->pid, cantidadTablaPaginas(peticion->pid)*configuracion.TAMANIO_PAGINAS, peticion->tamanio);
-            logInfoSincronizado(mensaje);
-            free(mensaje);
-        
-            while (deltaCantidadPaginas < 0){
-                fila_tabla_de_paginas * ultimaFila = buscarUltimaFilaValida(tabla);
-                ultimaFila->validez = false;
-                deltaCantidadPaginas++;
-                bitarray_set_bit(marcosLibres, ultimaFila->numeroMarco);
-            }
-        }
-  
-    pthread_mutex_unlock(mutexMarcosLibres);
-    return P_RESIZE;
-}
-
-bool compararValidezYNroPagina(void * elemento){
-    fila_tabla_de_paginas * fila = (fila_tabla_de_paginas*) elemento;
-    return nro_pagina_a_comparar_tabla == fila->numeroPagina && fila->validez;
-}
-
-// Finalización de proceso
-// Esta petición podrá venir solamente desde el módulo Kernel. 
-// El módulo Memoria, al ser finalizado un proceso, debe liberar su espacio de memoria (marcando los frames como libres pero sin sobreescribir su contenido).
+// -------------------------- Finalización de proceso --------------------------
 
 void borrarTablaDePaginas(t_tablaPaginas *  tabla) {
 
@@ -365,3 +269,118 @@ void borrarCodigoProceso(uint32_t pid) {
     free(codigo_del_programa);
 }
 
+// -------------------------- Acceso a tabla de páginas --------------------------
+
+bool compararValidezYNroPagina(void * elemento){
+    fila_tabla_de_paginas * fila = (fila_tabla_de_paginas*) elemento;
+    return nro_pagina_a_comparar_tabla == fila->numeroPagina && fila->validez;
+}
+
+// -------------------------- Ajustar tamaño de un proceso --------------------------
+
+codigos_operacion redimensionarProceso(peticion_resize * peticion){
+    int cantidadPaginasNuevas = peticion->tamanio / configuracion.TAMANIO_PAGINAS;
+    
+    if(peticion->tamanio % configuracion.TAMANIO_PAGINAS && peticion->tamanio){ cantidadPaginasNuevas++; }
+    
+    pthread_mutex_lock(mutexMarcosLibres);
+        int deltaCantidadPaginas = cantidadPaginasNuevas - cantidadTablaPaginas(peticion->pid);
+        
+        // -------------------------- Ampliación de un proceso --------------------------
+
+        if(deltaCantidadPaginas > 0) {
+            int cantidad_marcos = contarMarcosLibres();
+            char * mensaje_temp = string_from_format("Cantidad Marcos: %d", cantidad_marcos);
+            logInfoSincronizado(mensaje_temp);
+            free(mensaje_temp);
+        
+            if (deltaCantidadPaginas > cantidad_marcos) { return OUT_OF_MEMORY; }
+        
+            t_tablaPaginas * tabla = buscarTablaDePaginas(peticion->pid);
+            char * mensaje = string_from_format ("PID: %d - Tamaño Actual: %d - Tamaño a Ampliar: %d", tabla->pid, cantidadTablaPaginas(peticion->pid)*configuracion.TAMANIO_PAGINAS, peticion->tamanio);
+            logInfoSincronizado(mensaje);
+            free(mensaje);
+        
+            while (deltaCantidadPaginas > 0){
+                fila_tabla_de_paginas * fila = malloc(sizeof(fila_tabla_de_paginas));
+                fila_tabla_de_paginas * ultimaFila = buscarUltimaFilaValida(tabla);
+        
+                if(ultimaFila == NULL){ 
+                    fila->numeroPagina = 0; 
+                } else { 
+                    fila->numeroPagina = ultimaFila->numeroPagina +1;
+                }
+
+                fila->numeroMarco = encontrarPrimerMarcoLibre();
+                fila->validez = true;
+                deltaCantidadPaginas--;
+                bitarray_clean_bit(marcosLibres, fila->numeroMarco);
+            
+                if(ultimaFila == NULL || ultimaFila->numeroPagina == cantidadTablaPaginas(peticion->pid) - 1) { 
+                    list_add(tabla->listaPaginas, fila);
+                } else {
+                    fila_tabla_de_paginas *  fila_vieja = list_replace(tabla->listaPaginas, fila->numeroPagina, fila);
+                    free(fila_vieja);
+                }
+            }
+        
+        // -------------------------- Reducción de un proceso --------------------------
+        
+        } else if(deltaCantidadPaginas < 0){
+            t_tablaPaginas * tabla = buscarTablaDePaginas(peticion->pid);
+            char * mensaje = string_from_format ("PID: %d - Tamaño Actual: %d - Tamaño a Reducir: %d", tabla->pid, cantidadTablaPaginas(peticion->pid)*configuracion.TAMANIO_PAGINAS, peticion->tamanio);
+            logInfoSincronizado(mensaje);
+            free(mensaje);
+        
+            while (deltaCantidadPaginas < 0){
+                fila_tabla_de_paginas * ultimaFila = buscarUltimaFilaValida(tabla);
+                ultimaFila->validez = false;
+                deltaCantidadPaginas++;
+                bitarray_set_bit(marcosLibres, ultimaFila->numeroMarco);
+            }
+
+        } 
+
+    pthread_mutex_unlock(mutexMarcosLibres);
+
+    return P_RESIZE;
+}
+
+char * buscarInstruccion(peticion_instruccion * nueva_instruccion){
+    pthread_mutex_lock(codigos_programas->mutex_lista);
+    pid_solicitado = nueva_instruccion->pid;
+    codigo_proceso * codigo_del_programa = list_find(codigos_programas->lista, pid_a_comparar);
+    pthread_mutex_unlock(codigos_programas->mutex_lista);
+    
+    if(codigo_del_programa){
+        int pc_instruccion = nueva_instruccion->pc;
+        return codigo_del_programa->array_instrucciones[pc_instruccion];
+    } else {
+        return NULL;
+    }
+}
+
+bool pid_a_comparar(void* codigo_del_programa){
+    codigo_proceso * codigo = (codigo_proceso*) codigo_del_programa;
+    return pid_solicitado == codigo->pid;
+}
+
+void enviarSegunErrorAlBuscarInstr(t_buffer * buffer, char * string_instruccion, int socket_cliente) {
+    if(string_instruccion) {
+       t_instruccion * instruccion_a_mandar = estandarizarStringInstruccion(string_instruccion);                
+        buffer = serializarInstruccion(instruccion_a_mandar);
+        enviarBufferPorPaquete(buffer, ENVIAR_INSTRUCCION, socket_cliente);
+        free(instruccion_a_mandar->string_instruccion);
+        free(instruccion_a_mandar);
+    } else {
+        buffer = crearBufferGeneral(0);
+        enviarBufferPorPaquete(buffer, P_ERROR, socket_cliente);
+    }
+}
+
+t_instruccion * estandarizarStringInstruccion(char * string_instruccion){
+    t_instruccion * instruccion_estandarizada = malloc(sizeof(t_instruccion));
+    instruccion_estandarizada->longitud = string_length(string_instruccion)+1;
+    instruccion_estandarizada->string_instruccion = string_duplicate(string_instruccion);
+    return instruccion_estandarizada;
+}
