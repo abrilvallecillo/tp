@@ -1,18 +1,5 @@
 #include "memoria.h"
 
-lista_sincronizada* codigos_programas;
-lista_sincronizada* tablaPaginasProcesos;
-void* memoria;
-pthread_mutex_t* mutexMemoria;
-int cantidadMarcos;
-t_bitarray * marcosLibres;
-pthread_mutex_t* mutexMarcosLibres;
-int pidAComparar;
-int nroPaginaAComparar;
-void * tamanioMarcosLibres;
-
-bool encontrarTablaPorPid(void * elemento);
-bool igualNumeroDePagina (void * elemento);
 
 int contarMarcosLibres(){
     int contador = 0;
@@ -24,10 +11,8 @@ int contarMarcosLibres(){
 
 int cantidadTablaPaginas(int pid){
     t_tablaPaginas * tabla = buscarTablaDePaginas(pid);
-    if (list_size(tabla->listaPaginas) > 0){
-        return list_count_satisfying(tabla->listaPaginas, filaValida);    
-    }
-    return list_size(tabla->listaPaginas);
+    if (list_size(tabla->listaPaginas) > 0){ return list_count_satisfying(tabla->listaPaginas, filaValida);   
+    } return list_size(tabla->listaPaginas);
 }
 
 t_tablaPaginas * buscarTablaDePaginas(int pid){

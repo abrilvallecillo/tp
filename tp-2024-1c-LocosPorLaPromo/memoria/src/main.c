@@ -21,12 +21,9 @@ int main(int argc, char* argv[]) {
     
     inicializarLogger("memoria.log", "Log de la Memoria");
     char * direccion_config;
-    if(argc < 2) {
-        direccion_config = string_duplicate("memoria.config");
-    } else {
-        direccion_config = string_duplicate(argv[1]);
-    }
-    obtener_config(direccion_config);
+    if(argc < 2) { direccion_config = string_duplicate("memoria.config");
+    } else { direccion_config = string_duplicate(argv[1]);
+    } obtener_config(direccion_config);
     
     int conexion_servidor = crearConexionServidor(configuracion.PUERTO);
     //log_info(logger, "Servidor listo para recibir al cliente");
@@ -35,14 +32,13 @@ int main(int argc, char* argv[]) {
     tamanioMarcosLibres = malloc(cantidadMarcos/8);
     marcosLibres = bitarray_create_with_mode(tamanioMarcosLibres, cantidadMarcos/8, LSB_FIRST);
     memoria = malloc(configuracion.TAMANIO);
-    for(int i = 0; i< bitarray_get_max_bit(marcosLibres); i++) {
-        bitarray_set_bit(marcosLibres, i);
-    }
+    for(int i = 0; i< bitarray_get_max_bit(marcosLibres); i++) { bitarray_set_bit(marcosLibres, i); }
     tablaPaginasProcesos = crearListaSincronizada();
     
     while (1) {
         int * socket_cliente = malloc(sizeof(int));
         *socket_cliente = esperarCliente(conexion_servidor);
+        
         if(*socket_cliente < 0) {
             free(socket_cliente);
             break;

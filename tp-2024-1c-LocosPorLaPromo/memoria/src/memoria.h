@@ -11,6 +11,16 @@ extern int cantidadMarcos;
 extern t_bitarray * marcosLibres;
 extern pthread_mutex_t* mutexMarcosLibres;
 extern void * tamanioMarcosLibres;
+lista_sincronizada* codigos_programas;
+lista_sincronizada* tablaPaginasProcesos;
+void* memoria;
+pthread_mutex_t* mutexMemoria;
+int cantidadMarcos;
+t_bitarray * marcosLibres;
+pthread_mutex_t* mutexMarcosLibres;
+int pidAComparar;
+int nroPaginaAComparar;
+void * tamanioMarcosLibres;
 
 typedef struct{
     int pid;
@@ -23,6 +33,8 @@ typedef struct{
     bool validez;
 }fila_tabla_de_paginas;
 
+bool encontrarTablaPorPid(void * elemento);
+bool igualNumeroDePagina (void * elemento);
 int contarMarcosLibres();
 int cantidadTablaPaginas(int pid);
 t_tablaPaginas * buscarTablaDePaginas(int pid);
