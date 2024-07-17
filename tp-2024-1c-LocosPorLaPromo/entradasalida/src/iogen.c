@@ -11,20 +11,6 @@
 #include <fcntl.h>
 #include <utils/logger_concurrente.h>
 
-
-t_list * archivos_dial_fs;
-FILE * bloques;
-FILE * bitmap;
-t_bitarray * bitmap_archivos;
-void * espacio_bitmap;
-char * ruta_bitmap;
-char * ruta_bloques;
-char * nombre_a_borrar;
-void limpiarBitmap();
-bool archivoCreado(char * nombre);
-void borrarArchivoCompac(void * elemento);
-
-
 info_interfaz* crearTipoInterfaz(char* nombre, char* t_interfaz){
     info_interfaz* tipo_interfaz = malloc(sizeof(info_interfaz));
     tipo_interfaz->nombre = string_duplicate(nombre);
@@ -43,45 +29,48 @@ int casteoStringInterfaz(char* tipo_interfaz){
 
 int tamanioDireccionesFisicas(t_queue * direccionesFisicas, uint32_t cantidad_direccionesFisicas){
     int tamanioTotal = 0;
-    for (int i = 0; i < cantidad_direccionesFisicas; i++)
-    {
+    for (int i = 0; i < cantidad_direccionesFisicas; i++){
         t_direccionMemoria * direccion = list_get(direccionesFisicas->elements, i);
         tamanioTotal += direccion->tamanioEnvio;
-    }
-    return tamanioTotal;
+    } return tamanioTotal;
 } 
-
 
 void iniciarDialFS() {
     DIR * resultado_apertura = opendir(configuracion.PATH_BASE_DIALFS);
+    
     if(resultado_apertura == NULL){
         mkdir(configuracion.PATH_BASE_DIALFS, S_IRWXG | S_IRWXO | S_IRWXU);
         resultado_apertura = opendir(configuracion.PATH_BASE_DIALFS);
     }
+   
     struct dirent * archivo;
     archivo = readdir(resultado_apertura);
     while (archivo){
         if (archivoCreado(archivo->d_name)){
             char * nombre_archivo = string_duplicate(archivo->d_name);
             list_add(archivos_dial_fs, nombre_archivo);
-        }
+        } 
         archivo = readdir(resultado_apertura);
     }
+
     ruta_bitmap = string_duplicate(configuracion.PATH_BASE_DIALFS);
     string_append(&ruta_bitmap, "/bitmap.dat");
     bitmap = fopen(ruta_bitmap, "r+");
     espacio_bitmap = malloc(configuracion.BLOCK_COUNT/8);
     bitmap_archivos = bitarray_create_with_mode(espacio_bitmap, configuracion.BLOCK_COUNT/8, LSB_FIRST);
     limpiarBitmap();
+   
     if(bitmap == NULL){
         bitmap = fopen(ruta_bitmap, "w+");
     } else {
         fseek(bitmap, 0, SEEK_SET);
         fread(bitmap_archivos->bitarray, configuracion.BLOCK_COUNT/8, 1, bitmap);
     }
+    
     ruta_bloques = string_duplicate(configuracion.PATH_BASE_DIALFS);
     string_append(&ruta_bloques, "/bloques.dat");
     bloques = fopen(ruta_bloques, "r+");
+    
     if(bloques == NULL){
         bloques = fopen(ruta_bloques, "w+");
         uint32_t offset = 0;
@@ -108,8 +97,7 @@ bool hayEspacioLibre(int cantidadBloques){
     int bloquesLibres = 0;
     for(int i = 0; i < bitarray_get_max_bit(bitmap_archivos); i++) {
         bloquesLibres += bitarray_test_bit(bitmap_archivos, i);
-    }
-    return bloquesLibres >= cantidadBloques;
+    } return bloquesLibres >= cantidadBloques;
 }
 
 bool hayEspacioLibreContiguo(int bloque_inicial, int cantidad_bloques) {

@@ -19,6 +19,10 @@ extern void * espacio_bitmap;
 extern char * ruta_bitmap;
 extern char * ruta_bloques;
 extern char * nombre_a_borrar;
+t_list * archivos_dial_fs;
+FILE * bloques;
+FILE * bitmap;
+t_bitarray * bitmap_archivos;
 
 int casteoStringInterfaz(char* tipo_interfaz);
 int tamanioDireccionesFisicas(t_queue * direccionesFisicas, uint32_t cantidad_direccionesFisicas);
@@ -29,5 +33,12 @@ void iniciarDialFS();
 void compactar(char * nombre_archivo_pedido);
 int obtenerBloqueLibre();
 bool compararNombreArchivo(void * elemento);
+void * espacio_bitmap;
+char * ruta_bitmap;
+char * ruta_bloques;
+char * nombre_a_borrar;
+void limpiarBitmap();
+bool archivoCreado(char * nombre);
+void borrarArchivoCompac(void * elemento);
 
 #endif

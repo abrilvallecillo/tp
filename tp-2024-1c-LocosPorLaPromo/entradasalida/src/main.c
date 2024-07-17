@@ -19,13 +19,13 @@ int main(int argc, char* argv[]) {
     archivos_dial_fs = list_create();
 
     inicializarLogger("entradasalida.log", "Log de IO");
-    // Enviando un handshake para establecer la comunicación con él.
     char * direccion_config;
     if(argc < 3) {
         direccion_config = string_duplicate("entradasalida.config");
     } else {
         direccion_config = string_duplicate(argv[2]);
     }
+
     obtener_config(direccion_config);
 
     int conexion_kernel = crearConexionCliente(configuracion.IP_KERNEL, configuracion.PUERTO_KERNEL);
@@ -34,6 +34,7 @@ int main(int argc, char* argv[]) {
         fprintf(stderr, "Hubo problema al hacer el handshake con la memoria");
         abort();
     }
+    
     // Enviando un handshake para establecer la comunicación con él.
     int conexion_memoria = crearConexionCliente(configuracion.IP_MEMORIA, configuracion.PUERTO_MEMORIA);
     int handshake_memoria = enviarHandshake(conexion_memoria, ENTRADASALIDA);
@@ -42,40 +43,46 @@ int main(int argc, char* argv[]) {
         abort();
     }
     
-    
-    info_interfaz* tipo_interfaz = crearTipoInterfaz(argv[1], configuracion.TIPO_INTERFAZ);
+    info_interfaz* tipo_interfaz = crearTipoInterfaz(argv[1], configuracion.TIPO_INTERFAZ); //Genéricas, STDIN, STDOUT y DialFS
     t_buffer* buffer_interfaz = serializarInformacionInterfaz(tipo_interfaz);
     enviarBufferProcesoConMotivo(buffer_interfaz, INFO_INTERFAZ, conexion_kernel);
 
-    if(tipo_interfaz->tipo == DIALFS) {
-        iniciarDialFS();
-    }
+    if(tipo_interfaz->tipo == DIALFS) { iniciarDialFS();}
 
     while(1){
         t_paquete* paquete_kernel = recibirPaqueteGeneral(conexion_kernel);
         if(!paquete_kernel)
             break;
+
         switch(paquete_kernel->codigoOperacion){
+            
+            // -------------------------- Interfaces Genéricas --------------------------
+            
             case P_IO_GEN_SLEEP:
                 operacionIOGENSLEEP * operacion = deserializarOperacionIOGENSLEEP(paquete_kernel->buffer);
+
                 char * mensaje = string_from_format ("PID: %d - Operacion: %s", operacion->pid, "IO_GEN_SLEEP");
                 logInfoSincronizado(mensaje);
                 free(mensaje);
+
                 usleep(operacion->unidades_de_trabajo * configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 t_buffer* buffer = crearBufferGeneral(0);
                 enviarBufferProcesoConMotivo(buffer, P_IO_GEN_SLEEP, conexion_kernel);
                 free(operacion);
                 break;
+            
+            // -------------------------- Interfaces STDIN --------------------------
+            
             case P_IO_STDOUT_WRITE:
-                // Deserializar dirección física
                 operacionSTDInOut * operacionOut = deserializarOperacionSTDInOut(paquete_kernel->buffer);
+
                 mensaje = string_from_format ("PID: %d - Operacion: %s", operacionOut->pid, "IO_STDOUT_WRITE");
                 logInfoSincronizado(mensaje);
                 free(mensaje);
-                // Recibir valor desde la memoria
+                
                 int tamanio_a_reservar = tamanioDireccionesFisicas(operacionOut->direccionesFisicas, operacionOut->cantidad_direccionesFisicas); 
                 tamanio_a_reservar++;
-                void * valor = malloc(tamanio_a_reservar);
+                void * valor = malloc(tamanio_a_reservar); // espacio contiguo de memoria
                 int offset = 0;
                 while(tamanio_a_reservar > 0) {
                     tamanio_a_reservar -= 1;
@@ -85,31 +92,30 @@ int main(int argc, char* argv[]) {
                 }
                 char* valor_leido = hacerOperacionLecturaMemoria(operacionOut->direccionesFisicas, valor, operacionOut->pid, conexion_memoria);
 
-                // Mostrar el valor por pantalla
                 printf("Valor leído desde memoria: %s\n", valor_leido);
 
-                // Enviar confirmación al Kernel
                 t_buffer* buffer_confirmacion = crearBufferGeneral(0);
                 enviarBufferProcesoConMotivo(buffer_confirmacion, P_IO_STDOUT_WRITE, conexion_kernel);
+
                 free(valor_leido);
                 queue_destroy(operacionOut->direccionesFisicas);
                 free(operacionOut);
                 break;
+            
+            // -------------------------- Interfaces STDOUT --------------------------
+            
             case P_IO_STDIN_READ:
                 operacionSTDInOut * operacionIn = deserializarOperacionSTDInOut(paquete_kernel->buffer);
+
                 mensaje = string_from_format ("PID: %d - Operacion: %s", operacionIn->pid, "IO_STDIN_READ");
                 logInfoSincronizado(mensaje);
                 free(mensaje);
-                // Leer texto del usuario
+
                 char string[256];
                 printf("Ingrese texto: ");
                 fgets(string, 256, stdin);
-                string[strcspn(string, "\n")] = '\0';  // Remove newline character
-
-                // Deserializar dirección física
+                string[strcspn(string, "\n")] = '\0';  
                 
-                
-                // Enviar texto a la memoria
                 tamanio_a_reservar = tamanioDireccionesFisicas(operacionIn->direccionesFisicas, operacionIn->cantidad_direccionesFisicas); 
                 valor = malloc(tamanio_a_reservar);
                 offset = 0;
@@ -119,19 +125,24 @@ int main(int argc, char* argv[]) {
                     memcpy(valor + offset, &auxiliar, sizeof(char));
                     offset += sizeof(char);
                 }
+
                 int tamanio_stdin = string_length(string);
                 if(tamanio_stdin > tamanio_a_reservar) {
                     tamanio_stdin = tamanio_a_reservar;
                 }
                 memcpy(valor, string, tamanio_stdin);
                 hacerOperacionEscrituraMemoria(operacionIn->direccionesFisicas, valor, operacionIn->pid, conexion_memoria);
-                // Enviar confirmación al Kernel
+               
                 buffer_confirmacion = crearBufferGeneral(0);
                 enviarBufferProcesoConMotivo(buffer_confirmacion, P_IO_STDIN_READ, conexion_kernel);
+                
                 queue_destroy(operacionIn->direccionesFisicas);
                 free(operacionIn);
                 free(valor);
                 break;
+            
+            // -------------------------- Interfaces STDOUT --------------------------
+            
             case P_IO_FS_CREATE:
                 usleep(configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 operacionFSCREADEL * operacionFSC = deserializarOperacionFSCREADEL(paquete_kernel->buffer);
@@ -167,6 +178,7 @@ int main(int argc, char* argv[]) {
                 free(operacionFSC->nombre_archivo);
                 free(operacionFSC);
                 break;
+
             case P_IO_FS_DELETE:
                 usleep(configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 operacionFSCREADEL * operacionFSD = deserializarOperacionFSCREADEL(paquete_kernel->buffer);
@@ -205,6 +217,7 @@ int main(int argc, char* argv[]) {
                 free(operacionFSD->nombre_archivo);
                 free(operacionFSD);
                 break;
+            
             case P_IO_FS_TRUNCATE:
                 usleep(configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 operacionFSTRUN * operacionSTRUN = deserializarOperacionFSTRUN(paquete_kernel->buffer);
@@ -272,6 +285,7 @@ int main(int argc, char* argv[]) {
                 free(operacionSTRUN->nombre_archivo);
                 free(operacionSTRUN);
                 break;
+            
             case P_IO_FS_WRITE:
                 usleep(configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 operacionFSWR * operacionW = deserializarOperacionFSWR(paquete_kernel->buffer);
@@ -306,6 +320,7 @@ int main(int argc, char* argv[]) {
                 queue_destroy(operacionW->direccionesFisicas);
                 free(operacionW);
                 break;
+            
             case P_IO_FS_READ:
                 usleep(configuracion.TIEMPO_UNIDAD_TRABAJO * 1000);
                 operacionFSWR * operacionR = deserializarOperacionFSWR(paquete_kernel->buffer);
@@ -337,6 +352,7 @@ int main(int argc, char* argv[]) {
                 queue_destroy(operacionR->direccionesFisicas);
                 free(operacionR);
                 break;
+            
             default: 
                 fprintf(stderr, "No se encontro la operacion");            
         }
