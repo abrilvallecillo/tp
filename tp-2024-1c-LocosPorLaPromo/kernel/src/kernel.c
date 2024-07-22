@@ -6,14 +6,172 @@
 #include <utils/logger_concurrente.h>
 #include "configuracion.h"
 
+uint32_t pid_cola;
+char * nombre_a_comparar;
+pthread_mutex_t * mutex_nombre_recurso;
+uint32_t pid_comparar_estado;
+pthread_mutex_t  * mutex_pid_comparar;
+
+// -------------------------- Ejecutar Script de Operaciones --------------------------
+
+void leer_linea(char* leer_cadena){
+    char** array_cadena = string_split(leer_cadena, " ");
+    ejecutarComando(array_cadena[0], array_cadena[1]);
+     string_array_destroy(array_cadena);
+}
+
+// -------------------------- Iniciar proceso --------------------------
+
+peticion_memoria * CrearPeticionCrearProceso(char * ruta_codigo) {
+    peticion_memoria * crear_proceso = crearPeticionMemoria(CREAR_PROCESO);
+    int * pid = malloc(sizeof(int));
+    int * quantum = malloc(sizeof(int));
+    int * longitud_ruta_codigo = malloc(sizeof(int));
+    *pid = pid_nuevo_proceso;
+    *quantum = configuracion.QUANTUM;
+    *longitud_ruta_codigo = strlen(ruta_codigo) + 1;
+    queue_push(crear_proceso->cola_parametros, pid);
+    queue_push(crear_proceso->cola_parametros, quantum);
+    queue_push(crear_proceso->cola_parametros, longitud_ruta_codigo);
+    char * ruta_dupli = string_duplicate(ruta_codigo);
+    queue_push(crear_proceso->cola_parametros, ruta_dupli);
+    return crear_proceso;
+}
+
+// -------------------------- Finalizar Proceso --------------------------
+
+int obtenerEstadoPorPID(uint32_t pid) {
+    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
+    if(estado_pedido == NULL)
+        return -1;
+    return estado_pedido->estado; 
+}
+
+void buscarYTratarDeEliminarEn(estado_procesos estado_actual, uint32_t pid){
+    pcb * pcb_a_matar = buscarPCBAEliminar(estado_actual, pid);
+    
+    if(pcb_a_matar) {
+        agregarAColaExit(pcb_a_matar, "INTERRUPTED_BY_USER");
+    }
+}
+
+pcb * buscarPCBAEliminar(estado_procesos estado_actual, uint32_t pid) {
+    pcb * pcb_encontrado;
+
+    switch (estado_actual) {
+        case NEW:
+            pcb_encontrado = buscarYExtraerDeCola(cola_new, pid);
+            
+            break;
+
+        case READY:
+            pcb_encontrado = buscarYExtraerDeCola(cola_ready, pid);
+
+            if(pcb_encontrado == NULL){
+                pcb_encontrado = buscarYExtraerDeCola(cola_ready_vrr, pid);
+            }
+
+            break;
+
+        case BLOCKED:
+            bool esRecurso = obtenerBloqueadorPorPID(pid);
+            char * nombre_bloq = obtenerNombreBloqueadorPorPID(pid);
+           
+            if(esRecurso) { // No espera recurso
+                t_recurso * recurso = buscarRecurso(nombre_bloq);
+                pcb_encontrado = buscarYExtraerDeCola(recurso->cola_procesos_bloqueados, pid);
+
+            } else {
+                t_interfaz_kernel * interfaz = encontrarInterfazEnLista(nombre_bloq);
+                
+                if(interfaz != NULL) {
+                    pcb_encontrado = buscarYExtraerDeCola(interfaz->cola_bloqueados, pid);
+                }
+            }
+
+            break;
+
+        default:
+            fprintf(stderr, "Error, estado desconocido");
+            break;
+            
+    } return pcb_encontrado;
+}
+
+pcb * buscarYExtraerDeCola(cola_sincronizada * cola_sinc, uint32_t pid) {
+
+    pthread_mutex_lock(cola_sinc->mutex_cola);
+        pid_cola = pid;
+        pcb * pcb_elegido = (pcb *) list_find(cola_sinc->cola->elements, encontrarPcbPID);
+        list_remove_element(cola_sinc->cola->elements, pcb_elegido);
+    pthread_mutex_unlock(cola_sinc->mutex_cola);
+
+    return pcb_elegido;
+}
+
+bool encontrarPcbPID(void * proces) {
+    pcb * proceso = (pcb *) proces;
+    return proceso->PID == pid_cola;
+}
+
+bool obtenerBloqueadorPorPID(uint32_t pid) {
+    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
+    return estado_pedido->bloqueadoPorRecurso; 
+}
+
+char * obtenerNombreBloqueadorPorPID(uint32_t pid) {
+    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
+    return estado_pedido->elemento_bloqueador; 
+}
+
+t_estado_proceso * encontrarEstadoPorPID(uint32_t pid) {
+    
+    pthread_mutex_lock(mutex_pid_comparar);
+        pid_comparar_estado = pid;
+        t_estado_proceso * estado = (t_estado_proceso *) list_find(lista_estados, encontrarEstadoPid);
+    pthread_mutex_unlock(mutex_pid_comparar);
+    
+    return estado;
+}
+t_recurso * buscarRecurso(char * nombre_recurso) {
+
+    pthread_mutex_lock(mutex_nombre_recurso);
+        nombre_a_comparar = string_duplicate(nombre_recurso);
+        t_recurso * recurso = (t_recurso *) list_find(lista_recursos, compararNombre);
+        free(nombre_a_comparar);
+        
+        pthread_mutex_unlock(mutex_nombre_recurso);
+    return recurso;
+}
+
+t_interfaz_kernel * encontrarInterfazEnLista(char * nombre_interfaz) {
+
+    pthread_mutex_lock(mutex_lista_interfaces);
+        nombre_interfaz_a_comparar = string_duplicate(nombre_interfaz);
+        t_interfaz_kernel * interfaz_encontrada = (t_interfaz_kernel *) list_find(lista_interfaces, interfazTieneNombre);
+       
+        free(nombre_interfaz_a_comparar);
+    pthread_mutex_unlock(mutex_lista_interfaces);
+
+    return interfaz_encontrada;
+}
+
+// -------------------------- Listar Estados de Procesos --------------------------
+
+void listarPIDsyEstadosActuales() {
+
+    pthread_mutex_lock(mutex_pid_comparar);
+        list_iterate(lista_estados, mostrarPIDsYEstados);
+    pthread_mutex_unlock(mutex_pid_comparar);
+}
+
+// --------------------------  --------------------------
+
 
 algoritmo algoritmoPorString(char* algoritmo) {
-    if(strcmp(algoritmo, "FIFO") == 0) 
-        return FIFO;
-    else if(strcmp(algoritmo, "RR") == 0)
-        return RR;
-    else
-        return VRR;
+    if(strcmp(algoritmo, "FIFO") == 0) return FIFO;
+    else if(strcmp(algoritmo, "RR") == 0) return RR;
+    else return VRR;
 }
 
 cola_sincronizada * crearCola() {
@@ -34,6 +192,7 @@ void agregarACola(cola_sincronizada * cola_elegida, void * valor) {
     queue_push(cola_elegida->cola, valor);
     pthread_mutex_unlock(cola_elegida->mutex_cola);
 }
+
 void * sacarDeCola(cola_sincronizada * cola_elegida) {
     pthread_mutex_lock(cola_elegida->mutex_cola);
     void * valor = queue_pop(cola_elegida->cola);
@@ -114,14 +273,6 @@ bool interfazPuedeRealizarOperacion(codigos_operacion codigo, char * nombre_inte
     }
 }
 
-t_interfaz_kernel * encontrarInterfazEnLista(char * nombre_interfaz) {
-    pthread_mutex_lock(mutex_lista_interfaces);
-    nombre_interfaz_a_comparar = string_duplicate(nombre_interfaz);
-    t_interfaz_kernel * interfaz_encontrada = (t_interfaz_kernel *) list_find(lista_interfaces, interfazTieneNombre);
-    free(nombre_interfaz_a_comparar);
-    pthread_mutex_unlock(mutex_lista_interfaces);
-    return interfaz_encontrada;
-}
 
 void agregarInterfazALista(t_interfaz_kernel * interfaz_actual) {
     pthread_mutex_lock(mutex_lista_interfaces);
@@ -152,18 +303,10 @@ void agregarAColaReadyComun(pcb *proceso) {
     sem_post(hay_procesos_cola_ready);
 }
 
-char * nombre_a_comparar;
-pthread_mutex_t * mutex_nombre_recurso;
 
 
-t_recurso * buscarRecurso(char * nombre_recurso) {
-    pthread_mutex_lock(mutex_nombre_recurso);
-    nombre_a_comparar = string_duplicate(nombre_recurso);
-    t_recurso * recurso = (t_recurso *) list_find(lista_recursos, compararNombre);
-    free(nombre_a_comparar);
-    pthread_mutex_unlock(mutex_nombre_recurso);
-    return recurso;
-}
+
+
 
 bool compararNombre(void * recurso) {
     t_recurso * recurso_elegido = (t_recurso *) recurso;
@@ -184,15 +327,7 @@ void cargarRecursos() {
     }
 }
 
-uint32_t pid_comparar_estado;
-pthread_mutex_t  * mutex_pid_comparar;
 
-int obtenerEstadoPorPID(uint32_t pid) {
-    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
-    if(estado_pedido == NULL)
-        return -1;
-    return estado_pedido->estado; 
-}
 
 bool encontrarEstadoPid(void * elemento) {
     t_estado_proceso * estado_pedido = (t_estado_proceso *) elemento;
@@ -205,16 +340,11 @@ void cambiarEstadoLista(uint32_t pid, estado_procesos estado_nuevo) {
 }
 
 char * obtenerEstadoString(estado_procesos estado){
-    if(estado == NEW)
-        return "NEW";
-    else if(estado == READY) 
-        return "READY";
-    else if(estado == BLOCKED) 
-        return "BLOCKED";
-    else if(estado == EXEC)
-        return "EXEC";
-    else
-        return "EXIT";
+    if(estado == NEW) return "NEW";
+    else if(estado == READY) return "READY";
+    else if(estado == BLOCKED) return "BLOCKED";
+    else if(estado == EXEC) return "EXEC";
+    else return "EXIT";
 }
 
 void avisarYCambiarEstado(uint32_t pid, estado_procesos estado_actual) {
@@ -312,71 +442,7 @@ void hacerWaitOFinalizar(t_recurso * recurso, pcb * pcb_hace_wait) {
     }
 }
 
-void buscarYTratarDeEliminarEn(estado_procesos estado_actual, uint32_t pid){
-    pcb * pcb_a_matar = buscarPCBAEliminar(estado_actual, pid);
-    if(pcb_a_matar) {
-        agregarAColaExit(pcb_a_matar, "INTERRUPTED_BY_USER");
-    }
-}
 
-pcb * buscarPCBAEliminar(estado_procesos estado_actual, uint32_t pid) {
-    pcb * pcb_encontrado;
-    switch (estado_actual) {
-        case NEW:
-            pcb_encontrado = buscarYExtraerDeCola(cola_new, pid);
-            break;
-        case READY:
-            pcb_encontrado = buscarYExtraerDeCola(cola_ready, pid);
-            if(pcb_encontrado == NULL){
-                pcb_encontrado = buscarYExtraerDeCola(cola_ready_vrr, pid);
-            }
-            break;
-        case BLOCKED:
-            bool esRecurso = obtenerBloqueadorPorPID(pid);
-            char * nombre_bloq = obtenerNombreBloqueadorPorPID(pid);
-            if(esRecurso) {
-                t_recurso * recurso = buscarRecurso(nombre_bloq);
-                pcb_encontrado = buscarYExtraerDeCola(recurso->cola_procesos_bloqueados, pid);
-            } else {
-                t_interfaz_kernel * interfaz = encontrarInterfazEnLista(nombre_bloq);
-                if(interfaz != NULL) {
-                    pcb_encontrado = buscarYExtraerDeCola(interfaz->cola_bloqueados, pid);
-                }
-            }
-            break;
-        default:
-            fprintf(stderr, "Error, estado desconocido");
-            break;
-    }
-
-    return pcb_encontrado;
-}
-
-uint32_t pid_cola;
-
-pcb * buscarYExtraerDeCola(cola_sincronizada * cola_sinc, uint32_t pid) {
-    pthread_mutex_lock(cola_sinc->mutex_cola);
-    pid_cola = pid;
-    pcb * pcb_elegido = (pcb *) list_find(cola_sinc->cola->elements, encontrarPcbPID);
-    list_remove_element(cola_sinc->cola->elements, pcb_elegido);
-    pthread_mutex_unlock(cola_sinc->mutex_cola);
-    return pcb_elegido;
-}
-
-bool encontrarPcbPID(void * proces) {
-    pcb * proceso = (pcb *) proces;
-    return proceso->PID == pid_cola;
-}
-
-bool obtenerBloqueadorPorPID(uint32_t pid) {
-    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
-    return estado_pedido->bloqueadoPorRecurso; 
-}
-
-char * obtenerNombreBloqueadorPorPID(uint32_t pid) {
-    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
-    return estado_pedido->elemento_bloqueador; 
-}
 
 void setearTipoBloqueadorYNombreEnSistema(uint32_t pid, bool es_recurso, char * nombre_bloqueador) {
     t_estado_proceso * estado_a_actualizar = encontrarEstadoPorPID(pid);
@@ -438,19 +504,9 @@ void liberarInstanciasRecurso(void * recurso_tom) {
     free(recurso_a_liberar);
 }
 
-t_estado_proceso * encontrarEstadoPorPID(uint32_t pid) {
-    pthread_mutex_lock(mutex_pid_comparar);
-    pid_comparar_estado = pid;
-    t_estado_proceso * estado = (t_estado_proceso *) list_find(lista_estados, encontrarEstadoPid);
-    pthread_mutex_unlock(mutex_pid_comparar);
-    return estado;
-}
 
-void listarPIDsyEstadosActuales() {
-    pthread_mutex_lock(mutex_pid_comparar);
-    list_iterate(lista_estados, mostrarPIDsYEstados);
-    pthread_mutex_unlock(mutex_pid_comparar);
-}
+
+
 
 void mostrarPIDsYEstados(void * elemento_estado) {
     t_estado_proceso * estado_proces = (t_estado_proceso *)elemento_estado;
@@ -458,39 +514,45 @@ void mostrarPIDsYEstados(void * elemento_estado) {
 }
 
 void listarPIDsEnReadyComun() {
+
     pthread_mutex_lock(cola_ready->mutex_cola);
-    t_list * lista_proces_ready = cola_ready->cola->elements;
-    t_list * lista_string_pid_ready = list_map(lista_proces_ready, transformarEstadoProcesoAString);
-    char * mensaje_en_partes = string_new();
-    string_append(&mensaje_en_partes, "Cola Ready: [ ");
-    while(!list_is_empty(lista_string_pid_ready)) {
-        char * pid = list_remove(lista_string_pid_ready, 0);
-        string_append(&mensaje_en_partes, pid);
-        free(pid);
-    }
-    string_append(&mensaje_en_partes, " ]");
-    logInfoSincronizado(mensaje_en_partes);
-    list_destroy(lista_string_pid_ready);
-    free(mensaje_en_partes);
+        t_list * lista_proces_ready = cola_ready->cola->elements;
+        t_list * lista_string_pid_ready = list_map(lista_proces_ready, transformarEstadoProcesoAString);
+        char * mensaje_en_partes = string_new();
+        string_append(&mensaje_en_partes, "Cola Ready: [ ");
+       
+        while(!list_is_empty(lista_string_pid_ready)) {
+            char * pid = list_remove(lista_string_pid_ready, 0);
+            string_append(&mensaje_en_partes, pid);
+            free(pid);
+        }
+
+        string_append(&mensaje_en_partes, " ]");
+        logInfoSincronizado(mensaje_en_partes);
+        list_destroy(lista_string_pid_ready);
+        free(mensaje_en_partes);
     pthread_mutex_unlock(cola_ready->mutex_cola);
 }
 
 
 void listarPIDsEnReadyPlus() {
+
     pthread_mutex_lock(cola_ready_vrr->mutex_cola);
-    t_list * lista_proces_ready = cola_ready_vrr->cola->elements;
-    t_list * lista_string_pid_ready = list_map(lista_proces_ready, transformarEstadoProcesoAString);
-    char * mensaje_en_partes = string_new();
-    string_append(&mensaje_en_partes, "Cola Ready Prioridad: [ ");
-    while(!list_is_empty(lista_string_pid_ready)) {
-        char * pid = list_remove(lista_string_pid_ready, 0);
-        string_append(&mensaje_en_partes, pid);
-        free(pid);
-    }
-    string_append(&mensaje_en_partes, " ]");
-    logInfoSincronizado(mensaje_en_partes);
-    list_destroy(lista_string_pid_ready);
-    free(mensaje_en_partes);
+        t_list * lista_proces_ready = cola_ready_vrr->cola->elements;
+        t_list * lista_string_pid_ready = list_map(lista_proces_ready, transformarEstadoProcesoAString);
+        char * mensaje_en_partes = string_new();
+        string_append(&mensaje_en_partes, "Cola Ready Prioridad: [ ");
+       
+        while(!list_is_empty(lista_string_pid_ready)) {
+            char * pid = list_remove(lista_string_pid_ready, 0);
+            string_append(&mensaje_en_partes, pid);
+            free(pid);
+        }
+        
+        string_append(&mensaje_en_partes, " ]");
+        logInfoSincronizado(mensaje_en_partes);
+        list_destroy(lista_string_pid_ready);
+        free(mensaje_en_partes);
     pthread_mutex_unlock(cola_ready_vrr->mutex_cola);
 }
 
@@ -500,14 +562,16 @@ void * transformarEstadoProcesoAString(void * elemento) {
 }
 
 void agregarAListaEstados(t_estado_proceso *estado_nuevo) {
+   
     pthread_mutex_lock(mutex_pid_comparar);
-    list_add(lista_estados, estado_nuevo);
+        list_add(lista_estados, estado_nuevo);
     pthread_mutex_unlock(mutex_pid_comparar);
 }
 
 void eliminarInterfazDeSistema(t_interfaz_kernel * interfaz_actual) {
+   
     pthread_mutex_lock(mutex_lista_interfaces);
-    list_remove_element(lista_interfaces, interfaz_actual);
+        list_remove_element(lista_interfaces, interfaz_actual);
     pthread_mutex_unlock(mutex_lista_interfaces);
 }
 
@@ -518,10 +582,11 @@ void agregarMutexInterfazAlSistema(t_mutex_eliminacion_interfaz * nuevo_mutex){
 char * nombre_mutex_interfaz_comparar;
 
 t_mutex_eliminacion_interfaz * buscarMutexEliminacionLista(char * nombre_interfaz) {
+    
     pthread_mutex_lock(lista_mutex_eliminacion_interfaz->mutex_lista);
-    nombre_mutex_interfaz_comparar = string_duplicate(nombre_interfaz);
-    t_mutex_eliminacion_interfaz * mutex_nuevo = list_find(lista_mutex_eliminacion_interfaz->lista, encontrarMutexEliminacionPorNombre);
-    free(nombre_mutex_interfaz_comparar);
+        nombre_mutex_interfaz_comparar = string_duplicate(nombre_interfaz);
+        t_mutex_eliminacion_interfaz * mutex_nuevo = list_find(lista_mutex_eliminacion_interfaz->lista, encontrarMutexEliminacionPorNombre);
+        free(nombre_mutex_interfaz_comparar);
     pthread_mutex_unlock(lista_mutex_eliminacion_interfaz->mutex_lista);
     return mutex_nuevo;
 }

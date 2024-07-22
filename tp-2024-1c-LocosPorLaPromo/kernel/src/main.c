@@ -18,7 +18,6 @@
 #include <string.h>
 
 int main(int argc, char* argv[]) {
-
     
     //Inicializamos las colas, el logger y el config
     cola_memoria = crearCola();
@@ -27,6 +26,7 @@ int main(int argc, char* argv[]) {
     cola_ready_vrr = crearCola();
     cola_exit = crearCola();
     inicializarLogger("Log del Kernel", "kernel.log");
+
     solicitaron_finalizar_proceso = crearSemaforo(0);
     no_surgio_otra_interrupcion = crearSemaforo(0);
     hay_peticion_en_cola = crearSemaforo(0);
@@ -35,6 +35,7 @@ int main(int argc, char* argv[]) {
     hay_procesos_cola_exit = crearSemaforo(0);
     hay_procesos_cola_new = crearSemaforo(0);
     hay_procesos_cola_ready = crearSemaforo(0);
+    
     pid_nuevo_proceso = 0;
     lista_interfaces = list_create();
     lista_recursos = list_create();
