@@ -36,11 +36,13 @@ typedef struct {
     uint32_t DI;
 }registros_CPU; //registros propios que va a usar la CPU
 
+// -------------------------- PCB --------------------------
+
 typedef struct {
-    uint32_t PID;
-    uint32_t PC;
-    uint32_t Quantum;
-    registros_generales registros;
+    uint32_t PID; // Identificador del proceso (deberá ser un número entero, único en todo el sistema).
+    uint32_t PC; // Número de la próxima instrucción a ejecutar.
+    uint32_t Quantum; // Unidad de tiempo utilizada por el algoritmo de planificación VRR.
+    registros_generales registros; // Estructura que contendrá los valores de los registros de uso general de la CPU.
 } pcb;
 
 typedef enum {

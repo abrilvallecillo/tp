@@ -67,6 +67,19 @@ typedef struct{
     pthread_mutex_t * mutex;
 } t_mutex_eliminacion_interfaz;
 
+typedef struct {
+    datos_conexion_h conexion;
+    char * tipo_de_algoritmo;
+} datos_planificacion;
+
+
+typedef enum {
+    FIFO,
+    RR,
+    VRR
+} algoritmo;
+
+
 cola_sincronizada * crearCola();
 void agregarACola(cola_sincronizada * cola_elegida, void * valor);
 void * sacarDeCola(cola_sincronizada * cola_elegida);
@@ -112,17 +125,6 @@ extern sem_t * hay_procesos_cola_new;
 extern sem_t * hay_procesos_cola_ready;
 extern entero_sincronizado * quantum_actual;
 
-typedef struct {
-    datos_conexion_h conexion;
-    char * tipo_de_algoritmo;
-} datos_planificacion;
-
-
-typedef enum {
-    FIFO,
-    RR,
-    VRR
-} algoritmo;
 
 extern algoritmo algoritmo_elegido;
 

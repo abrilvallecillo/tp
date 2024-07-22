@@ -9,16 +9,15 @@
 #include <commons/string.h>
 #include "configuracion.h"
 
-
 void *planificarProcesos(void * sin_parametro){
     int conexion_cpu_dispatch = crearConexionCliente(configuracion.IP_CPU, configuracion.PUERTO_CPU_DISPATCH);
     int handshake_cpu_dispatch = enviarHandshake(conexion_cpu_dispatch, KERNEL);
+   
     if(handshake_cpu_dispatch == -1) {
         fprintf(stderr, "Hubo problema al hacer el handshake con la memoria");
         abort();
     }
 
-    
     //Crear hilo control new ready y hilo de estado a exit
     pasar_procesos_estado_exit = crearHilo(pasarProcesosEstadoAExit, NULL);
     pasar_procesos_new_ready = crearHilo(pasarProcesosNewAReady, NULL);
@@ -139,8 +138,7 @@ void enviarContexto(pcb * proceso_a_enviar, int conexion_cpu_dispatch) {
 void operarSegunMotivoDesalojo(t_paquete * proceso_desalojado_paq, int conexion_cpu_dispatch) {
     pcb * proceso_recibido; 
     codigos_operacion motivo = proceso_desalojado_paq->codigoOperacion;
-    switch (motivo)
-    {
+    switch (motivo){
         case P_EXIT:
             proceso_recibido = deserializarProceso(proceso_desalojado_paq->buffer);
             temporal_stop(cronometro_vrr);

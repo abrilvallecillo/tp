@@ -99,7 +99,8 @@ void ejecutarComando(char *comando, char *parametro) {
 
     // -------------------------- Detener Planificacion --------------------------
     // Este mensaje se encargará de pausar la planificación de corto y largo plazo. 
-    // El proceso que se encuentra en ejecución NO es desalojado, pero una vez que salga de EXEC se va a pausar el manejo de su motivo de desalojo. De la misma forma, los procesos bloqueados van a pausar su transición a la cola de Ready.
+    // El proceso que se encuentra en ejecución NO es desalojado, pero una vez que salga de EXEC se va a pausar el manejo de su motivo de desalojo. 
+    // De la misma forma, los procesos bloqueados van a pausar su transición a la cola de Ready.
 
     if (!strcmp(comando, "DETENER_PLANIFICACION")) {
         if(!detenerPlanificacion) {
@@ -128,10 +129,11 @@ void ejecutarComando(char *comando, char *parametro) {
     if (!strcmp(comando, "MULTIPROGRAMACION")){
         int valor = (int) strtol(parametro, NULL, 10);
         modificarEnteroSincronizado(grado_multiprogramacion, valor);
-        modificarEnteroSincronizado(diferencia_cambio_mp, valor - configuracion.GRADO_MULTIPROGRAMACION);
+        modificarEnteroSincronizado(diferencia_cambio_mp, valor - configuracion.GRADO_MULTIPROGRAMACION); // variacion del grado de multiprogramacion
         
         int delta_MP = leerEnteroSincronizado(diferencia_cambio_mp); 
-        while(delta_MP > 0){
+        
+        while(delta_MP > 0){ // Auemnto el grado de multiporgramacion
             sem_post(grado_multiprogramacion_habilita);
             disminuirEnteroSincronizado(diferencia_cambio_mp);
             delta_MP = leerEnteroSincronizado(diferencia_cambio_mp); 

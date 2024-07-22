@@ -12,6 +12,8 @@ pthread_mutex_t * mutex_nombre_recurso;
 uint32_t pid_comparar_estado;
 pthread_mutex_t  * mutex_pid_comparar;
 
+// -------------------------- CONSOLA --------------------------
+
 // -------------------------- Ejecutar Script de Operaciones --------------------------
 
 void leer_linea(char* leer_cadena){
@@ -165,7 +167,8 @@ void listarPIDsyEstadosActuales() {
     pthread_mutex_unlock(mutex_pid_comparar);
 }
 
-// --------------------------  --------------------------
+
+
 
 
 algoritmo algoritmoPorString(char* algoritmo) {
