@@ -185,6 +185,7 @@ pcb * CrearProceso(inicializar_proceso * peticion) {
     pcb_nuevo->registros.ECX = 0;
     pcb_nuevo->registros.EDX = 0; 
     pcb_nuevo->Quantum = peticion->quantum;
+    
     codigo_nuevo->pid = peticion->pid;
 
     char * direccion = string_duplicate(configuracion.PATH_INSTRUCCIONES);

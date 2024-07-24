@@ -135,6 +135,13 @@ t_estado_proceso * encontrarEstadoPorPID(uint32_t pid) {
     
     return estado;
 }
+
+
+bool encontrarEstadoPid(void * elemento) {
+    t_estado_proceso * estado_pedido = (t_estado_proceso *) elemento;
+    return estado_pedido->PID == pid_comparar_estado;
+}
+
 t_recurso * buscarRecurso(char * nombre_recurso) {
 
     pthread_mutex_lock(mutex_nombre_recurso);
@@ -144,6 +151,11 @@ t_recurso * buscarRecurso(char * nombre_recurso) {
         
         pthread_mutex_unlock(mutex_nombre_recurso);
     return recurso;
+}
+
+bool compararNombre(void * recurso) {
+    t_recurso * recurso_elegido = (t_recurso *) recurso;
+    return !strcmp(recurso_elegido->nombre_recurso, nombre_a_comparar);
 }
 
 t_interfaz_kernel * encontrarInterfazEnLista(char * nombre_interfaz) {
@@ -167,213 +179,25 @@ void listarPIDsyEstadosActuales() {
     pthread_mutex_unlock(mutex_pid_comparar);
 }
 
-
-
-
-
-algoritmo algoritmoPorString(char* algoritmo) {
-    if(strcmp(algoritmo, "FIFO") == 0) return FIFO;
-    else if(strcmp(algoritmo, "RR") == 0) return RR;
-    else return VRR;
+void mostrarPIDsYEstados(void * elemento_estado) {
+    t_estado_proceso * estado_proces = (t_estado_proceso *)elemento_estado;
+    printf("\nPID: %d -Estado: %s", estado_proces->PID, obtenerEstadoString(estado_proces->estado));
 }
 
-cola_sincronizada * crearCola() {
-    cola_sincronizada * cola_sincro = malloc(sizeof(cola_sincronizada));
-    cola_sincro->cola = queue_create();
-    if(!cola_sincro->cola) {
-        fprintf(stderr, "Error al crear la cola");
-        abort();
-    }
-    cola_sincro->mutex_cola = malloc(sizeof(pthread_mutex_t));
-    crearMutex(cola_sincro->mutex_cola);
+// -------------------------- Planificador --------------------------
 
-    return cola_sincro;
-}
-
-void agregarACola(cola_sincronizada * cola_elegida, void * valor) {
-    pthread_mutex_lock(cola_elegida->mutex_cola);
-    queue_push(cola_elegida->cola, valor);
-    pthread_mutex_unlock(cola_elegida->mutex_cola);
+void verSiPararPlanificacion() {
+    sem_wait(hay_que_parar_planificacion);
+    sem_post(hay_que_parar_planificacion);
 }
 
 void * sacarDeCola(cola_sincronizada * cola_elegida) {
+
     pthread_mutex_lock(cola_elegida->mutex_cola);
-    void * valor = queue_pop(cola_elegida->cola);
+        void * valor = queue_pop(cola_elegida->cola);
     pthread_mutex_unlock(cola_elegida->mutex_cola);
+
     return valor;
-}
-
-bool colaSincronizadaEstaVacia(cola_sincronizada * cola_elegida) {
-    pthread_mutex_lock(cola_elegida->mutex_cola);
-    bool resultado = queue_is_empty(cola_elegida->cola);
-    pthread_mutex_unlock(cola_elegida->mutex_cola);
-    return resultado;
-}
-
-void eliminarColaSincronizadaYElementos(cola_sincronizada * cola_elegida, void (*funcion_eliminadora) (void *)) {
-    pthread_mutex_lock(cola_elegida->mutex_cola);
-    queue_destroy_and_destroy_elements(cola_elegida->cola, funcion_eliminadora);
-    pthread_mutex_unlock(cola_elegida->mutex_cola);
-    pthread_mutex_destroy(cola_elegida->mutex_cola);
-    free(cola_elegida->mutex_cola);
-    free(cola_elegida);
-}
-
-void eliminarColaSincronizada(cola_sincronizada * cola_elegida) {
-    queue_destroy(cola_elegida->cola);
-    pthread_mutex_destroy(cola_elegida->mutex_cola);
-    free(cola_elegida->mutex_cola);
-    free(cola_elegida);
-}
-
-void avisarCambioEstado(uint32_t pid, const char * estado_anterior, const char * estado_actual) {
-    char * aviso_cambio_estado = string_from_format("PID: %d - Estado Anterior: %s - Estado Actual: %s ", pid, estado_anterior, estado_actual);
-    logInfoSincronizado(aviso_cambio_estado);
-    free(aviso_cambio_estado);
-}
-
-void avisarBloqueo(uint32_t pid, const char * nombre_recurso_o_interfaz) {
-    char * avisarBloqueo = string_from_format("PID: %d - Bloqueado por: %s", pid, nombre_recurso_o_interfaz);
-    logInfoSincronizado(avisarBloqueo);
-    free(avisarBloqueo);
-}
-
-bool existeInterfazEnSistema(char * nombre_interfaz) {
-    pthread_mutex_lock(mutex_lista_interfaces);
-    nombre_interfaz_a_comparar = string_duplicate(nombre_interfaz);
-    bool resultado = list_any_satisfy(lista_interfaces, interfazTieneNombre);
-    free(nombre_interfaz_a_comparar);
-    pthread_mutex_unlock(mutex_lista_interfaces);
-    return resultado;
-}
-
-bool interfazTieneNombre(void * interfaz) {
-    t_interfaz_kernel * interfaz_elegida = (t_interfaz_kernel *) interfaz;
-    return !strcmp(nombre_interfaz_a_comparar, interfaz_elegida->nombre_interfaz);
-}
-bool interfazPuedeRealizarOperacion(codigos_operacion codigo, char * nombre_interfaz) {
-    t_interfaz_kernel * interfaz_encontrada = encontrarInterfazEnLista(nombre_interfaz);
-    
-    if(interfaz_encontrada == NULL)
-        return false;
-    
-    switch(codigo){
-        case P_IO_GEN_SLEEP:
-            return interfaz_encontrada->tipo_de_interfaz == GENERICA;
-        case P_IO_STDIN_READ:
-            return interfaz_encontrada->tipo_de_interfaz == STDIN;
-        case P_IO_STDOUT_WRITE:
-            return interfaz_encontrada->tipo_de_interfaz == STDOUT;
-        case P_IO_FS_CREATE:
-        case P_IO_FS_DELETE:
-        case P_IO_FS_READ:
-        case P_IO_FS_TRUNCATE:
-        case P_IO_FS_WRITE:
-            return interfaz_encontrada->tipo_de_interfaz == DIALFS;
-        default:
-            fprintf(stderr, "Error: operacion desconocida!");
-            return false;
-    }
-}
-
-
-void agregarInterfazALista(t_interfaz_kernel * interfaz_actual) {
-    pthread_mutex_lock(mutex_lista_interfaces);
-    list_add(lista_interfaces, interfaz_actual);
-    pthread_mutex_unlock(mutex_lista_interfaces);
-}
-
-
-
-void agregarAColaReadySegunAlgoritmoQuantum(pcb *proceso_bloqueado) {
-    uint32_t pid = proceso_bloqueado->PID;
-    avisarYCambiarEstado(pid, READY);
-    if(proceso_bloqueado->Quantum > 0 && algoritmo_elegido == VRR) {
-        indicarSiEstaEnReadyComunONo(pid, true);
-        agregarACola(cola_ready_vrr, proceso_bloqueado);
-        listarPIDsEnReadyPlus();
-        sem_post(hay_procesos_cola_ready);
-    } else {
-        indicarSiEstaEnReadyComunONo(pid, false);
-        agregarAColaReadyComun(proceso_bloqueado);
-    }
-}
-
-void agregarAColaReadyComun(pcb *proceso) {
-    proceso->Quantum = configuracion.QUANTUM;
-    agregarACola(cola_ready, proceso);
-    listarPIDsEnReadyComun();
-    sem_post(hay_procesos_cola_ready);
-}
-
-
-
-
-
-
-bool compararNombre(void * recurso) {
-    t_recurso * recurso_elegido = (t_recurso *) recurso;
-    return !strcmp(recurso_elegido->nombre_recurso, nombre_a_comparar);
-}
-
-void cargarRecursos() {
-    while(!string_array_is_empty(configuracion.RECURSOS)){
-        t_recurso * recurso = malloc(sizeof(t_recurso));
-        recurso->nombre_recurso = string_array_pop(configuracion.RECURSOS);
-        char * instancia_recurso = string_array_pop(configuracion.INSTANCIAS_RECURSOS);
-        recurso->cantidad_instancias = atoi(instancia_recurso);
-        recurso->mutex_cantidad_instancias = malloc(sizeof(pthread_mutex_t));
-        crearMutex(recurso->mutex_cantidad_instancias);
-        free(instancia_recurso);
-        recurso->cola_procesos_bloqueados = crearCola();
-        list_add(lista_recursos, recurso);
-    }
-}
-
-
-
-bool encontrarEstadoPid(void * elemento) {
-    t_estado_proceso * estado_pedido = (t_estado_proceso *) elemento;
-    return estado_pedido->PID == pid_comparar_estado;
-}
-
-void cambiarEstadoLista(uint32_t pid, estado_procesos estado_nuevo) {
-    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
-    estado_pedido->estado = estado_nuevo;
-}
-
-char * obtenerEstadoString(estado_procesos estado){
-    if(estado == NEW) return "NEW";
-    else if(estado == READY) return "READY";
-    else if(estado == BLOCKED) return "BLOCKED";
-    else if(estado == EXEC) return "EXEC";
-    else return "EXIT";
-}
-
-void avisarYCambiarEstado(uint32_t pid, estado_procesos estado_actual) {
-    char * estado_anterior = obtenerEstadoString(obtenerEstadoPorPID(pid));
-    cambiarEstadoLista(pid, estado_actual);
-    avisarCambioEstado(pid, estado_anterior, obtenerEstadoString(estado_actual));
-}
-
-pcb_a_finalizar * crearPcbAFinalizar(pcb * proceso, char * motivo_fin) {
-    pcb_a_finalizar * pcb_fin = malloc(sizeof(pcb_a_finalizar));
-    pcb_fin->contexto = proceso;
-    pcb_fin->motivo_finalizacion = string_duplicate(motivo_fin);
-    return pcb_fin;
-}
-void destruirPcbAFinalizar(pcb_a_finalizar * pcb_fin) {
-    free(pcb_fin->contexto);
-    free(pcb_fin->motivo_finalizacion);
-    free(pcb_fin);
-}
-
-void agregarAColaExit(pcb * proceso, char * motivo_fin){
-    uint32_t pid = proceso->PID;
-    pcb_a_finalizar * pcb_fin = crearPcbAFinalizar(proceso, motivo_fin);
-    agregarACola(cola_exit, pcb_fin);
-    avisarYCambiarEstado(pid, EXIT);
-    sem_post(hay_procesos_cola_exit);
 }
 
 peticion_memoria * crearPeticionMemoria(codigos_operacion operacion) {
@@ -383,9 +207,28 @@ peticion_memoria * crearPeticionMemoria(codigos_operacion operacion) {
     return peticion;
 }
 
-void verSiPararPlanificacion() {
-    sem_wait(hay_que_parar_planificacion);
-    sem_post(hay_que_parar_planificacion);
+void agregarACola(cola_sincronizada * cola_elegida, void * valor) {
+
+    pthread_mutex_lock(cola_elegida->mutex_cola);
+        queue_push(cola_elegida->cola, valor);
+    pthread_mutex_unlock(cola_elegida->mutex_cola);
+}
+
+void liberarRecursosYborrarEstadoSistema(uint32_t pid) {
+
+    pthread_mutex_lock(mutex_pid_comparar);
+        pid_comparar_estado = pid;
+        t_estado_proceso * estado_a_borrar = (t_estado_proceso *) list_find(lista_estados, encontrarEstadoPid);
+        list_remove_element(lista_estados, estado_a_borrar);
+    pthread_mutex_unlock(mutex_pid_comparar);
+
+    if(list_size(estado_a_borrar->recursos_tomados) > 0) 
+        list_destroy_and_destroy_elements(estado_a_borrar->recursos_tomados, liberarInstanciasRecurso);
+    else 
+        list_destroy(estado_a_borrar->recursos_tomados);
+
+    free(estado_a_borrar->elemento_bloqueador);
+    free(estado_a_borrar);
 }
 
 void agregarAColaReadyComunOFinalizar(pcb * proceso) {
@@ -400,94 +243,42 @@ void agregarAColaReadyComunOFinalizar(pcb * proceso) {
     }
 }
 
-void agregarAColaReadyPorQuantumOFinalizar(pcb * proceso_bloqueado) {
-    if(proceso_bloqueado->PID == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
-        agregarAColaExit(proceso_bloqueado, "INTERRUPTED_BY_USER");
-    } else {
-        agregarAColaReadySegunAlgoritmoQuantum(proceso_bloqueado);
-    }
+void avisarYCambiarEstado(uint32_t pid, estado_procesos estado_actual) {
+    char * estado_anterior = obtenerEstadoString(obtenerEstadoPorPID(pid));
+    cambiarEstadoLista(pid, estado_actual);
+    avisarCambioEstado(pid, estado_anterior, obtenerEstadoString(estado_actual));
 }
 
-void bloquearEnInterfazOFinalizar(pcb_cola_interfaz * pcb_a_cola, t_interfaz_kernel * interfaz_elegida, char * nombre_interfaz) {
-    t_mutex_eliminacion_interfaz * elemento = buscarMutexEliminacionLista(nombre_interfaz);
-    pthread_mutex_lock(elemento->mutex);
-    uint32_t pid = pcb_a_cola->contexto->PID;
-    if(pid == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
-        agregarAColaExit(pcb_a_cola->contexto, "INTERRUPTED_BY_USER");
-        queue_destroy_and_destroy_elements(pcb_a_cola->cola_parametros, free);
-        free(pcb_a_cola);
-        pthread_mutex_unlock(elemento->mutex);
-    } else if(interfaz_elegida == NULL) {
-        agregarAColaExit(pcb_a_cola->contexto, "INVALID_INTERFACE");
-        queue_destroy_and_destroy_elements(pcb_a_cola->cola_parametros, free);
-        free(pcb_a_cola);
-        pthread_mutex_unlock(elemento->mutex);
-    } else {
-        avisarYCambiarEstado(pid, BLOCKED);
-        avisarBloqueo(pid, interfaz_elegida->nombre_interfaz);
-        setearTipoBloqueadorYNombreEnSistema(pid, false, interfaz_elegida->nombre_interfaz);
-        agregarACola(interfaz_elegida->cola_bloqueados, pcb_a_cola);
-        sem_post(interfaz_elegida->hay_procesos_en_interfaz);
-        pthread_mutex_unlock(elemento->mutex);
-    }
-    free(nombre_interfaz);
+char * obtenerEstadoString(estado_procesos estado){
+    if(estado == NEW) return "NEW";
+    else if(estado == READY) return "READY";
+    else if(estado == BLOCKED) return "BLOCKED";
+    else if(estado == EXEC) return "EXEC";
+    else return "EXIT";
 }
 
-void hacerWaitOFinalizar(t_recurso * recurso, pcb * pcb_hace_wait) {
-    uint32_t pid = pcb_hace_wait->PID;
-    if(pid == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
-        agregarAColaExit(pcb_hace_wait, "INTERRUPTED_BY_USER");
-    } else {
-        avisarYCambiarEstado(pid, BLOCKED);
-        avisarBloqueo(pcb_hace_wait->PID, recurso->nombre_recurso);
-        setearTipoBloqueadorYNombreEnSistema(pid, true, recurso->nombre_recurso);
-        agregarACola(recurso->cola_procesos_bloqueados, pcb_hace_wait);
-    }
+void cambiarEstadoLista(uint32_t pid, estado_procesos estado_nuevo) {
+    t_estado_proceso * estado_pedido = encontrarEstadoPorPID(pid);
+    estado_pedido->estado = estado_nuevo;
 }
 
-
-
-void setearTipoBloqueadorYNombreEnSistema(uint32_t pid, bool es_recurso, char * nombre_bloqueador) {
-    t_estado_proceso * estado_a_actualizar = encontrarEstadoPorPID(pid);
-    estado_a_actualizar->bloqueadoPorRecurso = es_recurso;
-    if (estado_a_actualizar->elemento_bloqueador)
-        free(estado_a_actualizar->elemento_bloqueador);
-    estado_a_actualizar->elemento_bloqueador = string_duplicate(nombre_bloqueador);
+void avisarCambioEstado(uint32_t pid, const char * estado_anterior, const char * estado_actual) {
+    char * aviso_cambio_estado = string_from_format("PID: %d - Estado Anterior: %s - Estado Actual: %s ", pid, estado_anterior, estado_actual);
+    logInfoSincronizado(aviso_cambio_estado);
+    free(aviso_cambio_estado);
 }
 
-char * nombre_recurso_sist_comparar;
-
-void actualizarDatosRecursoEnProceso(uint32_t pid, char * nombre_recurso, int instancias_a_sumar) {
-    t_estado_proceso * estado_a_actualizar = encontrarEstadoPorPID(pid);
-    nombre_recurso_sist_comparar = nombre_recurso;
-    recurso_tomado_proceso * recurso_a_modificar = (recurso_tomado_proceso *)  list_find(estado_a_actualizar->recursos_tomados, compararNombreRecursoSistema);
-    if(recurso_a_modificar == NULL) {
-        recurso_a_modificar = malloc(sizeof(recurso_tomado_proceso));
-        recurso_a_modificar->nombre_recurso = string_duplicate(nombre_recurso);
-        recurso_a_modificar->instancias_tomadas = 0;
-        list_add(estado_a_actualizar->recursos_tomados, recurso_a_modificar);
-    }
-    if(instancias_a_sumar > 0 || recurso_a_modificar->instancias_tomadas != 0)
-        recurso_a_modificar->instancias_tomadas += instancias_a_sumar;
+void indicarSiEstaEnReadyComunONo(uint32_t pid, bool esReadyPlus) {
+    t_estado_proceso * estado = encontrarEstadoPorPID(pid);
+    estado->esta_en_ready_plus = esReadyPlus;
 }
 
-bool compararNombreRecursoSistema(void * recurso_sistema) {
-    recurso_tomado_proceso * recurso = (recurso_tomado_proceso *) recurso_sistema;
-    return !strcmp(nombre_recurso_sist_comparar, recurso->nombre_recurso); 
-}
+void agregarAColaReadyComun(pcb *proceso) {
+    proceso->Quantum = configuracion.QUANTUM;
+    agregarACola(cola_ready, proceso);
+    listarPIDsEnReadyComun();
 
-void liberarRecursosYborrarEstadoSistema(uint32_t pid) {
-    pthread_mutex_lock(mutex_pid_comparar);
-    pid_comparar_estado = pid;
-    t_estado_proceso * estado_a_borrar = (t_estado_proceso *) list_find(lista_estados, encontrarEstadoPid);
-    list_remove_element(lista_estados, estado_a_borrar);
-    pthread_mutex_unlock(mutex_pid_comparar);
-    if(list_size(estado_a_borrar->recursos_tomados) > 0) 
-        list_destroy_and_destroy_elements(estado_a_borrar->recursos_tomados, liberarInstanciasRecurso);
-    else 
-        list_destroy(estado_a_borrar->recursos_tomados);
-    free(estado_a_borrar->elemento_bloqueador);
-    free(estado_a_borrar);
+    sem_post(hay_procesos_cola_ready);
 }
 
 void liberarInstanciasRecurso(void * recurso_tom) {
@@ -507,13 +298,44 @@ void liberarInstanciasRecurso(void * recurso_tom) {
     free(recurso_a_liberar);
 }
 
+bool colaSincronizadaEstaVacia(cola_sincronizada * cola_elegida) {
+    
+    pthread_mutex_lock(cola_elegida->mutex_cola);
+        bool resultado = queue_is_empty(cola_elegida->cola);
+    pthread_mutex_unlock(cola_elegida->mutex_cola);
+    
+    return resultado;
+}
 
+void agregarAColaReadyPorQuantumOFinalizar(pcb * proceso_bloqueado) {
+    if(proceso_bloqueado->PID == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
+        agregarAColaExit(proceso_bloqueado, "INTERRUPTED_BY_USER");
+    } else {
+        agregarAColaReadySegunAlgoritmoQuantum(proceso_bloqueado);
+    }
+}
 
+void agregarAColaExit(pcb * proceso, char * motivo_fin){
+    uint32_t pid = proceso->PID;
+    pcb_a_finalizar * pcb_fin = crearPcbAFinalizar(proceso, motivo_fin);
+    agregarACola(cola_exit, pcb_fin);
+    avisarYCambiarEstado(pid, EXIT);
 
+    sem_post(hay_procesos_cola_exit);
+}
 
-void mostrarPIDsYEstados(void * elemento_estado) {
-    t_estado_proceso * estado_proces = (t_estado_proceso *)elemento_estado;
-    printf("\nPID: %d -Estado: %s", estado_proces->PID, obtenerEstadoString(estado_proces->estado));
+void agregarAColaReadySegunAlgoritmoQuantum(pcb *proceso_bloqueado) {
+    uint32_t pid = proceso_bloqueado->PID;
+    avisarYCambiarEstado(pid, READY);
+    if(proceso_bloqueado->Quantum > 0 && algoritmo_elegido == VRR) {
+        indicarSiEstaEnReadyComunONo(pid, true);
+        agregarACola(cola_ready_vrr, proceso_bloqueado);
+        listarPIDsEnReadyPlus();
+        sem_post(hay_procesos_cola_ready);
+    } else {
+        indicarSiEstaEnReadyComunONo(pid, false);
+        agregarAColaReadyComun(proceso_bloqueado);
+    }
 }
 
 void listarPIDsEnReadyComun() {
@@ -537,6 +359,10 @@ void listarPIDsEnReadyComun() {
     pthread_mutex_unlock(cola_ready->mutex_cola);
 }
 
+void * transformarEstadoProcesoAString(void * elemento) {
+    pcb * proceso = (pcb *) elemento;
+    return string_from_format("%d, ", proceso->PID);
+}
 
 void listarPIDsEnReadyPlus() {
 
@@ -559,9 +385,228 @@ void listarPIDsEnReadyPlus() {
     pthread_mutex_unlock(cola_ready_vrr->mutex_cola);
 }
 
-void * transformarEstadoProcesoAString(void * elemento) {
-    pcb * proceso = (pcb *) elemento;
-    return string_from_format("%d, ", proceso->PID);
+pcb_a_finalizar * crearPcbAFinalizar(pcb * proceso, char * motivo_fin) {
+    pcb_a_finalizar * pcb_fin = malloc(sizeof(pcb_a_finalizar));
+    pcb_fin->contexto = proceso;
+    pcb_fin->motivo_finalizacion = string_duplicate(motivo_fin);
+   
+    return pcb_fin;
+}
+
+// -------------------------- Manejo de Interfaces de I/O  --------------------------
+
+bool existeInterfazEnSistema(char * nombre_interfaz) {
+
+    pthread_mutex_lock(mutex_lista_interfaces);
+        nombre_interfaz_a_comparar = string_duplicate(nombre_interfaz);
+        bool resultado = list_any_satisfy(lista_interfaces, interfazTieneNombre);
+        free(nombre_interfaz_a_comparar);
+    pthread_mutex_unlock(mutex_lista_interfaces);
+
+    return resultado;
+}
+
+bool interfazTieneNombre(void * interfaz) {
+    t_interfaz_kernel * interfaz_elegida = (t_interfaz_kernel *) interfaz;
+    return !strcmp(nombre_interfaz_a_comparar, interfaz_elegida->nombre_interfaz);
+}
+
+bool interfazPuedeRealizarOperacion(codigos_operacion codigo, char * nombre_interfaz) {
+    t_interfaz_kernel * interfaz_encontrada = encontrarInterfazEnLista(nombre_interfaz);
+    
+    if(interfaz_encontrada == NULL) return false;
+    
+    switch(codigo){
+        case P_IO_GEN_SLEEP:
+            return interfaz_encontrada->tipo_de_interfaz == GENERICA;
+            
+        case P_IO_STDIN_READ:
+            return interfaz_encontrada->tipo_de_interfaz == STDIN;
+
+        case P_IO_STDOUT_WRITE:
+            return interfaz_encontrada->tipo_de_interfaz == STDOUT;
+
+        case P_IO_FS_CREATE:
+        case P_IO_FS_DELETE:
+        case P_IO_FS_READ:
+        case P_IO_FS_TRUNCATE:
+        case P_IO_FS_WRITE:
+            return interfaz_encontrada->tipo_de_interfaz == DIALFS;
+
+        default:
+            fprintf(stderr, "Error: operacion desconocida!");
+            return false;
+    }
+}
+ 
+// Una vez la operación finalice, el Kernel recibirá una notificación y desbloqueará dicho proceso para que esté listo para continuar con su ejecución cuando le toque según el algoritmo.
+// Toda interfaz de I/O puede conectarse y desconectarse en tiempo de ejecución. 
+// No se evaluará el caso en que una interfaz se desconecte estando ocupada por un proceso.
+
+void bloquearEnInterfazOFinalizar(pcb_cola_interfaz * pcb_a_cola, t_interfaz_kernel * interfaz_elegida, char * nombre_interfaz) {
+    t_mutex_eliminacion_interfaz * elemento = buscarMutexEliminacionLista(nombre_interfaz);
+
+    pthread_mutex_lock(elemento->mutex);
+
+    uint32_t pid = pcb_a_cola->contexto->PID;
+        if(pid == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
+
+            agregarAColaExit(pcb_a_cola->contexto, "INTERRUPTED_BY_USER");
+            queue_destroy_and_destroy_elements(pcb_a_cola->cola_parametros, free);
+            free(pcb_a_cola);
+
+    pthread_mutex_unlock(elemento->mutex);
+
+        } else if(interfaz_elegida == NULL) {
+            
+            agregarAColaExit(pcb_a_cola->contexto, "INVALID_INTERFACE");
+            queue_destroy_and_destroy_elements(pcb_a_cola->cola_parametros, free);
+            free(pcb_a_cola);
+
+    pthread_mutex_unlock(elemento->mutex);
+
+            } else {
+                avisarYCambiarEstado(pid, BLOCKED);
+                avisarBloqueo(pid, interfaz_elegida->nombre_interfaz);
+                setearTipoBloqueadorYNombreEnSistema(pid, false, interfaz_elegida->nombre_interfaz);
+                agregarACola(interfaz_elegida->cola_bloqueados, pcb_a_cola);
+                
+                sem_post(interfaz_elegida->hay_procesos_en_interfaz);
+            
+    pthread_mutex_unlock(elemento->mutex);
+            
+            } free(nombre_interfaz);
+}
+
+t_mutex_eliminacion_interfaz * buscarMutexEliminacionLista(char * nombre_interfaz) {
+    
+    pthread_mutex_lock(lista_mutex_eliminacion_interfaz->mutex_lista);
+        nombre_mutex_interfaz_comparar = string_duplicate(nombre_interfaz);
+        t_mutex_eliminacion_interfaz * mutex_nuevo = list_find(lista_mutex_eliminacion_interfaz->lista, encontrarMutexEliminacionPorNombre);
+        free(nombre_mutex_interfaz_comparar);
+    pthread_mutex_unlock(lista_mutex_eliminacion_interfaz->mutex_lista);
+    return mutex_nuevo;
+}
+
+bool encontrarMutexEliminacionPorNombre(void * elemento) {
+    t_mutex_eliminacion_interfaz * mutex = (t_mutex_eliminacion_interfaz *) elemento;
+    return !strcmp(mutex->nombre_interfaz, nombre_mutex_interfaz_comparar); 
+}
+
+void avisarBloqueo(uint32_t pid, const char * nombre_recurso_o_interfaz) {
+    char * avisarBloqueo = string_from_format("PID: %d - Bloqueado por: %s", pid, nombre_recurso_o_interfaz);
+    logInfoSincronizado(avisarBloqueo);
+    free(avisarBloqueo);
+}
+
+void setearTipoBloqueadorYNombreEnSistema(uint32_t pid, bool es_recurso, char * nombre_bloqueador) {
+    t_estado_proceso * estado_a_actualizar = encontrarEstadoPorPID(pid);
+    estado_a_actualizar->bloqueadoPorRecurso = es_recurso;
+   
+    if (estado_a_actualizar->elemento_bloqueador) free(estado_a_actualizar->elemento_bloqueador);
+    
+    estado_a_actualizar->elemento_bloqueador = string_duplicate(nombre_bloqueador);
+}
+
+// -------------------------- Manejo de Recursos --------------------------
+
+void actualizarDatosRecursoEnProceso(uint32_t pid, char * nombre_recurso, int instancias_a_sumar) {
+    t_estado_proceso * estado_a_actualizar = encontrarEstadoPorPID(pid);
+    nombre_recurso_sist_comparar = nombre_recurso;
+    recurso_tomado_proceso * recurso_a_modificar = (recurso_tomado_proceso *)  list_find(estado_a_actualizar->recursos_tomados, compararNombreRecursoSistema);
+   
+    if(recurso_a_modificar == NULL) {
+        recurso_a_modificar = malloc(sizeof(recurso_tomado_proceso));
+        recurso_a_modificar->nombre_recurso = string_duplicate(nombre_recurso);
+        recurso_a_modificar->instancias_tomadas = 0;
+        list_add(estado_a_actualizar->recursos_tomados, recurso_a_modificar);
+    }
+    if(instancias_a_sumar > 0 || recurso_a_modificar->instancias_tomadas != 0)
+        recurso_a_modificar->instancias_tomadas += instancias_a_sumar;
+}
+
+bool compararNombreRecursoSistema(void * recurso_sistema) {
+    recurso_tomado_proceso * recurso = (recurso_tomado_proceso *) recurso_sistema;
+    return !strcmp(nombre_recurso_sist_comparar, recurso->nombre_recurso); 
+}
+
+void hacerWaitOFinalizar(t_recurso * recurso, pcb * pcb_hace_wait) {
+    uint32_t pid = pcb_hace_wait->PID;
+   
+    if(pid == (uint32_t) leerEnteroSincronizado(pid_fin_usuario)) {
+        agregarAColaExit(pcb_hace_wait, "INTERRUPTED_BY_USER");
+    
+    } else {
+        avisarYCambiarEstado(pid, BLOCKED);
+        avisarBloqueo(pcb_hace_wait->PID, recurso->nombre_recurso);
+        setearTipoBloqueadorYNombreEnSistema(pid, true, recurso->nombre_recurso);
+        agregarACola(recurso->cola_procesos_bloqueados, pcb_hace_wait);
+    }
+}
+
+// --------------------------  --------------------------
+// --------------------------  --------------------------
+// --------------------------  --------------------------
+
+algoritmo algoritmoPorString(char* algoritmo) {
+    if(strcmp(algoritmo, "FIFO") == 0) return FIFO;
+    else if(strcmp(algoritmo, "RR") == 0) return RR;
+    else return VRR;
+}
+
+void eliminarColaSincronizadaYElementos(cola_sincronizada * cola_elegida, void (*funcion_eliminadora) (void *)) {
+    pthread_mutex_lock(cola_elegida->mutex_cola);
+    queue_destroy_and_destroy_elements(cola_elegida->cola, funcion_eliminadora);
+    pthread_mutex_unlock(cola_elegida->mutex_cola);
+    pthread_mutex_destroy(cola_elegida->mutex_cola);
+    free(cola_elegida->mutex_cola);
+    free(cola_elegida);
+}
+
+void eliminarColaSincronizada(cola_sincronizada * cola_elegida) {
+    queue_destroy(cola_elegida->cola);
+    pthread_mutex_destroy(cola_elegida->mutex_cola);
+    free(cola_elegida->mutex_cola);
+    free(cola_elegida);
+}
+
+void agregarInterfazALista(t_interfaz_kernel * interfaz_actual) {
+    pthread_mutex_lock(mutex_lista_interfaces);
+    list_add(lista_interfaces, interfaz_actual);
+    pthread_mutex_unlock(mutex_lista_interfaces);
+}
+
+void cargarRecursos() {
+    while(!string_array_is_empty(configuracion.RECURSOS)){
+        t_recurso * recurso = malloc(sizeof(t_recurso));
+        recurso->nombre_recurso = string_array_pop(configuracion.RECURSOS);
+        char * instancia_recurso = string_array_pop(configuracion.INSTANCIAS_RECURSOS);
+        recurso->cantidad_instancias = atoi(instancia_recurso);
+        recurso->mutex_cantidad_instancias = malloc(sizeof(pthread_mutex_t));
+        crearMutex(recurso->mutex_cantidad_instancias);
+        free(instancia_recurso);
+        recurso->cola_procesos_bloqueados = crearCola();
+        list_add(lista_recursos, recurso);
+    }
+}
+
+cola_sincronizada * crearCola() {
+    cola_sincronizada * cola_sincro = malloc(sizeof(cola_sincronizada));
+    cola_sincro->cola = queue_create();
+    if(!cola_sincro->cola) {
+        fprintf(stderr, "Error al crear la cola");
+        abort();
+    }
+    cola_sincro->mutex_cola = malloc(sizeof(pthread_mutex_t));
+    crearMutex(cola_sincro->mutex_cola);
+
+    return cola_sincro;
+}
+
+void destruirPcbAFinalizar(pcb_a_finalizar * pcb_fin) {
+    free(pcb_fin->contexto);
+    free(pcb_fin->motivo_finalizacion);
+    free(pcb_fin);
 }
 
 void agregarAListaEstados(t_estado_proceso *estado_nuevo) {
@@ -583,23 +628,3 @@ void agregarMutexInterfazAlSistema(t_mutex_eliminacion_interfaz * nuevo_mutex){
 }
 
 char * nombre_mutex_interfaz_comparar;
-
-t_mutex_eliminacion_interfaz * buscarMutexEliminacionLista(char * nombre_interfaz) {
-    
-    pthread_mutex_lock(lista_mutex_eliminacion_interfaz->mutex_lista);
-        nombre_mutex_interfaz_comparar = string_duplicate(nombre_interfaz);
-        t_mutex_eliminacion_interfaz * mutex_nuevo = list_find(lista_mutex_eliminacion_interfaz->lista, encontrarMutexEliminacionPorNombre);
-        free(nombre_mutex_interfaz_comparar);
-    pthread_mutex_unlock(lista_mutex_eliminacion_interfaz->mutex_lista);
-    return mutex_nuevo;
-}
-
-bool encontrarMutexEliminacionPorNombre(void * elemento) {
-    t_mutex_eliminacion_interfaz * mutex = (t_mutex_eliminacion_interfaz *) elemento;
-    return !strcmp(mutex->nombre_interfaz, nombre_mutex_interfaz_comparar); 
-}
-
-void indicarSiEstaEnReadyComunONo(uint32_t pid, bool esReadyPlus) {
-    t_estado_proceso * estado = encontrarEstadoPorPID(pid);
-    estado->esta_en_ready_plus = esReadyPlus;
-}
