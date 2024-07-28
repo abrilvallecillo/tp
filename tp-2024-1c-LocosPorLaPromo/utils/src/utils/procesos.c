@@ -386,9 +386,7 @@ peticion_resize * deserializarPeticionResize(t_buffer * buffer_paquete){
     return peticion;
 }
 
-int deserializarTamPagina(t_buffer * buffer_paquete){
-    return (int) leerDeBufferUint32(buffer_paquete);
-}
+int deserializarTamPagina(t_buffer * buffer_paquete){ return (int) leerDeBufferUint32(buffer_paquete); }
 
 t_buffer * serializarTamPagina(uint32_t tamanio_pagina){
     t_buffer * buffer = crearBufferGeneral(

@@ -11,6 +11,7 @@ extern int cantidadMarcos;
 extern t_bitarray * marcosLibres;
 extern pthread_mutex_t* mutexMarcosLibres;
 extern void * tamanioMarcosLibres;
+
 lista_sincronizada* codigos_programas;
 lista_sincronizada* tablaPaginasProcesos;
 void* memoria;

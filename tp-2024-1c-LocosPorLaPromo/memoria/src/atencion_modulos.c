@@ -172,7 +172,6 @@ void * atenderPeticiones(void * conexion_cliente) {
 pcb * CrearProceso(inicializar_proceso * peticion) {
     if(peticion->direccion_codigo == NULL) {return NULL;}
     pcb * pcb_nuevo = malloc(sizeof(pcb));
-    codigo_proceso * codigo_nuevo = malloc(sizeof(codigo_proceso));
 
     pcb_nuevo->PID = peticion->pid;
     pcb_nuevo->PC = 0;
@@ -185,7 +184,8 @@ pcb * CrearProceso(inicializar_proceso * peticion) {
     pcb_nuevo->registros.ECX = 0;
     pcb_nuevo->registros.EDX = 0; 
     pcb_nuevo->Quantum = peticion->quantum;
-    
+
+    codigo_proceso * codigo_nuevo = malloc(sizeof(codigo_proceso));
     codigo_nuevo->pid = peticion->pid;
 
     char * direccion = string_duplicate(configuracion.PATH_INSTRUCCIONES);
@@ -214,12 +214,7 @@ pcb * CrearProceso(inicializar_proceso * peticion) {
     tablaPaginas->pid = peticion->pid;
     tablaPaginas->listaPaginas = list_create();
     agregarElementoAListaSincronizada(tablaPaginasProcesos, tablaPaginas);
-    
-    // Creación / destrucción de Tabla de Páginas: “PID: <PID> - Tamaño: <CANTIDAD_PAGINAS>”
-    char * mensaje = string_from_format("PID: %d - Tamaño: %d", peticion->pid, 0);
-    logInfoSincronizado(mensaje);
-    free(mensaje);
-    free(lectura_linea);
+
 
     return pcb_nuevo;   
 }
